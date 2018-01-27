@@ -1,0 +1,81 @@
+/* ==========================================================================
+
+   Util -> Mixins
+
+   ========================================================================== */
+
+/* Mixins -> Media Queries
+   ========================================================================== */
+
+// @param {Number(px)} $bp-1 - breakpoint value, min-width if declaring range
+// @param {Number(px)} $bp-2 [null] - [Optional] breakpoint value, max-width if declaring range
+@mixin mq($bp-1, $bp-2: null) {
+  @if $bp-1 == "max" {
+    @media (max-width: $bp-2 - 1) {
+      @content;
+    }
+  } @elseif $bp-2 == "max" {
+    @media (max-width: $bp-1 - 1) {
+      @content;
+    }
+  } @elseif $bp-2 == null {
+    @media (min-width: $bp-1) {
+      @content;
+    }
+  } @else {
+    @media (min-width: $bp-1) and (max-width:$bp-2 - 1) {
+      @content;
+    }
+  }
+}
+
+/* Mixins -> Fluid Fonts
+   ========================================================================== */
+
+@mixin fluid-font-size($min-size: 16px, $max-size: 38px, $min-width: 400px, $max-width: 1400px) {
+  font-size: $min-size;
+  @include mq($min-width, $max-width) {
+    font-size: calc(#{$min-size} + (#{strip-units($max-size)} - #{strip-units($min-size)}) * (100vw - #{$min-width}) / (#{strip-units($max-width)} - #{strip-units($min-width)}))
+  }
+  @include mq($max-width) {
+    font-size: $max-size;
+  }
+}
+
+@function strip-units($number) {
+  @return $number / ($number * 0 + 1);
+}
+
+/* Mixins -> Visual Functions
+   ========================================================================== */
+
+// Hides text, but is accessible to screen readers. Best used on single element next to an element that will display. IE: title next to an icon.
+
+@mixin hide($accessible: true) {
+
+  @if $accessible != true {
+    color: transparent;
+    font: 0/0 a;
+    text-shadow: none;
+  }
+  @else {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+
+    &.focusable:active,
+    &.focusable:focus {
+      clip: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      position: static;
+      width: auto;
+    }
+  }
+}
