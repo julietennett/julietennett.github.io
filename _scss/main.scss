@@ -59,13 +59,12 @@ h1 {
 //label
 
 .label {
-  display: inline-block; //sets width to the size of its contents
+  display: inline-flex; //sets width to the size of its contents
   border-top: solid 1px #fff;
   padding-top: 1.5em;
 }
 
 .label__section {
-  display: inline-block; //allows them to sit next to eachother :-)
   margin-right: 6em;
 }
 
