@@ -1,50 +1,19 @@
 ---
 layout: base
-title: Example
+title: Hello
 ---
-
-<head>
-  <!--load bitter-->
-  <link href="https://fonts.googleapis.com/css?family=Bitter:400i" rel="stylesheet">
-  <!--load asap-->
-  <link href="https://fonts.googleapis.com/css?family=Asap:400,600" rel="stylesheet">
-</head>
+<!--these are jekyll things that things know how to read. dont put anything above them >:( -->
 
 <div class="page--home">
   {% include layout/header.html %}
 
   <div class="content">
 
-    <div class="hero">
-      <div class="container">
-      <!--hero images-->
-        <div class="hero__img">
-          <img class="img-responsive hero__img--left" src="img/zealery_heroLeft.png" alt="iphone mockup">
-          <img class="img-responsive hero__img--right" src="img/zealery_heroRight.png" alt="iphone mockup">
-        </div>
-
-        <h1>How can we recreate the feeling of walking down Newbury with friends in a mobile app?</h1>
-
-        <div class="label">
-          <div class="label__section">
-            <div class="label__section--title">role</div>
-            <div class="label__section--answer">designer</div>
-          </div>
-          <div class="label__section">
-            <div class="label__section--title">client</div>
-            <div class="label__section--answer">Zealery</div>
-          </div>
-          <div class="label__section">
-            <div class="label__section--title">kind</div>
-            <div class="label__section--answer">UI/UX</div>
-          </div>
-          <div class="label__section">
-            <div class="label__section--title">date</div>
-            <div class="label__section--answer">fall 2016</div>
-          </div>
-        </div>
-
-    </div>
+        {% include components/hero.html
+        img1="zealery_heroLeft.png"
+        img2="zealery_heroRight.png"
+        question="How can we recreate the feeling of walking down Newbury with friends in a mobile app?"
+        role="designer" client="zealery" kind="ui & ux" date="Fall 2016"%}
 
   </div>
 
