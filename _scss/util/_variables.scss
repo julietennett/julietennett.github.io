@@ -6,7 +6,13 @@
 
 /* Variables -> Colors
    ========================================================================== */
-
+$c-black: #4A4A4A;
+$c-zealery--pink: #FF685A;
+$c-zealery--light: #FCF3F2;
+$c-trailtag--teal: #106469;
+$c-trailtag--light: #E1E8E8;
+$c-nifty--purple: #5A1537;
+$c-nifty--light: #F9F2F5;
 
 /* Variables -> Gradients
    ========================================================================== */
@@ -19,7 +25,7 @@ $bp-mobile:       500px;
 $bp-mobile-horiz: 600px;
 $bp-tablet-vert:  768px;
 $bp-tablet-horiz: 1080px;
-$bp-laptop:       1100px;
+$bp-laptop:       992px;
 $bp-desktop:      1200px;
 $bp-desktop-xl:   1440px;
 $bp-desktop-xxl:  1560px;

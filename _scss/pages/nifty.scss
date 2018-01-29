@@ -1,0 +1,11 @@
+.nifty { //this is to make sure it only shows up on trailtag page
+
+  h1 {
+    -webkit-text-fill-color: $c-nifty--purple; //overrides color (regardless of order)
+  }
+
+  .hero {
+    background-color: $c-nifty--purple;
+  }
+
+}

@@ -31,14 +31,16 @@
    Pages
 
    ========================================================================== */
-
+  @import "pages/zealery";
+  @import "pages/trailtag";
+  @import "pages/nifty";
 
 /* ==========================================================================
 
    Components
 
    ========================================================================== */
-
+  @import "components/hero";
 
 h1 {
   font-family: 'Bitter', serif;
@@ -46,7 +48,6 @@ h1 {
   line-height: 1.4em;
   width: 90%;
   color: #fff; //fallback color for browsers that don't support outline
-  -webkit-text-fill-color: #FF685A; //overrides color (regardless of order)
   -webkit-text-stroke-width: .01px;
   -webkit-text-stroke-color: white;
 }
@@ -56,45 +57,7 @@ h1 {
   margin: 0 auto;
 }
 
-.hero {
-  width: 100%;
-  height: 100;
-  padding: 8em 0;
-  background-color: #FF685A;
-  overflow: hidden;
-}
-
-.label {
-  display: flex; //sets width to the size of its contents
-  flex-flow: wrap;
-  justify-content: space-between;
-  border-top: solid 1px #fff;
-  width: 100%;
-}
-
-.label__section {
-  padding-top: 1.5em;
-  // margin-right: 6em;
-}
-
-.label__section--title {
-  font-family: 'Bitter', serif;
-  font-size: .75em;
-  color: #fff;
-}
-
-.label__section--answer {
-  padding-top: .5em;
-  font-family: 'Asap', sans-serif;
-  font-size: 1em;
-  color: #fff;
-}
-
-.hero__img {
-  display: none;
-}
-
-@media (min-width: 768px) {
+@media (min-width: $bp-tablet-vert) {
 
   .container {
     margin: 0 auto;
@@ -102,146 +65,17 @@ h1 {
   }
 
   h1 {
-    font-family: 'Bitter', serif;
     font-size: 3.5em;
     width: 85%;
-    color: #fff; //fallback color for browsers that don't support outline
-    -webkit-text-fill-color: #FF685A; //overrides color (regardless of order)
-    -webkit-text-stroke-width: .01px;
-    -webkit-text-stroke-color: white;
-  }
-
-  .hero {
-    width: 100%;
-    height: 100;
-    padding: 10% 4.5em;
-    background-color: #FF685A;
-    overflow: hidden;
-  }
-
-  //label
-
-  .label {
-    display: inline-flex; //sets width to the size of its contents
-    justify-content: space-between;
-    width: auto; //override the width of the mobile size one
-  }
-
-  .label__section {
-    margin-right: 4em;
-  }
-
-  .label__section:last-child {
-    margin-right: 0; //takes the margin-right off of the last label section
-  }
-
-  .label__section--title {
-    font-family: 'Bitter', serif;
-    font-size: .75em;
-    color: #fff;
-  }
-
-  .label__section--answer {
-    padding-top: .5em;
-    font-family: 'Asap', sans-serif;
-    font-size: 1em;
-    color: #fff;
-  }
-
-  .hero__img {
-    max-height: 100%;
-    position: relative;
-  }
-
-  .hero__img--left {
-    position: absolute;
-    left: 60%;
-    top: 65%;
-    width: 25%;
-    height: auto;
-    overflow: hidden;
-  }
-
-  .hero__img--right {
-    position: absolute;
-    left: 75%;
-    top: 20%;
-    width: 33%;
-    height: auto;
-    overflow: hidden;
   }
 }
 
 
-// @media (min-width: 992px) {
-//
-//   h1 {
-//     font-family: 'Bitter', serif;
-//     font-size: 5em;
-//     width: 75%;
-//     color: #fff; //fallback color for browsers that don't support outline
-//     -webkit-text-fill-color: #FF685A; //overrides color (regardless of order)
-//     -webkit-text-stroke-width: .01px;
-//     -webkit-text-stroke-color: white;
-//   }
-//
-//   .hero {
-//     width: 100%;
-//     height: 100;
-//     padding: 10% 4.5em;
-//     background-color: #FF685A;
-//     overflow: hidden;
-//   }
-//
-//   //label
-//
-//   .label {
-//     display: inline-flex; //sets width to the size of its contents
-//     border-top: solid 1px #fff;
-//     padding-top: 1.5em;
-//   }
-//
-//   .label__section {
-//     margin-right: 6em;
-//   }
-//
-//   .label__section:last-child {
-//     margin-right: 0; //takes the margin-right off of the last label section
-//   }
-//
-//   .label__section--title {
-//     font-family: 'Bitter', serif;
-//     font-size: .75em;
-//     color: #fff;
-//   }
-//
-//   .label__section--answer {
-//     padding-top: .5em;
-//     font-family: 'Asap', sans-serif;
-//     font-size: 1em;
-//     color: #fff;
-//   }
-//
-//   .hero__img {
-//     max-height: 100%;
-//     position: relative;
-//   }
-//
-//   .hero__img--left {
-//     position: absolute;
-//     left: 60%;
-//     top: 65%;
-//     width: 25%;
-//     height: auto;
-//     overflow: hidden;
-//   }
-//
-//   .hero__img--right {
-//     position: absolute;
-//     left: 75%;
-//     top: 20%;
-//     width: 33%;
-//     height: auto;
-//     overflow: hidden;
-//   }
-// }
+@media (min-width: $bp-laptop) {
+
+  h1 {
+    font-size: 5em;
+    width: 75%;
+  }
+
+}
