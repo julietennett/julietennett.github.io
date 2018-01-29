@@ -1,0 +1,9 @@
+.page--home {
+  background-color: $c-me--light;
+  height: 100vh;
+}
+
+.nav--home {
+  display: flex;
+  flex-flow: column nowrap;
+}

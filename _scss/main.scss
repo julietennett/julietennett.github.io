@@ -31,6 +31,7 @@
    Pages
 
    ========================================================================== */
+  @import "pages/home";
   @import "pages/zealery";
   @import "pages/trailtag";
   @import "pages/nifty";
@@ -50,6 +51,12 @@ h1 {
   color: #fff; //fallback color for browsers that don't support outline
   -webkit-text-stroke-width: .01px;
   -webkit-text-stroke-color: white;
+}
+
+a {
+  font-family: 'Bitter', serif;
+  font-size: 2.5em;
+  color: $c-me--purple;
 }
 
 .container {
