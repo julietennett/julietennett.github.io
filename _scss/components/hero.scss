@@ -1,6 +1,6 @@
 .hero {
-  width: 100%;
-  height: 100;
+  width: 100vw;
+  height: 100vh;
   padding: 8em 0;
   overflow: hidden;
 }
@@ -107,8 +107,6 @@
     background-color: #FF685A;
     overflow: hidden;
   }
-
-  //label
 
   .label {
     display: inline-flex; //sets width to the size of its contents
