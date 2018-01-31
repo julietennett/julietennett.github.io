@@ -1,7 +1,7 @@
 .hero {
   width: 100vw;
   height: 100vh;
-  padding: 8em 0;
+  padding: 100px 0;
   overflow: hidden;
 }
 
@@ -9,13 +9,9 @@
   display: flex; //sets width to the size of its contents
   flex-flow: wrap;
   justify-content: space-between;
+  padding-top: 15px;
   border-top: solid 1px #fff;
   width: 100%;
-}
-
-.label__section {
-  padding-top: 1.5em;
-  // margin-right: 6em;
 }
 
 .label__section--title {
@@ -25,7 +21,7 @@
 }
 
 .label__section--answer {
-  padding-top: .5em;
+  padding-top: 20px;
   font-family: 'Asap', sans-serif;
   font-size: 1em;
   color: #fff;
@@ -38,18 +34,13 @@
 @media (min-width: $bp-tablet-vert) {
 
   .hero {
-    width: 100%;
-    height: 100;
-    padding: 10% 4.5em;
-    background-color: #FF685A;
-    overflow: hidden;
+    padding: 100px 4.5em;
   }
 
   //label
 
   .label {
     display: inline-flex; //sets width to the size of its contents
-    justify-content: space-between;
     width: auto; //override the width of the mobile size one
   }
 
@@ -59,19 +50,6 @@
 
   .label__section:last-child {
     margin-right: 0; //takes the margin-right off of the last label section
-  }
-
-  .label__section--title {
-    font-family: 'Bitter', serif;
-    font-size: .75em;
-    color: #fff;
-  }
-
-  .label__section--answer {
-    padding-top: .5em;
-    font-family: 'Asap', sans-serif;
-    font-size: 1em;
-    color: #fff;
   }
 
   .hero__img {
@@ -100,40 +78,6 @@
 
 
 @media (min-width: $bp-laptop) {
-  .hero {
-    width: 100%;
-    height: 100;
-    padding: 10% 4.5em;
-    background-color: #FF685A;
-    overflow: hidden;
-  }
-
-  .label {
-    display: inline-flex; //sets width to the size of its contents
-    border-top: solid 1px #fff;
-    padding-top: 1.5em;
-  }
-
-  .label__section {
-    margin-right: 6em;
-  }
-
-  .label__section:last-child {
-    margin-right: 0; //takes the margin-right off of the last label section
-  }
-
-  .label__section--title {
-    font-family: 'Bitter', serif;
-    font-size: .75em;
-    color: #fff;
-  }
-
-  .label__section--answer {
-    padding-top: .5em;
-    font-family: 'Asap', sans-serif;
-    font-size: 1em;
-    color: #fff;
-  }
 
   .hero__img {
     max-height: 100%;
