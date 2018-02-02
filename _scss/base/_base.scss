@@ -111,6 +111,7 @@ h1 {
   -webkit-text-stroke-width: .01px;
   -webkit-text-stroke-color: white;
   @media (min-width: $bp-tablet-vert) {
+    @include fluid-font-size(40px, 50px, $bp-tablet-vert, $bp-laptop);
     width: 85%;
   }
   @media (min-width: $bp-laptop) {

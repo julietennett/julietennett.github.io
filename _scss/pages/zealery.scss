@@ -8,6 +8,35 @@
     background-color: $c-zealery--pink;
   }
 
+  @media (min-width: $bp-tablet-vert) {
+
+    .hero__img {
+      display: flex;
+      justify-content: flex-end;
+      width: 105vw;
+    }
+
+    .hero__img--left {
+      position: absolute;
+      width: 30vw;
+      top: 400px;
+      right: 20%;
+    }
+
+    .hero__img--right {
+      position: absolute;
+      width: 40vw;
+    }
+  }
+
+  @media (min-width: $bp-desktop) {
+
+    .hero__img--left {
+      top: 450px;
+      right: 20%;
+    }
+  }
+
   .project--intro {
     background-color: $c-zealery--light;
   }
