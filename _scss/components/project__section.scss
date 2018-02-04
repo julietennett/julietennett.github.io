@@ -2,4 +2,22 @@
   height: 100%;
   padding-top: 60px;
   padding-bottom: 30px;
+
+  @media (min-width: $bp-tablet-vert) {
+    min-height: 100vh;
+    width: 100vw;
+    padding: 60px 4.5em 30px 4.5em;
+  }
+
+  @media (min-width: $bp-desktop) {
+    padding-top: 100px;
+    h2 {
+      padding-left: 15%;
+    }
+    p {
+      padding-top: 20px;
+      padding-left: 25%;
+      width: 85%;
+    }
+  }
 }
