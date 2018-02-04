@@ -4,8 +4,20 @@
     -webkit-text-fill-color: $c-zealery--pink; //overrides color (regardless of order)
   }
 
+  .project__section {
+    background-color: $c-zealery--light;
+    
+    h2 {
+      color: $c-zealery--pink;
+    }
+  }
+
   .hero {
     background-color: $c-zealery--pink;
+  }
+
+  .project--intro {
+    background-color: $c-zealery--light;
   }
 
   @media (min-width: $bp-tablet-vert) {
@@ -37,8 +49,10 @@
     }
   }
 
-  .project--intro {
-    background-color: $c-zealery--light;
-  }
-
 }
+
+// .hello:nth-child(2n) { //targets the class, then nth child, then every second (even), then the h1's in that
+//     h1 {
+//     -webkit-text-fill-color: green!important;
+//   }
+// }

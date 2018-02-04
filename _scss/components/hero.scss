@@ -1,8 +1,7 @@
 .hero {
   width: 100vw;
-  height: 100vh;
+  height: 100%; //shouldn't cut off at 100vh on mobile
   padding: 100px 0;
-  overflow: hidden;
 }
 
 .label {
@@ -34,6 +33,8 @@
 @media (min-width: $bp-tablet-vert) {
 
   .hero {
+    height: 100vh;
+    overflow: hidden;
     padding: 100px 4.5em;
   }
 
