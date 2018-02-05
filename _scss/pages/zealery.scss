@@ -4,29 +4,27 @@
     -webkit-text-fill-color: $c-zealery--pink; //overrides color (regardless of order)
   }
 
-  .light {
-    // background-color: $col
-
-  }
-
   .hero {
     background-color: $c-zealery--pink;
+  }
 
-    @media (min-width: $bp-tablet-vert) {
+    @media (min-width: $bp-tablet-vert) { //put media query in each div style >:(
 
       .hero__img {
         display: flex;
         justify-content: flex-end;
         width: 105vw;
+        &--left {
+          position: absolute;
+          width: 30vw;
+          top: 400px;
+          right: 20%;
+        }
+        &--right {
+          position: absolute;
+          width: 40vw;
+        }
       }
-
-      .hero__img--left {
-        position: absolute;
-        width: 30vw;
-        top: 400px;
-        right: 20%;
-      }
-
       .hero__img--right {
         position: absolute;
         width: 40vw;
@@ -40,7 +38,7 @@
         right: 20%;
       }
     }
-  }
+
 
   .light {
     .project__section {
@@ -65,13 +63,18 @@
     }
   }
 
-  .project__section {
-
+  .wireframes {
     .section--img2 {
       padding-top: 75px;
       width: 100%;
     }
+  }
 
+  .hifi {
+    .section--img2 {
+      padding-top: 75px;
+      width: 100%;
+    }
   }
 
 
