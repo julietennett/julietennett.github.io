@@ -2,44 +2,44 @@
   <div class="container">
 
     <!-- hero images-->
-    <div class="hero__img">
-      <img class="img-responsive hero__img--left" src="/img/{{include.img1}}" alt="iphone mockup">
-      <img class="img-responsive hero__img--right" src="/img/{{include.img2}}" alt="iphone mockup">
+    <div class="hero__img--container">
+      <img class="img-responsive hero__img--left" src="/img/{{ include.img1 }}" alt="iphone mockup">
+      <img class="img-responsive hero__img--right" src="/img/{{ include.img2 }}" alt="iphone mockup">
     </div>
 
-    <h1>{{include.question}}</h1>
+    <h1>{{ include.question }}</h1>
 
     <div class="label">
-      {%if include.role != null%}
+      {% if include.role != null %}
       <div class="label__section">
         <div class="label__section--title">role</div>
-        <div class="label__section--answer">{{include.role}}</div>
+        <div class="label__section--answer">{{ include.role }}</div>
       </div>
-      {%endif%}
-      {%if include.client != null%}
+      {% endif %}
+      {% if include.client != null %}
       <div class="label__section">
         <div class="label__section--title">client</div>
-        <div class="label__section--answer">{{include.client}}</div>
+        <div class="label__section--answer">{{ include.client }}</div>
       </div>
-      {%endif%}
-      {%if include.class != null%}
+      {% endif %}
+      {% if include.class != null %}
       <div class="label__section">
         <div class="label__section--title">class</div>
-        <div class="label__section--answer">{{include.class}}</div>
+        <div class="label__section--answer">{{ include.class }}</div>
       </div>
-      {%endif%}
-      {%if include.kind != null%}
+      {% endif %}
+      {% if include.kind != null %}
       <div class="label__section">
         <div class="label__section--title">kind</div>
-        <div class="label__section--answer">{{include.kind}}</div>
+        <div class="label__section--answer">{{ include.kind }}</div>
       </div>
-      {%endif%}
-      {%if include.date != null%}
+      {% endif %}
+      {% if include.date != null %}
       <div class="label__section">
         <div class="label__section--title">date</div>
-        <div class="label__section--answer">{{include.date}}</div>
+        <div class="label__section--answer">{{ include.date  }}</div>
       </div>
-      {%endif%}
+      {% endif %}
     </div>
 
   </div>
