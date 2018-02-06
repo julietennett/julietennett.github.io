@@ -10,20 +10,26 @@
 
     @media (min-width: $bp-tablet-vert) { //put media query in each div style >:(
 
-      .hero__img {
+      .hero__img--container {
         display: flex;
         justify-content: flex-end;
         width: 105vw;
-        &--left {
-          position: absolute;
-          width: 30vw;
-          top: 400px;
-          right: 20%;
-        }
-        &--right {
-          position: absolute;
-          width: 40vw;
-        }
+        // &--left {
+        //   position: absolute;
+        //   width: 30vw;
+        //   top: 400px;
+        //   right: 20%;
+        // }
+        // &--right {
+        //   position: absolute;
+        //   width: 40vw;
+        // }
+      }
+      .hero__img--left {
+        position: absolute;
+        width: 30vw;
+        top: 400px;
+        right: 20%;
       }
       .hero__img--right {
         position: absolute;
@@ -41,7 +47,7 @@
 
 
   .light {
-    .project__section {
+    .project-section {
       background-color: $c-zealery--light;
 
       h2 {
@@ -51,7 +57,7 @@
   }
 
   .dark {
-    .project__section {
+    .project-section {
       background-color: $c-zealery--pink;
 
       h2 {
