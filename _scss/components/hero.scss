@@ -2,6 +2,11 @@
   width: 100vw;
   height: 100%; //shouldn't cut off at 100vh on mobile
   padding: 100px 0;
+  @media (min-width: $bp-tablet-vert) {
+    height: 100vh;
+    overflow: hidden;
+    padding: 100px 4.5em;
+  }
 }
 
 .label {
@@ -11,53 +16,36 @@
   padding-top: 15px;
   border-top: solid 1px #fff;
   width: 100%;
+  @media (min-width: $bp-tablet-vert) {
+    display: inline-flex; //sets width to the size of its contents
+    width: auto; //override the width of the mobile size one
+  }
+}
+
+.label__section {
+  @media (min-width: $bp-tablet-vert) {
+    margin-right: 3.5em;
+    &:last-child {
+      margin-right: 0; //takes the margin-right off of the last label section
+    }
+  }
 }
 
 .label__section--title {
-  font-family: 'Bitter', serif;
+  font-family: $f-bitter;
   font-size: .75em;
   color: #fff;
+  @media (min-width: $bp-tablet-vert) {
+    font-size: .6em;
+  }
 }
 
 .label__section--answer {
   padding-top: 20px;
-  font-family: 'Asap', sans-serif;
+  font-family: $f-asap;
   font-size: 1em;
   color: #fff;
-}
-
-.hero__img--container {
-  display: none;
-}
-
-@media (min-width: $bp-tablet-vert) {
-
-  .hero {
-    height: 100vh;
-    overflow: hidden;
-    padding: 100px 4.5em;
-  }
-
-  //label
-
-  .label {
-    display: inline-flex; //sets width to the size of its contents
-    width: auto; //override the width of the mobile size one
-  }
-
-  .label__section {
-    margin-right: 3.5em;
-  }
-
-  .label__section:last-child {
-    margin-right: 0; //takes the margin-right off of the last label section
-  }
-
-  .label__section--title {
-    font-size: .6em;
-  }
-
-  .label__section--answer {
+  @media (min-width: $bp-tablet-vert) {
     padding-top: 10px;
     font-size: .75em;
   }

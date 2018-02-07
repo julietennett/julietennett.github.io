@@ -2,37 +2,40 @@
   height: 100%;
   padding-top: 60px;
   padding-bottom: 30px;
-
-  .section--images {
-    display: none;
-  }
-
   @media (min-width: $bp-tablet-vert) {
     min-height: 100vh;
     width: 100vw;
     padding: 60px 4.5em 30px 4.5em;
+  }
+  @media (min-width: $bp-laptop) {
+    padding-top: 100px;
+  }
 
-    .section--images {
+  .section--images {
+    display: none;
+    @media (min-width: $bp-tablet-vert) {
       display: block;
     }
   }
 
-  @media (min-width: $bp-laptop) {
-    padding-top: 100px;
-    h2 {
+  h2 {
+    @media (min-width: $bp-laptop) {
       padding-left: 10%;
     }
-    p {
+    @media (min-width: $bp-desktop) {
       padding-top: 20px;
       padding-left: 20%;
       width: 85%;
     }
   }
-  @media (min-width: $bp-desktop) {
-    h2 {
-      padding-left: 15%;
+
+  p {
+    @media (min-width: $bp-laptop) {
+      padding-top: 20px;
+      padding-left: 20%;
+      width: 85%;
     }
-    p {
+    @media (min-width: $bp-desktop) {
       padding-top: 20px;
       padding-left: 25%;
       width: 85%;

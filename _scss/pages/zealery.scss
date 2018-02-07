@@ -1,5 +1,6 @@
 .page--zealery { //this is to make sure it only shows up on zealery page
 
+  //HERO STYLES
   h1 {
     -webkit-text-fill-color: $c-zealery--pink; //overrides color (regardless of order)
   }
@@ -8,48 +9,39 @@
     background-color: $c-zealery--pink;
   }
 
-    @media (min-width: $bp-tablet-vert) { //put media query in each div style >:(
+  .hero__img--container {
+    display: none;
+    @media (min-width: $bp-tablet-vert) {
+      display: flex;
+      justify-content: flex-end;
+      width: 105vw;
+    }
+  }
 
-      .hero__img--container {
-        display: flex;
-        justify-content: flex-end;
-        width: 105vw;
-        // &--left {
-        //   position: absolute;
-        //   width: 30vw;
-        //   top: 400px;
-        //   right: 20%;
-        // }
-        // &--right {
-        //   position: absolute;
-        //   width: 40vw;
-        // }
-      }
-      .hero__img--left {
+  .hero__img {
+    @media (min-width: $bp-tablet-vert) {
+      position: absolute;
+      &--left {
         position: absolute;
         width: 30vw;
         top: 400px;
         right: 20%;
+        @media (min-width: $bp-desktop) {
+          top: 450px;
+          right: 20%;
+        }
       }
-      .hero__img--right {
+      &--right {
         position: absolute;
         width: 40vw;
       }
     }
+  }
 
-    @media (min-width: $bp-desktop) {
-
-      .hero__img--left {
-        top: 450px;
-        right: 20%;
-      }
-    }
-
-
+  //SECTION STYLES
   .light {
     .project-section {
       background-color: $c-zealery--light;
-
       h2 {
         color: $c-zealery--pink;
       }
@@ -59,7 +51,6 @@
   .dark {
     .project-section {
       background-color: $c-zealery--pink;
-
       h2 {
         color: #fff;
       }
@@ -69,6 +60,7 @@
     }
   }
 
+  //WIREFRAMES PROJECT SECTION
   .wireframes {
     .section--img2 {
       padding-top: 75px;
@@ -76,6 +68,7 @@
     }
   }
 
+  //HIFI PROJECT SECTION
   .hifi {
     .section--img2 {
       padding-top: 75px;
