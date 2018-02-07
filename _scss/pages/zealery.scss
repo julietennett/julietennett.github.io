@@ -22,7 +22,6 @@
     @media (min-width: $bp-tablet-vert) {
       position: absolute;
       &--left {
-        position: absolute;
         width: 30vw;
         top: 400px;
         right: 20%;
@@ -32,7 +31,6 @@
         }
       }
       &--right {
-        position: absolute;
         width: 40vw;
       }
     }
@@ -52,10 +50,10 @@
     .project-section {
       background-color: $c-zealery--pink;
       h2 {
-        color: #fff;
+        color: $c-white;
       }
       p {
-        color: #fff;
+        color: $c-white;
       }
     }
   }
