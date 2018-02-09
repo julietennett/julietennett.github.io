@@ -18,7 +18,7 @@
     }
   }
 
-  h2 {
+  .subhead--indented {
     @media (min-width: $bp-laptop) {
       padding-left: 10%;
     }
@@ -29,7 +29,7 @@
     }
   }
 
-  p {
+  .par--indented {
     @media (min-width: $bp-laptop) {
       padding-top: 20px;
       padding-left: 20%;
