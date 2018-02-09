@@ -10,31 +10,31 @@
     <h1>{{ include.question }}</h1>
 
     <div class="label">
-      {% if include.role != null %}
+      {% if include.role %}
       <div class="label__section">
         <div class="label__section--title">role</div>
         <div class="label__section--answer">{{ include.role }}</div>
       </div>
       {% endif %}
-      {% if include.client != null %}
+      {% if include.client %}
       <div class="label__section">
         <div class="label__section--title">client</div>
         <div class="label__section--answer">{{ include.client }}</div>
       </div>
       {% endif %}
-      {% if include.class != null %}
+      {% if include.class %}
       <div class="label__section">
         <div class="label__section--title">class</div>
         <div class="label__section--answer">{{ include.class }}</div>
       </div>
       {% endif %}
-      {% if include.kind != null %}
+      {% if include.kind %}
       <div class="label__section">
         <div class="label__section--title">kind</div>
         <div class="label__section--answer">{{ include.kind }}</div>
       </div>
       {% endif %}
-      {% if include.date != null %}
+      {% if include.date %}
       <div class="label__section">
         <div class="label__section--title">date</div>
         <div class="label__section--answer">{{ include.date  }}</div>
