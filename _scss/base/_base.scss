@@ -102,9 +102,64 @@ button {
 
 /* Base -> Typography
    ========================================================================== */
+h1 {
+  @include fluid-font-size(40px, 50px, $bp-mobile, $bp-tablet-vert);
+  font-family: $f-bitter;
+  line-height: 1.4em;
+  width: 90%;
+  color: #fff; //fallback color for browsers that don't support outline
+  -webkit-text-stroke-width: .01px;
+  -webkit-text-stroke-color: white;
+  @media (min-width: $bp-tablet-vert) {
+    @include fluid-font-size(40px, 50px, $bp-tablet-vert, $bp-laptop);
+    width: 85%;
+  }
+  @media (min-width: $bp-laptop) {
+    @include fluid-font-size(50px, 75px, $bp-laptop, $bp-desktop-xxl);
+    width: 75%;
+  }
+}
+
+a {
+ font-family: $f-bitter;
+ font-size: 2.5em;
+ color: $c-me--purple;
+}
+
+h2 {
+  margin: 0;
+  padding-bottom: 10px;
+  font-family: $f-bitter;
+  font-size: 25px;
+  @media (min-width: $bp-laptop) {
+    font-size: 45px;
+  }
+  @media (min-width: $bp-desktop) {
+    font-size: 60px;
+  }
+}
+
+p {
+  font-family: $f-asap;
+  font-size: 16px;
+  line-height: 1.4em;
+}
+
+
+
 
 /* Base -> Layout
    ========================================================================== */
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  @media (min-width: $bp-tablet-vert) {
+    width: 100%;
+  }
+}
+
+
 
 /* Base -> Components
    ========================================================================== */

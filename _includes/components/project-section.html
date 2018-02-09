@@ -1,0 +1,21 @@
+<div class="project-section">
+  <div class="container">
+
+    <h2>{{ include.subhead }}</h2>
+
+    <p>{{ include.par1 }}</p>
+
+    {% if include.img1 %}
+    <img class="img-responsive section--images section--img1" src="/img/{{include.img1}}" alt="{{include.alt}}">
+    {% endif %}
+
+    {% if include.par2 %}
+    <p>{{ include.par2 }}</p>
+    {% endif %}
+
+    {% if include.img2 %}
+    <img class="img-responsive section--images section--img2" src="/img/{{include.img2}}" alt="{{include.alt}}">
+    {% endif %}
+
+  </div>
+</div>

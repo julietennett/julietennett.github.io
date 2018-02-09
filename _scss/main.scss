@@ -31,11 +31,15 @@
    Pages
 
    ========================================================================== */
-
+  @import "pages/home";
+  @import "pages/zealery";
+  @import "pages/trailtag";
+  @import "pages/nifty";
 
 /* ==========================================================================
 
    Components
 
    ========================================================================== */
-
+  @import "components/hero";
+  @import "components/project-section";

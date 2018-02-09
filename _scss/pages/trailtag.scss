@@ -1,0 +1,11 @@
+.trailtag { //this is to make sure it only shows up on trailtag page
+
+  h1 {
+    -webkit-text-fill-color: $c-trailtag--teal; //overrides color (regardless of order)
+  }
+
+  .hero {
+    background-color: $c-trailtag--teal;
+  }
+
+}
