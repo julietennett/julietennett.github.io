@@ -5,6 +5,10 @@
     -webkit-text-fill-color: $c-trailtag--teal; //overrides color (regardless of order)
   }
 
+  h3 {
+    color: $c-trailtag--teal;
+  }
+
   .hero {
     background-color: $c-trailtag--teal;
   }
@@ -61,6 +65,31 @@
       .project-section {
         background: url(/img/trailtag/section--hike.png);
         background-size: cover;
+      }
+    }
+
+    //UX STYLES
+    .ux {
+      .section--img2 {
+        width: 100%;
+        padding-top: 50px;
+      }
+    }
+
+    //VISUAL STYLES
+    .visual {
+      .section--images {
+        width: 100%;
+        padding-top: 50px;
+        @media (min-width: $bp-laptop) {
+          padding-top: 75px;
+          padding-left: 20%;
+          height: 500px;
+          width: auto;
+        }
+        @media (min-width: $bp-desktop) {
+          padding-left: 25%;
+        }
       }
     }
 

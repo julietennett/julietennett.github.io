@@ -26,6 +26,32 @@ title: TrailTag Case Study
       {% include components/project-section.html %}
     </div>
 
+    <!--ux-->
+    <div class="ux white">
+      {% include components/project-section.html
+      subhead='creating <br>a ux system'
+      par1='Our first weeks of wireframing were all-hands-on-deck as we mapped out, flow-by-flow, each corner of the TrailTag app. We realized quickly how large our UX system would be, given the sheer amounts of the overlapping states the app would have. Member in a group vs. not-yet-joined-a-group, regular state vs. emergency state, emergency state for the one who sent the distress signal vs. users receiving the distress signal, out-of-range users, etc: and all of these divided further into admin view vs. regular user view. Plus you could download maps!<br>
+      <br>
+      We used paper wireframes (pencils + scissors + little interface component puzzle pieces)  to collaboratively piece together full flows. We then translated our paper wireframes into Balsamiq screens to place into an InVision prototype to update and present to our client at each weekly meeting. We realized quickly that Balsamiq’s limitations as a program made the rapid iteration and duplication of all of our overlapping flows a difficult task to accomplish easily, and retrospectively we agreed that we would have rather used a Sketch file to create low-fi mockups if we had to start all over again!'
+      img2='trailtag/section--ux.png' alt='logo' %}
+    </div>
+
+    <div class="visual white">
+      {% include components/project-section.html
+      subhead='our color &amp; <br>visual system'
+      par1='Because our app would be used by people in a variety of outdoor situations, our interface had to be as easy as possible for people to use under fast-paced and limiting circumstances. For that reason, one of our main focuses when approaching high fidelity mockups was creating a consistent color and visual system that relayed the most important information to users upon first glance.'
+      img2='trailtag/section--user.png' alt='hifi iphone mockups'
+      par2='<h3>USERS ON THE MAP: Guides vs. Non-Guides</h3>
+      <p>One primary peice of information users would want to know at first glance is who are the guides, and where are they? To indicate this easily, guide markers and associated elements are light blue, while non-guide markers and associated elements are TrailTag teal. For ease of quickly recognizing your own marker on the map, that marker is visually bigger than the others surrounding it. </p>'
+      img3='trailtag/section--distress.png' alt='hifi iphone mockups'
+      par3='<h3>DISTRESS MODE</h3>
+      <p>The third color code we introduced into the app signifies distress, whether you are in distress or a user near you is. The distress color is red, which we believed to be the most direct and universal. The markers and associated secondary elements of user’s in distress appear red. Red is incorporated into the secondary elements of other user’s when you yourself are in Distress Mode. </p>'
+      img4='trailtag/section--secondaryInfo.png' alt='hifi iphone mockups'
+      par4='<h3>SECONDARY USER INFO: Full Name and options</h3>
+      <p>The secondary information associated with the markers would come after tapping on a certain marker: you would see their full name, their approximate distance from you, and two options that allow you to navigate towards or message the user selected. You can also swipe the the popup to scroll to the rest of the members whose markers are currently visible on your page. </p>'
+      %}
+    </div>
+
   </div>
 
   {% include layout/footer.html %}
