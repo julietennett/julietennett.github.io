@@ -2,16 +2,29 @@
 layout: base
 title: TrailTag Case Study
 ---
-<!--these are jekyll things that things know how to read. dont put anything above them >:( -->
 
 <div class="page--trailtag">
   {% include layout/header.html %}
 
-  <div class="content trailtag">
+  <div class="content">
 
-        {% include components/hero.html
-        question="How can we create a reassuring but non-intrusive experience for outdoor sports?"
-        role="design lead" client="trailtag" kind="ui &amp; ux" date="Spring 2017"%}
+    <!--hero-->
+    {% include components/hero.html
+    question='How can we create a reassuring but non-intrusive experience for outdoor sports?'
+    role='design lead' client='trailtag' kind='ui &amp; ux' date='Spring 2017'%}
+
+    <!--r+d-->
+    <div class="research dark">
+      {% include components/project-section.html
+      subhead='the project'
+      par1='Our client approached us to design and develop a mobile app that paired with a physical location tracking device for use in outdoor sports, a product that would aid in finding people lost in woods and mountains. I lead a team of four through a modified Agile/Scrum process, meeting weekly with the client for the duration of a full semester (4 months)! The project included a research and discovery phase, branding, ux wireframes, high fidelity design, and development of the TrailTag mobile app.'
+      img2='trailtag/section--logo.png' alt='logo' %}
+    </div>
+
+    <!--photo-->
+    <div class="hike">
+      {% include components/project-section.html %}
+    </div>
 
   </div>
 
