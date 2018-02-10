@@ -12,10 +12,7 @@
   }
 
   .section--images {
-    display: none;
-    @media (min-width: $bp-tablet-vert) {
-      display: block;
-    }
+    display: block;
   }
 
   .subhead--indented {
@@ -36,9 +33,7 @@
       width: 85%;
     }
     @media (min-width: $bp-desktop) {
-      padding-top: 20px;
       padding-left: 25%;
-      width: 85%;
     }
   }
 }

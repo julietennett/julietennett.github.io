@@ -58,6 +58,15 @@
     }
   }
 
+  .white {
+    .project-section {
+      background-color: $c-white;
+      h2 {
+        color: $c-zealery--pink;
+      }
+    }
+  }
+
   //WIREFRAMES PROJECT SECTION
   .wireframes {
     .section--img2 {
@@ -70,6 +79,19 @@
   .hifi {
     .section--img1 {
       padding-bottom: 75px;
+      width: 100%;
+    }
+  }
+
+  //GUIDELINES PROJECT SECTION
+  .guidelines {
+    .section--img2 {
+      padding-top: 75px;
+      padding-left: 25%;
+      width: 85%;
+    }
+    .section--img3 {
+      padding-top: 75px;
       width: 100%;
     }
   }
