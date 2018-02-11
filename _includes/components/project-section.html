@@ -47,6 +47,12 @@
       <img class="img-responsive section--images section--img5" src="/img/{{include.img5}}" alt="{{include.alt}}">
     {% endif %}
 
+    {% if include.caption %}
+      <div class="caption">
+        <div class="caption--text">{{ include.caption }}</div>
+      </div>
+    {% endif %}
+
 
 
   </div>

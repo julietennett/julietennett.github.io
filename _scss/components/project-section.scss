@@ -11,30 +11,57 @@
     padding-top: 100px;
     padding-bottom: 100px;
   }
-
-  .section--images {
-    display: block;
-  }
-
   .subhead--indented {
     @media (min-width: $bp-laptop) {
-      padding-left: 10%;
-    }
-    @media (min-width: $bp-desktop) {
       padding-top: 20px;
-      padding-left: 20%;
-      width: 85%;
+      padding-left: $m-grid-col1;
     }
   }
 
   .par--indented {
     @media (min-width: $bp-laptop) {
       padding-top: 20px;
-      padding-left: 20%;
-      width: 85%;
-    }
-    @media (min-width: $bp-desktop) {
-      padding-left: 25%;
+      padding-left: $m-grid-col2;
+      width: $w-grid-col2;
     }
   }
+
+  // .caption {
+  //   font-family: 'Bitter', serif;
+  //   font-size: 11px;
+  //   line-height: 15px;
+  //   // position: absolute;
+  //   padding-top: 8px;
+  //   border-top: solid 2px $c-white;
+  //   @media (min-width: $bp-tablet-vert) {
+  //     width: 50%;
+  //   }
+  //   @media (min-width: $bp-laptop) {
+  //     margin-left: $m-grid-col1;
+  //     width: 13%;
+  //     padding-right: 3%;
+  //   }
+  // }
+
+  .caption {
+    display: flex;
+    align-items: center;
+    // height: 100vh;
+    @media (min-width: $bp-tablet-vert) {
+      width: 50%;
+    }
+    @media (min-width: $bp-laptop) {
+      margin-left: $m-grid-col1;
+      width: 20%;
+      padding-right: 3%;
+    }
+  }
+  .caption--text {
+    font-family: 'Bitter', serif;
+    font-size: 11px;
+    line-height: 15px;
+    padding-top: 8px;
+    border-top: solid 2px $c-white;
+  }
+
 }
