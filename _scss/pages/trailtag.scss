@@ -53,8 +53,8 @@
     }
   }
 
-  //R+D STYLES
-  .research {
+  //PROJECT STYLES
+  .project {
     .section--img2 {
       width: 100%;
       margin-top: 50px;
@@ -68,10 +68,6 @@
         width: $w-grid-col2;
       }
     }
-    .caption {
-      position: relative;
-      bottom: 737px;
-    }
   }
 
     //HIKE STYLES
@@ -79,6 +75,15 @@
       .project-section {
         background: url(/img/trailtag/section--hike.png);
         background-size: cover;
+      }
+    }
+
+    .research {
+      .project-section {
+        .caption {
+          position: relative;
+          bottom: 60px;
+        }
       }
     }
 
