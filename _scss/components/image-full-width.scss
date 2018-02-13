@@ -1,0 +1,10 @@
+.image-full-width {
+  .img--full {
+    display: none;
+    @media (min-width: $bp-laptop) {
+      display: block;
+      width: 100%;
+      padding-top: 50px;
+    }
+  }
+}

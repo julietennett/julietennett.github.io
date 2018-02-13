@@ -1,0 +1,32 @@
+.image-block-caption {
+  .block {
+    display: flex;
+    flex-flow: column;
+    padding-left: 3.5%;
+    @media (min-width: $bp-tablet-vert) {
+      flex-flow: row-reverse;
+    }
+
+    .caption {
+      padding-top: 15px;
+      @media (min-width: $bp-tablet-vert) {
+        width: 50%;
+      }
+      @media (min-width: $bp-laptop) {
+        margin-left: $m-grid-col1;
+        width: 20%;
+        padding-top: 40px;
+      }
+    }
+    .grid--col2 {
+      @media (min-width: $bp-tablet-vert) {
+        padding-left: 3.5%;
+      }
+      @media (min-width: $bp-laptop) {
+        padding-top: 20px;
+        width: $w-grid-col2;
+      }
+    }
+  }
+
+}
