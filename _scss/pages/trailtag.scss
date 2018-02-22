@@ -3,7 +3,7 @@
   //////////////////HERO STYLES
 
   h1 {
-    -webkit-text-fill-color: $c-trailtag--teal; //overrides color (regardless of order)
+    -webkit-text-fill-color: rgba(0, 0, 0, 0); //overrides color (regardless of order)
   }
 
   h3 {
@@ -12,6 +12,33 @@
 
   .hero {
     background-color: $c-trailtag--teal;
+    background: url(/img/trailtag/hero-background.png);
+    background-size: cover;
+
+    .butts {
+        display: none;
+        @media (min-width: $bp-tablet-vert) {
+          display: block;
+          height: 100vh;
+          width: 100%;
+          position: absolute;
+          bottom: 1vh;
+        }
+    }
+    .hero__img {
+      @media (min-width: $bp-tablet-vert) {
+        position: absolute;
+        width: 60%;
+        top: 30vh;
+        left: 40vw;
+      }
+      @media (min-width: $bp-laptop) {
+        position: absolute;
+        width: 50%;
+        top: 5vh;
+        left: 50vw;
+      }
+    }
   }
 
   ////////////////SECTION STYLES
