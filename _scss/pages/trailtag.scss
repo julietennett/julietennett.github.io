@@ -1,11 +1,74 @@
-.trailtag { //this is to make sure it only shows up on trailtag page
+.page--trailtag { //this is to make sure it only shows up on trailtag page
+
+  //////////////////HERO STYLES
 
   h1 {
     -webkit-text-fill-color: $c-trailtag--teal; //overrides color (regardless of order)
   }
 
+  h3 {
+    color: $c-trailtag--teal;
+  }
+
   .hero {
     background-color: $c-trailtag--teal;
   }
+
+  ////////////////SECTION STYLES
+
+  .light {
+      background-color: $c-trailtag--light;
+      h2 {
+        color: $c-trailtag--teal;
+      }
+      .caption {
+        color: $c-trailtag--teal;
+        border-color: $c-trailtag--teal;
+      }
+  }
+
+  .white {
+      background-color: $c-white;
+      h2 {
+        color: $c-trailtag--teal;
+      }
+      .caption {
+        color: $c-trailtag--teal;
+        border-color: $c-trailtag--teal;
+      }
+  }
+
+  .dark {
+      background-color: $c-trailtag--teal;
+      h2 {
+        color: $c-white;
+      }
+      p {
+        color: $c-white;
+      }
+      .caption {
+        color: $c-white;
+      }
+  }
+
+    .hike {
+      .project-section {
+        background: url(/img/trailtag/section--hike.png);
+        background-size: cover;
+      }
+    }
+
+    .visual {
+      .img--block {
+        width: 100%;
+        padding-top: 50px;
+        @media (min-width: $bp-laptop) {
+          padding-top: 75px;
+          height: 450px;
+          width: auto;
+        }
+      }
+    }
+
 
 }

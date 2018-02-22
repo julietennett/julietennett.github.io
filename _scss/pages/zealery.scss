@@ -1,6 +1,7 @@
 .page--zealery { //this is to make sure it only shows up on zealery page
 
-  //HERO STYLES
+  //////////////////HERO STYLES
+
   h1 {
     -webkit-text-fill-color: $c-zealery--pink; //overrides color (regardless of order)
   }
@@ -36,18 +37,16 @@
     }
   }
 
-  //SECTION STYLES
+  ////////////////////SECTION STYLES
+
   .light {
-    .project-section {
       background-color: $c-zealery--light;
       h2 {
         color: $c-zealery--pink;
       }
-    }
   }
 
   .dark {
-    .project-section {
       background-color: $c-zealery--pink;
       h2 {
         color: $c-white;
@@ -55,30 +54,25 @@
       p {
         color: $c-white;
       }
-    }
   }
 
-  //WIREFRAMES PROJECT SECTION
-  .wireframes {
-    .section--img2 {
-      padding-top: 75px;
+  .white {
+      background-color: $c-white;
+      h2 {
+        color: $c-zealery--pink;
+      }
+  }
+
+  .guidelines {
+    .img--block {
       width: 100%;
+      padding-top: 50px;
+      @media (min-width: $bp-laptop) {
+        padding-top: 75px;
+        height: 450px;
+        width: auto;
+      }
     }
   }
-
-  //HIFI PROJECT SECTION
-  .hifi {
-    .section--img2 {
-      padding-top: 75px;
-      width: 100%;
-    }
-  }
-
 
 }
-
-// .hello:nth-child(2n) { //targets the class, then nth child, then every second (even), then the h1's in that
-//     h1 {
-//     -webkit-text-fill-color: green!important;
-//   }
-// }

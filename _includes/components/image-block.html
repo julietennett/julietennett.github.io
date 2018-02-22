@@ -1,0 +1,17 @@
+<div class="{{ include.class }}">
+  <div class="container">
+
+    <div class="block">
+      <div class="grid--col2">
+        <img class="img-responsive img--block" src="/img/{{ include.img }}" alt="{{ include.alt }}">
+      </div>
+
+      {% if include.caption %}
+        <div class="caption">
+          <div class="caption--text">{{ include.caption }}</div>
+        </div>
+      {% endif %}
+    </div>
+
+  </div>
+</div>
