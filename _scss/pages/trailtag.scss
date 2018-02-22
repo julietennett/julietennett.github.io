@@ -1,6 +1,7 @@
 .page--trailtag { //this is to make sure it only shows up on trailtag page
 
-  //HERO STYLES
+  //////////////////HERO STYLES
+
   h1 {
     -webkit-text-fill-color: $c-trailtag--teal; //overrides color (regardless of order)
   }
@@ -13,7 +14,8 @@
     background-color: $c-trailtag--teal;
   }
 
-  //SECTION STYLES
+  ////////////////SECTION STYLES
+
   .light {
       background-color: $c-trailtag--light;
       h2 {
@@ -49,7 +51,6 @@
       }
   }
 
-    //HIKE STYLES
     .hike {
       .project-section {
         background: url(/img/trailtag/section--hike.png);
@@ -57,17 +58,6 @@
       }
     }
 
-    .research {
-      .project-section {
-        .caption {
-          position: relative;
-          bottom: 60px;
-        }
-      }
-    }
-
-
-    //VISUAL STYLES
     .visual {
       .img--block {
         width: 100%;
@@ -76,26 +66,6 @@
           padding-top: 75px;
           height: 450px;
           width: auto;
-        }
-      }
-    }
-
-    //NAVIGATION STYLES
-    .navigation {
-      .section--img2 {
-        width: 100%;
-        padding-top: 50px;
-      }
-    }
-
-    //TEAM STYLES
-    .team {
-      .section--img1 {
-        width: 100%;
-        padding-top: 50px;
-        @media (min-width: $bp-laptop) {
-          padding-top: 75px;
-          padding-left: $m-grid-col2;
         }
       }
     }
