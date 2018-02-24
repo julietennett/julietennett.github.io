@@ -25,6 +25,10 @@
           bottom: 1vh;
         }
     }
+
+    .hero__img--container {
+      
+    }
     .hero__img {
       @media (min-width: $bp-tablet-vert) {
         position: absolute;
