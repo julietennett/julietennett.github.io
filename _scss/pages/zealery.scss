@@ -13,6 +13,7 @@
   .hero__img--container {
     display: none;
     @media (min-width: $bp-tablet-vert) {
+      position: relative;
       display: flex;
       justify-content: flex-end;
       width: 105vw;
@@ -25,11 +26,7 @@
       &--left {
         width: 30vw;
         top: 400px;
-        right: 20%;
-        @media (min-width: $bp-desktop) {
-          top: 450px;
-          right: 20%;
-        }
+        right: 25%;
       }
       &--right {
         width: 40vw;

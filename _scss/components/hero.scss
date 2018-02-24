@@ -4,6 +4,7 @@
   padding: 100px 0;
   @media (min-width: $bp-tablet-vert) {
     height: 100vh;
+    min-height: 700px;
     overflow: hidden;
     padding: 100px 4.5em;
   }
