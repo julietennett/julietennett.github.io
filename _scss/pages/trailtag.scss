@@ -15,20 +15,6 @@
     background: url(/img/trailtag/hero-background.png);
     background-size: cover;
 
-    .butts {
-        display: none;
-        @media (min-width: $bp-tablet-vert) {
-          display: block;
-          height: 100vh;
-          width: 100%;
-          position: absolute;
-          bottom: 1vh;
-        }
-    }
-
-    .hero__img--container {
-      
-    }
     .hero__img {
       @media (min-width: $bp-tablet-vert) {
         position: absolute;
