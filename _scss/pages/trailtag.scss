@@ -88,10 +88,10 @@
 
 //////////////////NAV STYLES
     .nav {
-      a {
+      .slider--link {
         color: $c-trailtag--teal;
       }
-      .slider__item:hover {
+      .slider--item:hover {
         background-color: $c-trailtag--teal;
       }
     }
