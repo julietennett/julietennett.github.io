@@ -86,5 +86,14 @@
       }
     }
 
+//////////////////NAV STYLES
+    .nav {
+      a {
+        color: $c-trailtag--teal;
+      }
+      .slider__item:hover {
+        background-color: $c-trailtag--teal;
+      }
+    }
 
 }

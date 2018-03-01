@@ -72,4 +72,14 @@
     }
   }
 
+//////////////////NAV STYLES
+  .nav {
+    a {
+      color: $c-zealery--pink;
+    }
+    .slider--item:hover {
+      background-color: $c-zealery--pink;
+    }
+  }
+
 }

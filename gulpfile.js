@@ -11,5 +11,20 @@ const sync    = require('./gulp/browsersync');
   task( gulp );
 });
 
+gulp.task('icons', function () {
+  return gulp.src('./img/icons/*')
+    .pipe(svgmin())
+    .pipe(svgstore({ fileName: 'icons.svg', inlineSvg: true}))
+    .pipe(cheerio({
+      run: function ($, file) {
+        $('svg').addClass('hide');
+        $('[fill]').removeAttr('fill');
+      },
+      parserOptions: { xmlMode: true }
+    }))
+    .pipe(gulp.dest('./_includes/'));
+});
+
+
 gulp.task( 'build', [ 'sass', 'scripts', 'images', 'jekyll-build' ]);
 gulp.task( 'default', ['jekyll-build', 'serve']);
