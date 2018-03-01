@@ -1,6 +1,6 @@
 .nav {
 
-  .nav--hamburger-button-container {
+  .nav__hamburger--button-container {
     top: 0;
     position: fixed;
     margin: 16px;
@@ -9,7 +9,7 @@
     }
   }
 
-  .nav--hamburger-button {
+  .nav__hamburger--button {
     width: 25px;
     padding: 0;
   }
@@ -21,7 +21,7 @@
 
   //SLIDERS
 
-  .slider {
+  .nav__slider {
     position: fixed;
     height: 100vh;
     width: 100vw;
@@ -38,13 +38,13 @@
       width: 25vw;
     }
 
-    .nav--slider-button-container {
+    .nav__slider--button-container {
       display: flex;
       justify-content: flex-end;
       width: 100%;
     }
 
-    .nav--slider-button {
+    .nav__slider--button {
       margin: 16px 16px 0 0;
       padding: 0;
       @media (min-width: $bp-tablet-vert) {
@@ -52,7 +52,7 @@
       }
     }
 
-    .nav--slider-icon {
+    .nav__slider--icon {
       width: 20px;
     }
 
