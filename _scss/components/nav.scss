@@ -1,5 +1,7 @@
 .nav {
 
+  ////////////////HAMBURGER
+
   .nav__hamburger--button-container {
     top: 0;
     position: fixed;
@@ -18,8 +20,9 @@
     width: auto;
     stroke: #fff;
   }
+   
 
-  //SLIDERS
+  ////////////////SLIDER
 
   .nav__slider {
     position: fixed;
@@ -37,60 +40,59 @@
     @media (min-width: $bp-laptop) {
       width: 25vw;
     }
+  }
 
-    .nav__slider--button-container {
-      display: flex;
-      justify-content: flex-end;
-      width: 100%;
+  .nav__slider--button-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .nav__slider--button {
+    margin: 16px 16px 0 0;
+    padding: 0;
+    @media (min-width: $bp-tablet-vert) {
+      margin: 36px 26px;
     }
+  }
 
-    .nav__slider--button {
-      margin: 16px 16px 0 0;
+  .nav__slider--icon {
+    width: 20px;
+  }
+
+  .nav__slider--list {
+    list-style: none;
+    padding: 45px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: $bp-tablet-vert) {
       padding: 0;
-      @media (min-width: $bp-tablet-vert) {
-        margin: 36px 26px;
-      }
     }
+  }
 
-    .nav__slider--icon {
-      width: 20px;
-    }
+  .slider--item {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 6px 0;
+    margin: 10px 0;
+    text-decoration: none;
+  }
 
-    .nav__slider--list {
-      list-style: none;
-      padding: 45px 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      @media (min-width: $bp-tablet-vert) {
-        padding: 0;
-      }
-    }
+  .slider--link {
+    text-decoration: none;
+  }
 
-    .slider--item {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      padding: 6px 0;
-      margin: 10px 0;
-      text-decoration: none;
-    }
+  .slider--item:hover {
+    color: rgba(0, 0, 0, 0); //fallback color for browsers that don't support outline
 
     .slider--link {
       text-decoration: none;
+      -webkit-text-stroke-width: 1.2px;
+      -webkit-text-stroke-color: white;
     }
-
-    .slider--item:hover {
-      color: rgba(0, 0, 0, 0); //fallback color for browsers that don't support outline
-
-    .slider--link {
-        text-decoration: none;
-        -webkit-text-stroke-width: 1.2px;
-        -webkit-text-stroke-color: white;
-      }
-    }
-
   }
 
 }
