@@ -74,6 +74,9 @@
 
 //////////////////NAV STYLES
   .nav {
+    .nav--hamburger-icon {
+      stroke: $c-zealery--pink;
+    }
     .nav__slider {
       box-shadow: 0 0 19px $c-zealery--pinkshadow;
     }
