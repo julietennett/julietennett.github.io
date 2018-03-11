@@ -88,16 +88,24 @@
 
 //////////////////NAV STYLES
     .nav {
-      .nav__slider {
-        box-shadow: 0 0 19px $c-trailtag--shadow;
+      .nav__hamburger--icon {
+        stroke: $c-trailtag--teal;
       }
-      // .slider--link {
-      //   color: $c-trailtag--teal;
-      // }
-      // .slider--item:hover {
-      //   background-color: $c-trailtag--teal;
-      // }
-      .nav--hamburger-icon {
+      .nav__slider {
+        box-shadow: 0 0 25px $c-trailtag--shadow;
+      }
+      .slider--item {
+        background-image: linear-gradient(to right, $c-trailtag--teal, $c-trailtag--teal 50%, transparent 50%, transparent);
+        &:hover {
+          .slider--link {
+            color: $c-trailtag--teal;
+          }
+        }
+      }
+      .slider--link {
+        color: $c-trailtag--teal;
+      }
+      .nav__slider--icon {
         stroke: $c-trailtag--teal;
       }
     }

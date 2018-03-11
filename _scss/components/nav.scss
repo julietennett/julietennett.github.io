@@ -15,12 +15,13 @@
     width: 25px;
     padding: 0;
     transition: all .15s ease-in-out;
+    cursor: pointer;
     &:hover {
       transform: scale(1.1);
     }
   }
 
-  .nav--hamburger-icon {
+  .nav__hamburger--icon {
     width: auto;
     stroke: #000;
 
@@ -30,7 +31,9 @@
 
   }
 
+
   ////////////////SLIDER
+
 
   .nav__slider {
     position: fixed;
@@ -61,6 +64,7 @@
     margin: 16px 16px 0 0;
     padding: 0;
     transition: all .15s ease-in-out;
+    cursor: pointer;
     &:hover {
       transform: scale(1.1);
     }
@@ -71,6 +75,7 @@
 
   .nav__slider--icon {
     width: 20px;
+    stroke: white;
   }
 
   .nav__slider--list {
@@ -79,7 +84,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     @media (min-width: $bp-tablet-vert) {
       padding: 0;
     }
@@ -89,33 +93,23 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 6px 0;
     margin: 10px 0;
-    background-image: linear-gradient(to right, $c-trailtag--teal, $c-trailtag--teal 50%, transparent 50%, transparent);
     background-position: 100% 0;
     background-size: 200% 100%;
     transition: all .15s ease-in;
     &:hover {
       .slider--link {
-        color: $c-trailtag--teal;
         -webkit-text-stroke-width: 1.2px;
-        -webkit-text-stroke-color: white;
+        -webkit-text-stroke-color: $c-white;
       }
       background-position: 0 0;
     }
   }
 
   .slider--link {
-    // text-shadow:
-  	// 	-1px -1px 0 #fff,
-  	// 	1px -1px 0 #fff,
-  	// 	-1px 1px 0 #fff,
-  	// 	1px 1px 0 #fff;
     height: 100%;
     display: inline-block;
-    padding: 1em 1.5em;
-    color: $c-trailtag--teal;
-    // transition: color 0.25s ease;
+    padding: .5em;
     text-decoration: none;
   }
 

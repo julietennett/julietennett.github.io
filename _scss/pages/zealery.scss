@@ -74,18 +74,27 @@
 
 //////////////////NAV STYLES
   .nav {
-    .nav--hamburger-icon {
+    .nav__hamburger--icon {
       stroke: $c-zealery--pink;
     }
     .nav__slider {
       box-shadow: 0 0 19px $c-zealery--pinkshadow;
     }
+    .nav__slider--icon {
+      stroke: $c-zealery--pink;
+    }
+    .slider--item {
+      background-image: linear-gradient(to right, $c-zealery--pink, $c-zealery--pink 50%, transparent 50%, transparent);
+      &:hover {
+        .slider--link {
+          color: $c-zealery--pink;
+        }
+      }
+    }
     .slider--link {
       color: $c-zealery--pink;
     }
-    .slider--item:hover {
-      background-color: $c-zealery--pink;
-    }
   }
+
 
 }
