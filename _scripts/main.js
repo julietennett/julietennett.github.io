@@ -34,24 +34,5 @@ function hamburgerColor() {
         }
       }
     }
-
-    // if (scrollPos > offset && scrollPos < sectionHeight) {
-    //   console.log('hello');
-    //   console.log(offset);
-    //   // if ($projectSection.hasClass(.dark)) {
-    //   //   $hamburgerIcon.addClass('icon-white');
-    //   // } else {
-    //   //   $hamburgerIcon.removeClass('icon-white');
-    //   // }
-    // }
   });
-
-  // $(document).scroll(function () {
-  //   var scrollPos = window.scrollY;
-  //   if (scrollPos < heroHeight) {
-  //     $hamburgerIcon.addClass('icon-white');
-  //   } else if (scrollPos > heroHeight) {
-  //     $hamburgerIcon.removeClass('icon-white');
-  //   }
-  // });
 }
