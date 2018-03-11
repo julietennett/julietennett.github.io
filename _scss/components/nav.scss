@@ -86,16 +86,28 @@
   }
 
   .slider--item {
+    display: flex;
+    justify-content: center;
     width: 100%;
     padding: 6px 0;
     margin: 10px 0;
+    background-image: linear-gradient(to right,
+                                      $c-trailtag--teal,
+                                      $c-trailtag--teal 50%,
+                                      transparent 50%,
+                                      transparent);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .2s ease-in;
+    &:hover {
+      background-position: 0 0;
+    }
   }
 
   .slider--link {
     height: 100%;
     display: inline-block;
     padding: 1em 1.5em;
-    // background: none;
     color: $c-trailtag--teal;
     transition: color 0.25s ease;
     text-decoration: none;
@@ -104,22 +116,22 @@
       -webkit-text-stroke-width: 1.2px;
       -webkit-text-stroke-color: white;
     }
-    &::after {
-      position: absolute;
-      content:'';
-      top: 0;
-      left: 0;
-      width: 0;
-      height: 100%;
-      background-color: white;
-      transform-origin: left;
-      transition: width 0.25s ease;
-      z-index:-1;
-    }
-    &:hover::after {
-      background-color: $c-trailtag--teal;
-      width:100%;
-    }
+    // &::after {
+    //   position: absolute;
+    //   content:'';
+    //   top: 0;
+    //   left: 0;
+    //   width: 0;
+    //   height: 100%;
+    //   background-color: white;
+    //   transform-origin: left;
+    //   transition: width 0.25s ease;
+    //   z-index:-1;
+    // }
+    // &:hover::after {
+    //   background-color: $c-trailtag--teal;
+    //   width:100%;
+    // }
   }
 
   // .slider--link {

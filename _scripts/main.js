@@ -26,7 +26,7 @@ function hamburgerColor() {
       var $projectSection = $projectSectionArr.eq(i);
       var offset = $projectSection.offset().top;
       var sectionHeight = $projectSection.innerHeight();
-      if (scrollPos > offset && scrollPos < offset + sectionHeight) {
+      if (scrollPos > (offset - 37) && scrollPos < offset + sectionHeight) {
         if ($projectSection.hasClass('dark')) {
           $hamburgerIcon.addClass('icon-white');
         } else {
