@@ -74,7 +74,10 @@
 
 //////////////////NAV STYLES
   .nav {
-    a {
+    .nav__slider {
+      box-shadow: 0 0 19px $c-zealery--pinkshadow;
+    }
+    .slider--link {
       color: $c-zealery--pink;
     }
     .slider--item:hover {

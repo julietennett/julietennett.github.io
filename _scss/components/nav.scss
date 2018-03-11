@@ -1,6 +1,8 @@
 .nav {
 
-  .nav--hamburger-button-container {
+  ////////////////HAMBURGER
+
+  .nav__hamburger--button-container {
     top: 0;
     position: fixed;
     margin: 16px;
@@ -9,19 +11,28 @@
     }
   }
 
-  .nav--hamburger-button {
+  .nav__hamburger--button {
     width: 25px;
     padding: 0;
+    transition: all .15s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   .nav--hamburger-icon {
     width: auto;
-    stroke: #fff;
+    stroke: #000;
+
+    &.icon-white {
+      stroke: #fff;
+    }
+
   }
 
-  //SLIDERS
+  ////////////////SLIDER
 
-  .slider {
+  .nav__slider {
     position: fixed;
     height: 100vh;
     width: 100vw;
@@ -33,63 +44,123 @@
     }
     @media (min-width: $bp-tablet-vert) {
       width: 50vw;
+      box-shadow: 0 0 19px $c-white;
     }
     @media (min-width: $bp-laptop) {
       width: 25vw;
     }
-
-    .nav--slider-button-container {
-      display: flex;
-      justify-content: flex-end;
-      width: 100%;
-    }
-
-    .nav--slider-button {
-      margin: 16px 16px 0 0;
-      padding: 0;
-      @media (min-width: $bp-tablet-vert) {
-        margin: 36px 26px;
-      }
-    }
-
-    .nav--slider-icon {
-      width: 20px;
-    }
-
-    ul {
-      list-style: none;
-      padding: 45px 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      @media (min-width: $bp-tablet-vert) {
-        padding: 0;
-      }
-    }
-
-    .slider--item {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      padding: 6px 0;
-      margin: 10px 0;
-
-      a {
-        text-decoration: none;
-      }
-    }
-
-    .slider--item:hover {
-      color: rgba(0, 0, 0, 0); //fallback color for browsers that don't support outline
-
-      a {
-        text-decoration: none;
-        -webkit-text-stroke-width: 1.2px;
-        -webkit-text-stroke-color: white;
-      }
-    }
-
   }
+
+  .nav__slider--button-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .nav__slider--button {
+    margin: 16px 16px 0 0;
+    padding: 0;
+    transition: all .15s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+    }
+    @media (min-width: $bp-tablet-vert) {
+      margin: 36px 26px;
+    }
+  }
+
+  .nav__slider--icon {
+    width: 20px;
+  }
+
+  .nav__slider--list {
+    list-style: none;
+    padding: 45px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: $bp-tablet-vert) {
+      padding: 0;
+    }
+  }
+
+  .slider--item {
+    width: 100%;
+    padding: 6px 0;
+    margin: 10px 0;
+  }
+
+  .slider--link {
+    height: 100%;
+    display: inline-block;
+    padding: 1em 1.5em;
+    // background: none;
+    color: $c-trailtag--teal;
+    transition: color 0.25s ease;
+    text-decoration: none;
+    &:hover {
+      color: rgba(0, 0, 0, 0);
+      -webkit-text-stroke-width: 1.2px;
+      -webkit-text-stroke-color: white;
+    }
+    &::after {
+      position: absolute;
+      content:'';
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background-color: white;
+      transform-origin: left;
+      transition: width 0.25s ease;
+      z-index:-1;
+    }
+    &:hover::after {
+      background-color: $c-trailtag--teal;
+      width:100%;
+    }
+  }
+
+  // .slider--link {
+  //   display: flex;
+  //   justify-content: center;
+  //   width: 100%;
+  //   text-decoration: none;
+  //   transition: all 250ms;
+  //   text-decoration: none;
+  //   transition:all 250ms;
+  //   z-index: 10000;
+  //   &:before {
+  //     content:"";
+  //     width: 0%;
+  //     background-color: $c-trailtag--teal;
+  //     z-index: -1;
+  //     position:absolute;
+  //     color: rgba(0, 0, 0, 0);
+  //     -webkit-text-stroke-width: 1.2px;
+  //     -webkit-text-stroke-color: white;
+  //     transition: height 250ms;
+  //   }
+  //   &:hover {
+  //     &:before {
+  //       width:100%;
+  //     }
+  //   }
+  // }
+
+  // .slider--item:hover {
+  //   .slider--link {
+  //     &before {
+  //         color: rgba(0, 0, 0, 0);
+  //         text-decoration: none;
+  //         -webkit-text-stroke-width: 1.2px;
+  //         -webkit-text-stroke-color: white;
+  //     }
+  //     text-decoration: none;
+  //     -webkit-text-stroke-width: 1.2px;
+  //     -webkit-text-stroke-color: white;
+  //   }
+  // }
 
 }

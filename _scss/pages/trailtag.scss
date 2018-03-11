@@ -88,11 +88,17 @@
 
 //////////////////NAV STYLES
     .nav {
-      a {
-        color: $c-trailtag--teal;
+      .nav__slider {
+        box-shadow: 0 0 19px $c-trailtag--shadow;
       }
-      .slider__item:hover {
-        background-color: $c-trailtag--teal;
+      // .slider--link {
+      //   color: $c-trailtag--teal;
+      // }
+      // .slider--item:hover {
+      //   background-color: $c-trailtag--teal;
+      // }
+      .nav--hamburger-icon {
+        stroke: $c-trailtag--teal;
       }
     }
 

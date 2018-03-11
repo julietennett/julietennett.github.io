@@ -1,8 +1,8 @@
 class Nav {
   constructor() {
     this.$body = $('body');
-    this.$navButton = $('.nav--hamburger-button');
-    this.$sliderButton = $('.nav--slider-button');
+    this.$navButton = $('.nav__hamburger--button');
+    this.$sliderButton = $('.nav__slider--button');
 
     this.init();
   }
