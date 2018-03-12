@@ -11,7 +11,7 @@ function checkPage() {
 }
 
 function hamburgerColor() {
-  var $hamburgerIcon = $('.nav--hamburger-icon');
+  var $hamburgerIcon = $('.nav__hamburger--icon');
   var heroHeight = $('.hero').innerHeight();
   var projectSection = $('.project-section').innerHeight();
 
