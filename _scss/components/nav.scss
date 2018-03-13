@@ -91,22 +91,37 @@
 
   .slider--item {
     display: flex;
+    position: relative;
     justify-content: center;
+    background-image: linear-gradient(to right, #ff685a, #ff685a 50%, transparent 50%, transparent);
     width: 100%;
     background-position: 100% 0;
     background-size: 200% 100%;
-    transition: all .15s ease-in;
-    @media (min-width: $bp-tablet-vert) {
-      justify-content: left;
-      padding: 0 45px;
-    }
+    transition: all $hover-time ease-in;
     &:hover {
-      .slider--link {
-        -webkit-text-stroke-width: 1.2px;
-        -webkit-text-stroke-color: $c-white;
-      }
       background-position: 0 0;
+      .slider--hover-mask {
+        transform: translateX(0);
+        .slider--link-hover {
+          transform: translateX(0);
+        }
+      }
     }
+  }
+
+  .slider--hover-mask {
+    position: absolute;
+    overflow: hidden;
+    transform: translateX(-100%);
+    transition: transform $hover-time ease-in;
+    pointer-events: none;
+  }
+
+  .slider--link-hover {
+    -webkit-text-stroke-width: 1.2px;
+    -webkit-text-stroke-color: white;
+    transform: translateX(100%);
+    transition: transform $hover-time ease-in;
   }
 
   .slider--link {
