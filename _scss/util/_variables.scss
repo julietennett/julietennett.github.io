@@ -9,8 +9,11 @@
 $c-black: #4A4A4A;
 $c-white: #fff;
 $c-zealery--pink: #FF685A;
+$c-zealery--pinkshadow: rgba(172, 45, 45, 50);
 $c-zealery--light: #FCF3F2;
+$c-zealery--lightshadow: rgba(106, 17, 17, 50);
 $c-trailtag--teal: #106469;
+$c-trailtag--shadow: rgba(5, 68, 72, 50);
 $c-trailtag--light: #E1E8E8;
 $c-nifty--purple: #5A1537;
 $c-nifty--light: #F9F2F5;
@@ -36,6 +39,15 @@ $bp-desktop-xxl:  1560px;
 /* Variables -> Fonts
    ========================================================================== */
 
+@font-face {
+ font-family: Bitter;
+ src: url(/fonts/Bitter-Italic.ttf),
+}
+@font-face {
+ font-family: Asap;
+ src: url(/fonts/Asap-Regular.ttf),
+}
+
 $f-bitter: 'Bitter', serif;
 $f-asap: 'Asap', sans-serif;
 
@@ -47,3 +59,5 @@ $w-grid-col2: 85%; //width
 
 /* Variables -> Easings
    ========================================================================== */
+
+$hover-time: .25s;

@@ -1,0 +1,140 @@
+.nav {
+
+  ////////////////HAMBURGER
+
+  .nav__hamburger--button-container {
+    top: 0;
+    position: fixed;
+    margin: 16px;
+    @media (min-width: $bp-tablet-vert) {
+      margin: 36px 72px;
+    }
+  }
+
+  .nav__hamburger--button {
+    width: 25px;
+    padding: 0;
+    transition: all .15s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .nav__hamburger--icon {
+    width: auto;
+    stroke: #000;
+
+    &.icon-white {
+      stroke: #fff;
+    }
+
+  }
+
+
+  ////////////////SLIDER
+
+
+  .nav__slider {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: $c-white;
+    transform: translateX(-100vw);
+    transition: all .3s linear;
+    .js-slider-open & {
+      transform: translateX(0);
+    }
+    @media (min-width: $bp-tablet-vert) {
+      width: 50vw;
+      box-shadow: 0 0 19px $c-white;
+    }
+    @media (min-width: $bp-laptop) {
+      width: 25vw;
+    }
+  }
+
+  .nav__slider--button-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .nav__slider--button {
+    margin: 16px 16px 0 0;
+    padding: 0;
+    transition: all .15s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1);
+    }
+    @media (min-width: $bp-tablet-vert) {
+      margin: 36px 26px 0 36px;
+    }
+  }
+
+  .nav__slider--icon {
+    width: 20px;
+    stroke: white;
+  }
+
+  .nav__slider--list {
+    list-style: none;
+    padding: 45px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media (min-width: $bp-tablet-vert) {
+      padding: 0;
+    }
+  }
+
+  .slider--item {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background-image: linear-gradient(to right, #ff685a, #ff685a 50%, transparent 50%, transparent);
+    width: 100%;
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all $hover-time ease-in;
+    &:hover {
+      background-position: 0 0;
+      .slider--hover-mask {
+        transform: translateX(0);
+        .slider--link-hover {
+          transform: translateX(0);
+        }
+      }
+    }
+  }
+
+  .slider--hover-mask {
+    position: absolute;
+    overflow: hidden;
+    transform: translateX(-100%);
+    transition: transform $hover-time ease-in;
+    pointer-events: none;
+  }
+
+  .slider--link-hover {
+    -webkit-text-stroke-width: 1.2px;
+    -webkit-text-stroke-color: white;
+    transform: translateX(100%);
+    transition: transform $hover-time ease-in;
+  }
+
+  .slider--link {
+    height: 100%;
+    display: inline-block;
+    padding: .5em;
+    text-decoration: none;
+  }
+
+  .nav__background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+  }
+
+}

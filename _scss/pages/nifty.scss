@@ -1,4 +1,4 @@
-.nifty { //this is to make sure it only shows up on trailtag page
+.page--nifty {
 
   h1 {
     -webkit-text-fill-color: $c-nifty--purple; //overrides color (regardless of order)
@@ -6,6 +6,16 @@
 
   .hero {
     background-color: $c-nifty--purple;
+  }
+
+//////////////////NAV STYLES
+  .nav {
+    a {
+      color: $c-nifty--purple;
+    }
+    .slider--item:hover {
+      background-color: $c-nifty--purple;
+    }
   }
 
 }
