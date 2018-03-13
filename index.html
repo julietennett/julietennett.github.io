@@ -7,10 +7,45 @@ title: Hello
 <div class="page--home">
   {% include layout/header.html %}
 
-  <div class="nav--home">
-    <a class="link--home" href="_pages/zealery.html">Zealery</a>
-    <a class="link--home" href="_pages/trailtag.html">TrailTag</a>
-    <a class="link--home" href="_pages/nifty.html">Nifty</a>
+  <div class="content">
+
+    <div class="hero__intro">
+      <div class="project-section">
+        <div class="container">
+
+          <div class="intro__container">
+            <div class="intro__img--container">
+              {% include icons/myface.html
+                class="intro__img"%}
+            </div>
+
+            <div class="intro__text--container">
+              <h1 class="intro__name">Julie Tennett</h1>
+              <p class="intro__about">a designer who does ui / ux / product / digital / illustrationy things and loves finding make-life-easier solutions fueled by empathy and cool code</p>
+            </div>
+          </div>
+
+          <div class="intro__links--container">
+            <div class="intro__item">
+              <div class="intro__link--mask">
+                <div class="intro__link--hover"><a class="secondary-link intro__link">view my resume</a></div>
+              </div>
+              <div class="intro__link--before"><a class="secondary-link intro__link" href="/img/pdf/tennett_resume_Feb2018.pdf">view my resume</a></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="project-section work__links--container">
+      <ul class="work__links--list">
+        <li class="work__link"><a class="link__underline" href="_pages/zealery.html">zealery</a></li>
+        <li class="work__link"><a class="link__underline" href="_pages/trailtag.html">trailTag</a></li>
+        <li class="work__link"><a class="link__underline" href="_pages/nifty.html">nifty</a></li>
+      </ul>
+    </div>
+
   </div>
 
   {% include layout/footer.html %}
