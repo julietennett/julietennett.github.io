@@ -195,10 +195,15 @@ body {
       background: url(/img/trailtag/hero-background.png);
       background-size: cover;
     }
-    .link--zealery:hover + .hover__img {
-      opacity: 1;
-      background: url(/img/home/work__link--zealery.png);
-      background-size: cover;
+    .link--zealery:hover {
+      &+ .hover__img {
+        opacity: 1;
+        background: url(/img/home/work__link--zealery.png);
+        background-size: cover;
+      }
+      // &~ .hover__description--text {
+      //   opacity: 1;
+      // }
     }
 
     .link--container {
@@ -214,7 +219,18 @@ body {
       transform: translateY(100%);
       z-index: -1;
       opacity: 0;
-      transition: opacity .2s ease;
+      transition: opacity .3s ease;
+    }
+
+    .hover__description {
+      position: relative;
+      opacity: 0;
+    }
+
+    .hover__description--text {
+      font-size: 24px;
+      color: $c-white;
+      margin-top: 0;
     }
 
 }
