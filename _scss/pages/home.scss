@@ -1,13 +1,8 @@
 body {
   background-color: $c-me--light;
-
 }
 
 .page--home {
-  // .content {
-  //   background-color: $c-me--light;
-  //   z-index: -2;
-  // }
 
   //////////////////INTRO SECTION
 
@@ -172,11 +167,14 @@ body {
 
     //////////////////WORK STYLES
     .work__links--container{
-      width: 30%;
+      width: 100%;
+      @media (min-width: $bp-tablet-vert) {
+        width: 30%;
+      }
     }
 
     .work__link {
-      font-size: 85px;
+      font-size: 65px;
       border-bottom: solid 6px $c-me--purple;
       &.text-white {
         color: $c-white;
@@ -187,6 +185,9 @@ body {
         -webkit-text-stroke-width: 1.5px;
         -webkit-text-stroke-color: $c-white;
         border-bottom: none;
+      }
+      @media (min-width: $bp-tablet-vert) {
+        font-size: 85px;
       }
     }
 
