@@ -1,7 +1,13 @@
+body {
+  background-color: $c-me--light;
+
+}
+
 .page--home {
-  .content {
-    background-color: $c-me--light;
-  }
+  // .content {
+  //   background-color: $c-me--light;
+  //   z-index: -2;
+  // }
 
   //////////////////INTRO SECTION
 
@@ -161,12 +167,41 @@
     }
 
     //////////////////WORK STYLES
+    .work__links--container{
+      width: 25%;
+    }
 
-    .work__links--list {
-      list-style-type: none;
+    .hover__img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: url(/img/trailtag/hero-background.png);
+      background-size: cover;
+      width: 100vw;
+      height: 100vh;
+      transform: translateY(100%);
+      z-index: -1;
+      opacity: 0;
+      transition: opacity .15s ease;
+    }
+
+    .link--trailtag:hover {
+      .work__link {
+        color: $c-transparent;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: $c-white;
+        border-bottom: none;
+      }
+      &+ .hover__img {
+        opacity: 1;
+      }
     }
 
     .work__link {
+      border-bottom: solid 6px $c-me--purple;
+    }
+
+    .link--container {
       margin-top: 50px;
     }
 
