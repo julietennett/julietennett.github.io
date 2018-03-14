@@ -174,7 +174,8 @@ body {
     }
 
     .work__link {
-      font-size: 65px;
+      @include fluid-font-size(65px, 75px, $bp-mobile, $bp-tablet-vert);
+      @include fluid-font-size(75px, 95px, $bp-tablet-vert, $bp-laptop);
       border-bottom: solid 6px $c-me--purple;
       &.text-white {
         color: $c-white;
@@ -185,9 +186,6 @@ body {
         -webkit-text-stroke-width: 1.5px;
         -webkit-text-stroke-color: $c-white;
         border-bottom: none;
-      }
-      @media (min-width: $bp-tablet-vert) {
-        font-size: 85px;
       }
     }
 
