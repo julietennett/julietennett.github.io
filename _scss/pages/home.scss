@@ -11,6 +11,10 @@ body {
     align-items: center;
   }
 
+  .project-section {
+    padding-bottom: 0;
+  }
+
   .intro__container {
     @media (min-width: $bp-mobile-horiz) {
       display: flex;
