@@ -172,21 +172,21 @@ body {
 
     //////////////////WORK STYLES
     .work__links--container{
-      width: 25%;
+      width: 30%;
     }
 
     .work__link {
       font-size: 85px;
       border-bottom: solid 6px $c-me--purple;
-      &:hover {
-          color: $c-transparent;
-          -webkit-text-stroke-width: 1.5px;
-          -webkit-text-stroke-color: $c-white;
-          border-bottom: none;
-      }
       &.text-white {
         color: $c-white;
         border-bottom: solid 6px $c-white;
+      }
+      &.text-outline {
+        color: $c-transparent;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: $c-white;
+        border-bottom: none;
       }
     }
 
@@ -195,19 +195,15 @@ body {
       background: url(/img/trailtag/hero-background.png);
       background-size: cover;
     }
-    .link--zealery:hover {
-      &+ .hover__img {
-        opacity: 1;
-        background: url(/img/home/work__link--zealery.png);
-        background-size: cover;
-      }
-      // &~ .hover__description--text {
-      //   opacity: 1;
-      // }
+    .link--zealery:hover + .hover__img {
+      opacity: 1;
+      background: url(/img/home/work__link--zealery.png);
+      background-size: cover;
     }
 
     .link--container {
       margin-top: 50px;
+      width: fit-content;
     }
 
     .hover__img {
@@ -225,6 +221,7 @@ body {
     .hover__description {
       position: relative;
       opacity: 0;
+      margin-top: 10px;
     }
 
     .hover__description--text {
