@@ -115,7 +115,7 @@ h1 {
     width: 85%;
   }
   @media (min-width: $bp-laptop) {
-    @include fluid-font-size(75px, 95px, $bp-laptop, $bp-desktop-xxl);
+    @include fluid-font-size(60px, 75px, $bp-laptop, $bp-desktop-xxl);
     width: 75%;
   }
 }
