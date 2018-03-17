@@ -5,29 +5,21 @@
 
       <div class="prev__container">
         <p class="prev-next__text">previous</p>
-        <div class="link-hover">
-          <div class="link__container">
-            <div class="link__item">
-              <div class="link__mask">
-                <div class="link__hover"><a class="prev-next__link">{{ include.prev }}</a></div>
-              </div>
-              <a class="prev-next__link" href="/_pages/{{ include.prev }}.html">{{ include.prev }}</a>
-            </div>
+        <div class="link__item">
+          <div class="link__mask">
+            <div class="link__hover"><a class="prev-next__link">{{ include.prev }}</a></div>
           </div>
-      </div>
+          <a class="prev-next__link" href="/_pages/{{ include.prev }}.html">{{ include.prev }}</a>
+        </div>
     </div>
 
     <div class="next__container">
       <p class="prev-next__text">next</p>
-      <div class="link-hover">
-        <div class="link__container">
-          <div class="link__item">
-            <div class="link__mask">
-              <div class="link__hover"><a class="prev-next__link">{{ include.next }}</a></div>
-            </div>
-            <a class="prev-next__link" href="/{{ include.next }}.html">{{ include.next }}</a>
-          </div>
+      <div class="link__item">
+        <div class="link__mask">
+          <div class="link__hover"><a class="prev-next__link">{{ include.next }}</a></div>
         </div>
+        <a class="prev-next__link" href="/{{ include.next }}.html">{{ include.next }}</a>
       </div>
     </div>
 
