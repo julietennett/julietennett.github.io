@@ -1,5 +1,5 @@
 .page--trailtag { //this is to make sure it only shows up on trailtag page
-
+  position: relative;
   //////////////////HERO STYLES
 
   h1 {
@@ -116,6 +116,10 @@
   }
 
   .prev-next__link {
+    color: $c-trailtag--teal;
+  }
+
+  .footer__link {
     color: $c-trailtag--teal;
   }
 

@@ -1,5 +1,5 @@
 .page--zealery { //this is to make sure it only shows up on zealery page
-
+  position: relative;
   //////////////////HERO STYLES
 
   h1 {
@@ -96,12 +96,16 @@
     }
   }
 
-  /////////////////PREV-NEXT STYLES
+  /////////////////BOTTOM LINK STYLES
   .link__item {
     background-image: linear-gradient(to top, $c-zealery--pink, $c-zealery--pink 50%, transparent 50%, transparent);
   }
 
   .prev-next__link {
+    color: $c-zealery--pink;
+  }
+
+  .footer__link {
     color: $c-zealery--pink;
   }
 
