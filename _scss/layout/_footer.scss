@@ -5,8 +5,11 @@
    ========================================================================== */
 
 .footer {
+  position: absolute;
+  bottom: 0;
 
   .footer__container {
+    width: 100vw;
     display: none;
     @media (min-width: $bp-tablet-vert) {
       display: flex;
