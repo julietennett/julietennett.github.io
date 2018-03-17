@@ -30,4 +30,13 @@ body {
         color: $c-me--purple;
       }
     }
+
+/////////////////PREV-NEXT STYLES
+  .link__item {
+    background-image: linear-gradient(to top, $c-me--purple, $c-me--purple 50%, transparent 50%, transparent);
+  }
+
+  .footer__link {
+    color: $c-me--purple;
+  }
 }

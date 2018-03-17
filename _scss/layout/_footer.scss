@@ -3,3 +3,70 @@
    Layout -> Footer
 
    ========================================================================== */
+
+.footer {
+
+  .footer__container {
+    display: none;
+    @media (min-width: $bp-tablet-vert) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding: 20px 4.5em 20px 4.5em;
+      flex-wrap: wrap;
+    }
+    @media (min-width: $bp-tablet-horiz) {
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 20px 4.5em 20px 4.5em;
+    }
+  }
+
+  .link__container {
+    width: 100%;
+    @media (min-width: $bp-laptop) {
+      width: 65%;
+      max-width: 700px;
+    }
+  }
+
+  .link__item {
+    margin-left: 1em;
+    padding: 5px 10px 10px 10px;
+    background-position: 0 0;
+    background-size: 100% 200%;
+    transition: all $hover-time ease-in;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:hover {
+      background-position: 0 100%;
+      .link__mask {
+        transform: translateX(0);
+        .link__hover {
+          transform: translateX(0);
+        }
+      }
+    }
+  }
+
+  .link__mask {
+    position: absolute;
+    overflow: hidden;
+    transform: translateY(106%);
+    transition: transform $hover-time ease-in;
+    pointer-events: none;
+  }
+
+  .link__hover {
+    transform: translateY(-106%);
+    transition: transform $hover-time ease-in;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: $c-white;
+  }
+
+  .footer__link {
+    @include fluid-font-size(16px, 24px, $bp-mobile, $bp-tablet-vert);
+  }
+
+}
