@@ -107,15 +107,15 @@ h1 {
   font-family: $f-bitter;
   line-height: 1.4em;
   width: 90%;
-  color: #fff; //fallback color for browsers that don't support outline
+  color: $c-white; //fallback color for browsers that don't support outline
   -webkit-text-stroke-width: .01px;
-  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-color: $c-white;
   @media (min-width: $bp-tablet-vert) {
     @include fluid-font-size(40px, 50px, $bp-tablet-vert, $bp-laptop);
     width: 85%;
   }
   @media (min-width: $bp-laptop) {
-    @include fluid-font-size(50px, 75px, $bp-laptop, $bp-desktop-xxl);
+    @include fluid-font-size(60px, 75px, $bp-laptop, $bp-desktop-xxl);
     width: 75%;
   }
 }
@@ -124,6 +124,18 @@ a {
  font-family: $f-bitter;
  font-size: 3.25em;
  color: $c-me--purple;
+ text-decoration: none;
+}
+
+.secondary-link {
+  font-family: $f-bitter;
+  font-size: 1.75em;
+  color: $c-me--purple;
+  border-bottom: solid 4px $c-me--purple;
+}
+
+.link__underline {
+  border-bottom: solid 6px $c-me--purple;
 }
 
 h2 {

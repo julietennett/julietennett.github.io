@@ -1,9 +1,33 @@
-.page--home {
+body {
   background-color: $c-me--light;
-  height: 100vh;
 }
 
-.nav--home {
-  display: flex;
-  flex-flow: column nowrap;
+.page--home {
+
+  //////////////////NAV STYLES
+    .nav {
+      .nav__hamburger--icon {
+        stroke: $c-me--purple;
+      }
+      .icon-white {
+        stroke: $c-me--purple !important; //why are u trying to hurt me icon-white??
+      }
+      .nav__slider {
+        box-shadow: 0 0 19px $c-me--purple;
+      }
+      .nav__slider--icon {
+        stroke: $c-me--purple;
+      }
+      .slider--item {
+        background-image: linear-gradient(to right, $c-me--purple, $c-me--purple 50%, transparent 50%, transparent);
+        &:hover {
+          .slider--link {
+            color: $c-me--purple;
+          }
+        }
+      }
+      .slider--link {
+        color: $c-me--purple;
+      }
+    }
 }

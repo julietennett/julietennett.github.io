@@ -1,0 +1,70 @@
+body {
+  background-color: $c-me--light;
+}
+
+.page--home {
+    //////////////////WORK STYLES
+    .work__links--container{
+      width: 100%;
+      @media (min-width: $bp-tablet-vert) {
+        width: 30%;
+      }
+    }
+
+    .work__link {
+      @include fluid-font-size(65px, 75px, $bp-mobile, $bp-tablet-vert);
+      @include fluid-font-size(75px, 95px, $bp-tablet-vert, $bp-laptop);
+      border-bottom: solid 6px $c-me--purple;
+      &.text-white {
+        color: $c-white;
+        border-bottom: solid 6px $c-white;
+      }
+      &.text-outline {
+        color: $c-transparent;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: $c-white;
+        border-bottom: none;
+      }
+    }
+
+    .link--trailtag:hover + .hover__img {
+      opacity: 1;
+      background: url(/img/trailtag/hero-background.png);
+      background-size: cover;
+    }
+    .link--zealery:hover + .hover__img {
+      opacity: 1;
+      background: url(/img/home/work__link--zealery.png);
+      background-size: cover;
+    }
+
+    .link--container {
+      margin-top: 50px;
+      width: fit-content;
+    }
+
+    .hover__img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      transform: translateY(100%);
+      z-index: -1;
+      opacity: 0;
+      transition: opacity .3s ease;
+    }
+
+    .hover__description {
+      position: relative;
+      opacity: 0;
+      margin-top: 10px;
+    }
+
+    .hover__description--text {
+      font-size: 24px;
+      color: $c-white;
+      margin-top: 0;
+    }
+
+}
