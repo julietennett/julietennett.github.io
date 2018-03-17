@@ -96,5 +96,14 @@
     }
   }
 
+  /////////////////PREV-NEXT STYLES
+  .link__item {
+    background-image: linear-gradient(to top, $c-zealery--pink, $c-zealery--pink 50%, transparent 50%, transparent);
+  }
+
+  .prev-next__link {
+    color: $c-zealery--pink;
+  }
+
 
 }
