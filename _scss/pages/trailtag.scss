@@ -67,47 +67,56 @@
       }
   }
 
-    .hike {
-      .project-section {
-        background: url(/img/trailtag/section--hike.png);
-        background-size: cover;
-      }
+  .hike {
+    .project-section {
+      background: url(/img/trailtag/section--hike.png);
+      background-size: cover;
     }
+  }
 
-    .visual {
-      .img--block {
-        width: 100%;
-        padding-top: 50px;
-        @media (min-width: $bp-laptop) {
-          padding-top: 75px;
-          height: 450px;
-          width: auto;
-        }
+  .visual {
+    .img--block {
+      width: 100%;
+      padding-top: 50px;
+      @media (min-width: $bp-laptop) {
+        padding-top: 75px;
+        height: 450px;
+        width: auto;
       }
     }
+  }
 
 //////////////////NAV STYLES
-    .nav {
-      .nav__hamburger--icon {
-        stroke: $c-trailtag--teal;
-      }
-      .nav__slider {
-        box-shadow: 0 0 25px $c-trailtag--shadow;
-      }
-      .slider--item {
-        background-image: linear-gradient(to right, $c-trailtag--teal, $c-trailtag--teal 50%, transparent 50%, transparent);
-        &:hover {
-          .slider--link {
-            color: $c-trailtag--teal;
-          }
+  .nav {
+    .nav__hamburger--icon {
+      stroke: $c-trailtag--teal;
+    }
+    .nav__slider {
+      box-shadow: 0 0 25px $c-trailtag--shadow;
+    }
+    .slider--item {
+      background-image: linear-gradient(to right, $c-trailtag--teal, $c-trailtag--teal 50%, transparent 50%, transparent);
+      &:hover {
+        .slider--link {
+          color: $c-trailtag--teal;
         }
       }
-      .slider--link {
-        color: $c-trailtag--teal;
-      }
-      .nav__slider--icon {
-        stroke: $c-trailtag--teal;
-      }
     }
+    .slider--link {
+      color: $c-trailtag--teal;
+    }
+    .nav__slider--icon {
+      stroke: $c-trailtag--teal;
+    }
+  }
+
+/////////////////PREV-NEXT STYLES
+  .link__item {
+    background-image: linear-gradient(to top, $c-trailtag--teal, $c-trailtag--teal 50%, transparent 50%, transparent);
+  }
+
+  .prev-next__link {
+    color: $c-trailtag--teal;
+  }
 
 }

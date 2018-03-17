@@ -18,4 +18,13 @@
     }
   }
 
+  /////////////////PREV-NEXT STYLES
+    .link__item {
+      background-image: linear-gradient(to top, $c-nifty--purple, $c-nifty--purple 50%, transparent 50%, transparent);
+    }
+
+    .prev-next__link {
+      color: $c-nifty--purple;
+    }
+
 }
