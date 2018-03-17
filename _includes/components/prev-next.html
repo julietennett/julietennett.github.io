@@ -1,0 +1,29 @@
+<div class="prev-next project-section {{ include.color }}">
+  <div class="container">
+
+    <div class="prev-next__container">
+
+      <div class="prev__container">
+        <p class="prev-next__text">previous</p>
+        <div class="link__item">
+          <div class="link__mask">
+            <div class="link__hover"><a class="prev-next__link">{{ include.prev }}</a></div>
+          </div>
+          <a class="prev-next__link" href="/{{ include.prev }}">{{ include.prev }}</a>
+        </div>
+    </div>
+
+    <div class="next__container">
+      <p class="prev-next__text">next</p>
+      <div class="link__item">
+        <div class="link__mask">
+          <div class="link__hover"><a class="prev-next__link">{{ include.next }}</a></div>
+        </div>
+        <a class="prev-next__link" href="/{{ include.next }}">{{ include.next }}</a>
+      </div>
+    </div>
+
+    </div>
+  </div>
+
+</div>
