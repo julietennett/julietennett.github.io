@@ -55,13 +55,13 @@
   .link__mask {
     position: absolute;
     overflow: hidden;
-    transform: translateY(100%);
+    transform: translateY(106%);
     transition: transform $hover-time ease-in;
     pointer-events: none;
   }
 
   .link__hover {
-    transform: translateY(-100%);
+    transform: translateY(-106%);
     transition: transform $hover-time ease-in;
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: $c-white;
