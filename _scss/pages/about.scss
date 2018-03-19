@@ -5,6 +5,34 @@ body {
 .page--about {
   position: relative;
 
+  .about__container {
+    padding: 0 4em;
+    width: 100%;
+    &:hover {
+      .about__text--mask {
+        transform: translateX(0);
+        .about__text--hover {
+          transform: translateX(0);
+        }
+      }
+    }
+  }
+
+  .about__text--mask {
+    position: absolute;
+    overflow: hidden;
+    transform: translateX(-100%);
+    transition: transform $hover-time ease-in;
+    pointer-events: none;
+  }
+
+  .about__text--hover {
+    text-decoration: line-through;
+    color: $c-me--purple;
+    transform: translateX(100%);
+    transition: transform $hover-time ease-in;
+  }
+
   .about__text {
     color: $c-transparent;
     -webkit-text-stroke-width: .1px;
@@ -12,8 +40,12 @@ body {
     font-size: 85px;
     margin: 0;
     width: 100%;
-    padding: 0 1em;
     line-height: 105px;
+    cursor: pointer;
+
+    // &:hover {
+    //   text-decoration: line-through;
+    // }
   }
 
   //////////////////NAV STYLES
