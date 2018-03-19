@@ -34,13 +34,24 @@ body {
   }
 
   .about__text {
+    width: 100%;
+    margin: 0;
     color: $c-transparent;
     -webkit-text-stroke-width: .1px;
     -webkit-text-stroke-color: $c-me--purple;
-    font-size: 85px;
-    margin: 0;
-    width: 100%;
-    line-height: 105px;
+    font-size: 40px;
+    line-height: 50px;
+    @media (min-width: $bp-tablet-vert) {
+      @include fluid-font-size(50px, 65px, $bp-tablet-vert, $bp-tablet-horiz);
+      line-height: 75px;
+    }
+    @media (min-width: $bp-tablet-horiz) {
+      @include fluid-font-size(65px, 95px, $bp-tablet-horiz, $bp-desktop);
+      line-height: 95px;
+    }
+    @media (min-width: $bp-desktop) {
+      line-height: 105px;
+    }
     cursor: pointer;
 
     // &:hover {
