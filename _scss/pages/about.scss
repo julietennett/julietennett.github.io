@@ -1,0 +1,162 @@
+body {
+  background-color: $c-me--light;
+}
+
+.page--about {
+  position: relative;
+
+  //////////////////NAV STYLES
+    .nav {
+      .nav__hamburger--icon {
+        stroke: $c-me--purple;
+      }
+      .icon-white {
+        stroke: $c-me--purple !important; //why are u trying to hurt me icon-white??
+      }
+      .nav__slider {
+        box-shadow: 0 0 19px $c-me--purple;
+      }
+      .nav__slider--icon {
+        stroke: $c-me--purple;
+      }
+      .slider--item {
+        background-image: linear-gradient(to right, $c-me--purple, $c-me--purple 50%, transparent 50%, transparent);
+        &:hover {
+          .slider--link {
+            color: $c-me--purple;
+          }
+        }
+      }
+      .slider--link {
+        color: $c-me--purple;
+      }
+    }
+
+/////////////////PREV-NEXT STYLES
+  .link__item {
+    background-image: linear-gradient(to top, $c-me--purple, $c-me--purple 50%, transparent 50%, transparent);
+  }
+
+  .footer__link {
+    color: $c-me--purple;
+  }
+
+
+///////////////CONTENT
+  .hero__intro .project-section {
+    display: flex;
+    align-items: center;
+  }
+
+  .project-section {
+    padding-bottom: 0;
+  }
+
+  .about__container {
+    @media (min-width: $bp-mobile-horiz) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .about__img--container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-left: 10%;
+    overflow: hidden;
+    @media (min-width: $bp-mobile-horiz) {
+      justify-content: flex-start;
+      width: auto;
+      margin: 0;
+      padding-left: 10%;
+    }
+    @media (min-width: $bp-laptop) {
+      width: 40%;
+      max-width: 600px;
+      padding-left: 0;
+      justify-content: flex-start;
+    }
+  }
+
+  .about__img {
+    width: 85%;
+    height: 85%;
+    z-index: -5;
+    @media (min-width: $bp-mobile-horiz) {
+      width: 100%;
+    }
+    @media (min-width: $bp-laptop) {
+      position: fixed;
+      top: 5%;
+      left: 60%;
+      bottom: 0;
+      width: 35%;
+    }
+    & .hide {
+      display: none;
+    }
+  }
+
+  .about__text--container {
+    width: 85%;
+    @media (min-width: $bp-tablet-vert) {
+      width: 50%;
+    }
+    @media (min-width: $bp-laptop) {
+      width: 65%;
+      max-width: 700px;
+    }
+  }
+
+  .about__greeting {
+    width: 100%;
+    margin: 20px 0;
+    @include fluid-font-size(65px, 80px, $bp-mobile, $bp-tablet-vert);
+    @include fluid-font-size(75px, 100px, $bp-laptop, $bp-desktop);
+    line-height: 75px;
+    color: $c-transparent;
+    -webkit-text-stroke-color: $c-me--purple;
+    @media (min-width: $bp-laptop) {
+      margin: 40px 0;
+    }
+  }
+
+  .about__text {
+    color: $c-me--purple;
+    line-height: 28px;
+  }
+
+//////////EXPERIENCE
+
+  .experience__container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 36px;
+    & a {
+      font-size: 16px;
+      border-bottom: solid 2px $c-me--purple;
+    }
+  }
+
+  .experience__item {
+    padding-left: 6em;
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+
+  .experience__h2 {
+    color: $c-transparent;
+    -webkit-text-stroke-color: $c-me--purple;
+    -webkit-text-stroke-width: .2px;
+    font-size: 24px;
+    padding: 0;
+    margin-top: 36px;
+  }
+
+
+
+}
