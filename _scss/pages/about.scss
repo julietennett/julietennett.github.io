@@ -39,7 +39,7 @@ body {
     color: $c-transparent;
     -webkit-text-stroke-width: .1px;
     -webkit-text-stroke-color: $c-me--purple;
-    font-size: 40px;
+    @include fluid-font-size(40px, 50px, $bp-mobile, $bp-tablet-vert);
     line-height: 50px;
     @media (min-width: $bp-tablet-vert) {
       @include fluid-font-size(50px, 65px, $bp-tablet-vert, $bp-tablet-horiz);
