@@ -1,0 +1,116 @@
+.page--videogame{ //this is to make sure it only shows up on trailtag page
+  position: relative;
+  //////////////////HERO STYLES
+
+  h1 {
+    -webkit-text-fill-color: rgba(0, 0, 0, 0); //overrides color (regardless of order)
+  }
+
+  h3 {
+    color: $c-trailtag--teal;
+  }
+
+  .hero {
+    background-color: $c-trailtag--teal;
+    background: url(/img/videogame/hero-background.png);
+    background-size: cover;
+
+    h1 {
+      margin-top: 8%;
+    }
+  }
+
+  ////////////////SECTION STYLES
+
+  .light {
+      background-color: $c-videogame--light;
+      h2 {
+        color: $c-videogame--blue;
+      }
+      .caption {
+        color: $c-videogame--blue;
+        border-color: $c-videogame--blue;
+      }
+  }
+
+  .white {
+      background-color: $c-white;
+      h2 {
+        color: $c-videogame--blue;
+      }
+      .caption {
+        color: $c-videogame--blue;
+        border-color: $c-videogame--blue;
+      }
+  }
+
+  .dark {
+      background-color: $c-videogame--blue;
+      h2 {
+        color: $c-white;
+      }
+      p {
+        color: $c-white;
+      }
+      .caption {
+        color: $c-white;
+      }
+  }
+
+  .scroll {
+    .project-section {
+      background: url(/img/videogame/background-scroll.png);
+      background-size: cover;
+    }
+  }
+
+  .visual {
+    .img--block {
+      width: 100%;
+      padding-top: 50px;
+      @media (min-width: $bp-laptop) {
+        padding-top: 75px;
+        height: 450px;
+        width: auto;
+      }
+    }
+  }
+
+//////////////////NAV STYLES
+  .nav {
+    .nav__hamburger--icon {
+      stroke: $c-videogame--blue;
+    }
+    .nav__slider {
+      box-shadow: 0 0 25px $c-videogame--blue;
+    }
+    .slider--item {
+      background-image: linear-gradient(to right, $c-videogame--blue, $c-videogame--blue 50%, transparent 50%, transparent);
+      &:hover {
+        .slider--link {
+          color: $c-videogame--blue;
+        }
+      }
+    }
+    .slider--link {
+      color: $c-videogame--blue;
+    }
+    .nav__slider--icon {
+      stroke: $c-videogame--blue;
+    }
+  }
+
+/////////////////PREV-NEXT STYLES
+  .link__item {
+    background-image: linear-gradient(to top, $c-videogame--blue, $c-videogame--blue 50%, transparent 50%, transparent);
+  }
+
+  .prev-next__link {
+    color: $c-videogame--blue;
+  }
+
+  .footer__link {
+    color: $c-videogame--blue;
+  }
+
+}
