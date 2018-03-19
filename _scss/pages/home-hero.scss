@@ -95,8 +95,13 @@ body {
 
   //intro links
   .intro__links--container {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     margin-top: 44px;
+    @media(min-width: $bp-mobile-horiz) {
+      flex-direction: row;
+    }
     @media (min-width: $bp-laptop) {
       width: 65%;
       max-width: 700px;
@@ -109,6 +114,15 @@ body {
     background-position: 0 0;
     background-size: 100% 200%;
     transition: all $hover-time ease-in;
+    margin-top: 20px;
+    @media(min-width: $bp-mobile-horiz) {
+      margin-left: 10%;
+      margin-top: 0;
+    }
+    &:first-child {
+      margin-left: 0;
+      margin-top: 0;
+    }
     &:hover {
       background-position: 0 100%;
       .intro__link--mask {
