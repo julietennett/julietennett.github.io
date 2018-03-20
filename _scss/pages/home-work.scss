@@ -42,6 +42,11 @@ body {
       background: url(/img/home/work__link--zealery.png);
       background-size: cover;
     }
+    .link--videogame:hover + .hover__img {
+      opacity: 1;
+      background: url(/img/videogame/hero-background.png);
+      background-size: cover;
+    }
 
     .link--container {
       margin-top: 50px;
