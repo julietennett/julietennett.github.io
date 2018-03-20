@@ -47,6 +47,11 @@ body {
       background: url(/img/videogame/hero-background.png);
       background-size: cover;
     }
+    .link--illustrations:hover + .hover__img {
+      opacity: 1;
+      background: url(/img/illustrations/hero-background.png);
+      background-size: cover;
+    }
 
     .link--container {
       margin-top: 50px;
