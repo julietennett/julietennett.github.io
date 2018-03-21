@@ -1,5 +1,6 @@
 import Nav from './modules/nav';
 import Homepage from './modules/homepage';
+import Typed from 'typed.js';
 // import Homepage from './modules/about';
 
 $(document).ready(function() {
@@ -7,6 +8,7 @@ $(document).ready(function() {
   new Homepage();
   // new About();
   changeFact();
+  $('.before-load').removeClass('before-load');
 }); //this creates a jquery object on document then calling .ready() on that jquery object, which takes in a function tnats called afer the jquery obkect is loaded
 
 var aboutFacts = [
@@ -25,13 +27,18 @@ var aboutFacts = [
 function changeFact() {
   let $aboutText = $(".about__text");
   let $aboutFact = $(".about__text--fact");
+  // let $typer = typer('.about__text--fact', 20);
   let randomFact = aboutFacts[Math.floor(Math.random()*aboutFacts.length)];
+  // $typer.line(randomFact);
+  //
+  // var typed = new Typed('.text__about--fact', {
+  //   stringsElement: '.text__about--fact'
+  // });
 
   $aboutText.on("click", function () {
-    randomFact = aboutFacts[Math.floor(Math.random()*aboutFacts.length)];
     $aboutFact.text(randomFact);
-    console.log('i am working');
-    console.log($aboutFact.text());
+    // $typer.back(10);
+    randomFact = aboutFacts[Math.floor(Math.random()*aboutFacts.length)];
+    // $typer.continue(randomFact);
   });
-
 }

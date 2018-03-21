@@ -22,7 +22,7 @@ body {
     position: absolute;
     overflow: hidden;
     transform: translateX(-100%);
-    transition: transform $hover-time ease-in;
+    transition: all $hover-time ease-in;
     pointer-events: none;
   }
 
@@ -31,6 +31,19 @@ body {
     color: $c-me--purple;
     transform: translateX(100%);
     transition: transform $hover-time ease-in;
+  }
+
+  .about__text--before {
+    position: relative;
+    transition: all .5s ease;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+  .before-load {
+    opacity: 0;
+    transform: translateY(10px);
   }
 
   .about__text {
