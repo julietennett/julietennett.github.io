@@ -32,12 +32,16 @@ body {
       }
     }
 
-/////////////////PREV-NEXT STYLES
+/////////////////FOOTER STYLES
   .link__item {
     background-image: linear-gradient(to top, $c-me--purple, $c-me--purple 50%, transparent 50%, transparent);
   }
 
   .footer__link {
     color: $c-me--purple;
+  }
+
+  .footer__container {
+    background-color: $c-me--light;
   }
 }
