@@ -5,6 +5,11 @@ body {
 .page--home {
   position: relative;
 
+  .footer {
+    position: relative;
+    z-index: -1000;
+  }
+
   //////////////////NAV STYLES
     .nav {
       .nav__hamburger--icon {

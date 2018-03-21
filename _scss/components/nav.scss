@@ -37,6 +37,7 @@
 
   .nav__slider {
     position: fixed;
+    index: 1000000000000;
     height: 100vh;
     width: 100vw;
     background-color: $c-white;
