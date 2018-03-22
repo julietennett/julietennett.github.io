@@ -1,0 +1,116 @@
+.page--lacentrale {
+  position: relative;
+
+  //////////////////HERO STYLES
+
+  h1 {
+    -webkit-text-fill-color: rgba(0, 0, 0, 0); //overrides color (regardless of order)
+  }
+
+  .hero {
+    background-color: $c-illustrations--purple;
+    background: url(/img/lacentrale/hero-background.png);
+    background-size: cover;
+
+  }
+
+  ////////////////SECTION STYLES
+
+  .white {
+      background-color: $c-white;
+      h2 {
+        color: $c-lacentrale--blue;
+      }
+      .caption {
+        color: $c-lacentrale--blue;
+        border-color: $c-lacentrale--blue;
+      }
+  }
+
+  .dark {
+      background-color: $c-lacentrale--blue;
+      h2 {
+        color: $c-white;
+      }
+      p {
+        color: $c-white;
+      }
+      .caption {
+        color: $c-white;
+      }
+  }
+
+  .img--container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 3em;
+    @media (min-width:$bp-tablet-vert) {
+      padding: 0 2em;
+    }
+    @media (min-width:$bp-desktop) {
+      padding: 0 8em;
+    }
+  }
+
+  .mockup--img {
+    width: 50%;
+    height: 50%;
+    padding: 15px 1em;
+    @media (min-width:$bp-desktop) {
+      width: 25%;
+      height: 25%;
+      padding: 30px 2em;
+    }
+  }
+
+//////////////////NAV STYLES
+  .nav {
+    .nav__hamburger--icon {
+      stroke: $c-lacentrale--blue;
+    }
+    .nav__slider {
+      box-shadow: 0 0 25px $c-lacentrale--blue;
+    }
+    .slider--item {
+      background-image: linear-gradient(to right, $c-lacentrale--blue, $c-lacentrale--blue 50%, transparent 50%, transparent);
+      &:hover {
+        .slider--link {
+          color: $c-lacentrale--blue;
+        }
+      }
+    }
+    .slider--link {
+      color: $c-lacentrale--blue;
+    }
+    .nav__slider--icon {
+      stroke: $c-lacentrale--blue;
+    }
+  }
+
+/////////////////PREV-NEXT STYLES
+  .link__item {
+    background-image: linear-gradient(to top, $c-white, $c-white 50%, transparent 50%, transparent);
+  }
+
+  .prev-next__link {
+    color: $c-white;
+  }
+
+  .footer__link {
+    color: $c-white;
+  }
+  .prev-next {
+    .link__hover {
+      -webkit-text-stroke-color: $c-lacentrale--blue;
+      -webkit-text-stroke-width: 2px;
+    }
+  }
+
+  .link__hover {
+    -webkit-text-stroke-color: $c-lacentrale--blue;
+    -webkit-text-stroke-width: 1px;
+  }
+
+}
