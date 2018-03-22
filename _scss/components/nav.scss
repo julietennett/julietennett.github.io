@@ -139,3 +139,9 @@
   }
 
 }
+
+.js-slider-open {
+  .link--container {
+    pointer-events: none;
+  }
+}
