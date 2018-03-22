@@ -1,5 +1,6 @@
-.page--illustrations{ //this is to make sure it only shows up on trailtag page
+.page--illustrations{
   position: relative;
+
   //////////////////HERO STYLES
 
   h1 {
@@ -69,12 +70,6 @@
     width: 30%;
     height: 30%;
     transition: all .3s ease;
-    // &:hover {
-    //   animation-duration: .6s;
-    //   animation-timing-function: linear;
-    //   animation-iteration-count: 1;
-    //   animation-name: wiggle;
-    // }
   }
 
   @keyframes wiggle {

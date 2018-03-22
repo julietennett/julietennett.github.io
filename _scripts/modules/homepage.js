@@ -16,14 +16,14 @@ class Homepage {
       $(this).children($workLink).removeClass("text-white");
       $(this).children($hoverDesc).css('opacity', '1');
       $hamburger.css('stroke', 'white');
-      $footer__container.css('display', 'none');
+      $footer__container.addClass("hide");
     })
     $linkContainer.on("mouseleave", function() {
       $workLink.removeClass("text-white");
       $(this).children($workLink).removeClass("text-outline");
       $hoverDesc.css('opacity', '0');
       $hamburger.css('stroke', '#745e84');
-      $footer__container.css('display', 'flex');
+      $footer__container.removeClass("hide");
     })
   }
 }
