@@ -21,11 +21,11 @@ body {
       @include fluid-font-size(65px, 75px, $bp-mobile, $bp-tablet-vert);
       @include fluid-font-size(75px, 95px, $bp-tablet-vert, $bp-laptop);
       border-bottom: solid 6px $c-me--purple;
-      &.text-white {
+      &.js-text-white {
         color: $c-white;
         border-bottom: solid 6px $c-white;
       }
-      &.text-outline {
+      &.js-text-outline {
         color: $c-transparent;
         -webkit-text-stroke-width: 1.5px;
         -webkit-text-stroke-color: $c-white;

@@ -11,21 +11,18 @@ class Homepage {
     var $footer__container = $(".footer__container");
 
     $linkContainer.on("mouseenter", function() {
-      $workLink.addClass('text-white');
-      $(this).children($workLink).addClass('text-outline');
-      $(this).children($workLink).removeClass('text-white');
-//       $(this).children($hoverDesc).css('opacity', '1');
+      $workLink.addClass('js-text-white');
+      $(this).children($workLink).addClass('js-text-outline');
       $(this).children($hoverDesc).addClass('js-show');
-      $hamburger.addClass('icon-white');
-      $footer__container.addClass('hide');
+      $hamburger.addClass('js-icon-white');
+      $footer__container.addClass('js-hide');
     })
     $linkContainer.on("mouseleave", function() {
-      $workLink.removeClass('text-white');
-      $(this).children($workLink).removeClass('text-outline');
-//       $hoverDesc.css('opacity', '0');
+      $workLink.removeClass('js-text-white');
+      $(this).children($workLink).removeClass('js-text-outline');
       $hoverDesc.removeClass('js-show');
-      $hamburger.removeClass('icon-white');
-      $footer__container.removeClass('hide');
+      $hamburger.removeClass('js-icon-white');
+      $footer__container.removeClass('js-hide');
     })
   }
 }
