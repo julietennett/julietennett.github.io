@@ -12,8 +12,11 @@
 
   .hero {
     background-color: $c-trailtag--teal;
-    background: url(/img/videogame/hero-background.png);
+    background: url(/img/videogame/hero-background-mobile.png);
     background-size: cover;
+    @media (min-width: $bp-tablet-vert) {
+      background: url(/img/videogame/hero-background.png);
+    }
 
     h1 {
       margin-top: 8%;
@@ -59,6 +62,7 @@
 
   .scroll {
     .project-section {
+      height: 400px;
       background: url(/img/videogame/section--scroll.png);
       background-size: cover;
     }
