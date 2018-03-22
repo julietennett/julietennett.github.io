@@ -67,6 +67,11 @@
       }
   }
 
+  .project {
+    display: flex;
+    align-items: center;
+  }
+
   .hike {
     .project-section {
       height: 400px;
