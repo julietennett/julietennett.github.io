@@ -14,15 +14,17 @@ class Homepage {
       $workLink.addClass('text-white');
       $(this).children($workLink).addClass('text-outline');
       $(this).children($workLink).removeClass('text-white');
-      $(this).children($hoverDesc).css('opacity', '1');
-      $hamburger.css('stroke', 'white');
+//       $(this).children($hoverDesc).css('opacity', '1');
+      $(this).children($hoverDesc).addClass('js-show');
+      $hamburger.addClass('icon-white');
       $footer__container.addClass('hide');
     })
     $linkContainer.on("mouseleave", function() {
       $workLink.removeClass('text-white');
       $(this).children($workLink).removeClass('text-outline');
-      $hoverDesc.css('opacity', '0');
-      $hamburger.css('stroke', '#745e84');
+//       $hoverDesc.css('opacity', '0');
+      $hoverDesc.removeClass('js-show');
+      $hamburger.removeClass('icon-white');
       $footer__container.removeClass('hide');
     })
   }

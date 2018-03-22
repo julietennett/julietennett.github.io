@@ -72,15 +72,21 @@ body {
     }
 
     .hover__description {
+      display: block;
       position: relative;
       opacity: 0;
       margin-top: 10px;
+      opacity: 0;
     }
 
     .hover__description--text {
       font-size: 24px;
       color: $c-white;
       margin-top: 0;
+    }
+
+    .js-show {
+      opacity: 1;
     }
 
 }
