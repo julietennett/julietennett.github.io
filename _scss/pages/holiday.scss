@@ -1,0 +1,83 @@
+.page--holiday{
+  position: relative;
+  //////////////////HERO STYLES
+
+  h1 {
+    -webkit-text-fill-color: rgba(0, 0, 0, 0); //overrides color (regardless of order)
+  }
+
+  h3 {
+    color: $c-holiday--red;
+  }
+
+  .hero {
+    background-color: $c-holiday--red;
+    @media (min-width: $bp-tablet-vert) {
+      background: url(/img/holiday/hero-background.png);
+      background-size: cover;
+    }
+
+    h1 {
+      margin-top: 8%;
+    }
+  }
+
+  ////////////////SECTION STYLES
+
+  .light {
+      background-color: $c-holiday--light;
+      h2 {
+        color: $c-holiday--red;
+      }
+  }
+
+  .closeup {
+    .project-section {
+      height: 200px;
+      @media (min-width: $bp-tablet-vert) {
+        height: 350px;
+      }
+      background: url(/img/holiday/section-background.png);
+      background-size: cover;
+    }
+  }
+
+
+//////////////////NAV STYLES
+  .nav {
+    .nav__hamburger--icon {
+      stroke: $c-holiday--red;
+    }
+    .nav__slider {
+      box-shadow: 0 0 25px $c-holiday--red;
+    }
+    .slider--item {
+      background-image: linear-gradient(to right, $c-holiday--red, $c-holiday--red 50%, transparent 50%, transparent);
+      &:hover {
+        .slider--link {
+          color: $c-holiday--red;
+        }
+      }
+    }
+    .slider--link {
+      color: $c-holiday--red;
+    }
+    .nav__slider--icon {
+      stroke: $c-holiday--red;
+    }
+  }
+
+/////////////////PREV-NEXT STYLES
+  .link__item {
+    background-image: linear-gradient(to top, $c-holiday--red, $c-holiday--red 50%, transparent 50%, transparent);
+  }
+
+  .prev-next__link {
+    color: $c-holiday--red;
+  }
+
+  .footer__link {
+    color: $c-holiday--red;
+  }
+
+}
