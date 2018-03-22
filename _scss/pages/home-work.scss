@@ -14,17 +14,18 @@ body {
 
     .work__links--container{
       width: 100%;
+      margin: 0 0 75px 0;
     }
 
     .work__link {
       @include fluid-font-size(65px, 75px, $bp-mobile, $bp-tablet-vert);
       @include fluid-font-size(75px, 95px, $bp-tablet-vert, $bp-laptop);
       border-bottom: solid 6px $c-me--purple;
-      &.text-white {
+      &.js-text-white {
         color: $c-white;
         border-bottom: solid 6px $c-white;
       }
-      &.text-outline {
+      &.js-text-outline {
         color: $c-transparent;
         -webkit-text-stroke-width: 1.5px;
         -webkit-text-stroke-color: $c-white;
@@ -47,6 +48,11 @@ body {
       background: url(/img/videogame/hero-background.png);
       background-size: cover;
     }
+    .link--illustrations:hover + .hover__img {
+      opacity: 1;
+      background: url(/img/illustrations/hero-background.png);
+      background-size: cover;
+    }
 
     .link--container {
       margin-top: 50px;
@@ -66,15 +72,21 @@ body {
     }
 
     .hover__description {
+      display: block;
       position: relative;
       opacity: 0;
       margin-top: 10px;
+      opacity: 0;
     }
 
     .hover__description--text {
       font-size: 24px;
       color: $c-white;
       margin-top: 0;
+    }
+
+    .js-show {
+      opacity: 1;
     }
 
 }
