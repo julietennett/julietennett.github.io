@@ -33,6 +33,13 @@
         }
       }
 
+      .img--block {
+        width: 100%;
+        @media (min-width: $bp-laptop) {
+          width: auto;
+        }
+      }
+
       .caption {
         @media (min-width: $bp-tablet-vert) {
           width: 50%;
