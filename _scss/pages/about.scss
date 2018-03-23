@@ -2,38 +2,22 @@ body {
   background-color: $c-me--light;
 }
 
+.js-slider-open {
+  .about__container {
+    z-index: -1;
+  }
+}
+
 .page--about {
   position: relative;
 
   .about__container {
     padding: 0 4em;
     width: 100%;
-    &:hover {
-      .about__text--mask {
-        transform: translateX(0);
-        .about__text--hover {
-          transform: translateX(0);
-        }
-      }
-    }
+    position: relative;
   }
 
-  .about__text--mask {
-    position: absolute;
-    overflow: hidden;
-    transform: translateX(-100%);
-    transition: all $hover-time ease-in;
-    pointer-events: none;
-  }
-
-  .about__text--hover {
-    text-decoration: line-through;
-    color: $c-me--purple;
-    transform: translateX(100%);
-    transition: transform $hover-time ease-in;
-  }
-
-  .about__text--before {
+  .about__text--container {
     position: relative;
     transition: all .5s ease;
     opacity: 1;
@@ -67,9 +51,6 @@ body {
     }
     cursor: url("/img/icons/finger.png"), pointer;
 
-    // &:hover {
-    //   text-decoration: line-through;
-    // }
   }
 
   //////////////////NAV STYLES
