@@ -6,6 +6,5 @@ $(document).ready(function() {
   new Nav();
   new Homepage();
   new About();
-  // changeFact();
   $('.before-load').removeClass('before-load');
 });
