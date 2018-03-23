@@ -65,7 +65,7 @@ body {
     @media (min-width: $bp-desktop) {
       line-height: 105px;
     }
-    cursor: pointer;
+    cursor: url("/img/icons/finger.png"), pointer;
 
     // &:hover {
     //   text-decoration: line-through;

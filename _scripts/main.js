@@ -30,7 +30,8 @@ function changeFact() {
   let randomFact = aboutFacts[Math.floor(Math.random()*aboutFacts.length)];
 
   var typed = new Typed('.about__text--fact', {
-    strings: [aboutFacts[0]]
+    strings: [aboutFacts[0]],
+    typeSpeed: 20
   });
 
   $aboutText.on("click", function () {
@@ -39,7 +40,8 @@ function changeFact() {
     $(".about__text--fact").text(''); //ugh remove the current text :\
 
     typed = new Typed('.about__text--fact', {
-      strings: [randomFact]
+      strings: [randomFact],
+      typeSpeed: 20
     });
   });
 }
