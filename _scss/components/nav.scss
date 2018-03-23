@@ -45,6 +45,7 @@
     transition: all .3s linear;
     .js-slider-open & {
       transform: translateX(0);
+      overflow: scroll;
     }
     @media (min-width: $bp-tablet-vert) {
       width: 50vw;

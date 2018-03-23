@@ -53,6 +53,16 @@ body {
       background: url(/img/illustrations/hero-background.png);
       background-size: cover;
     }
+    .link--lacentrale:hover + .hover__img {
+      opacity: 1;
+      background: url(/img/lacentrale/hero-background.png);
+      background-size: cover;
+    }
+    .link--holiday:hover + .hover__img {
+      opacity: 1;
+      background: url(/img/holiday/hero-background.png);
+      background-size: cover;
+    }
 
     .link--container {
       margin-top: 50px;

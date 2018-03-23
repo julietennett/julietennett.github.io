@@ -3,6 +3,10 @@
 
   //////////////////HERO STYLES
 
+  .hero {
+    align-items: flex-start;
+  }
+
   h1 {
     -webkit-text-fill-color: rgba(0, 0, 0, 0); //overrides color (regardless of order)
     -webkit-text-stroke-color: $c-illustrations--purple; //overrides color (regardless of order)
