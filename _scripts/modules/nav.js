@@ -25,7 +25,7 @@ class Nav {
 
     const $projectSectionArr = $('.project-section');
 
-    $hamburgerIcon.addClass('icon-white');
+    $hamburgerIcon.addClass('js-icon-white');
 
     $(document).scroll(function() {
       var scrollPos = window.scrollY;
@@ -36,9 +36,9 @@ class Nav {
         var sectionHeight = $projectSection.innerHeight();
         if (scrollPos > (offset - 37) && scrollPos < offset + sectionHeight) {
           if ($projectSection.hasClass('dark')) {
-            $hamburgerIcon.addClass('icon-white');
+            $hamburgerIcon.addClass('js-icon-white');
           } else {
-            $hamburgerIcon.removeClass('icon-white');
+            $hamburgerIcon.removeClass('js-icon-white');
           }
         }
       }
