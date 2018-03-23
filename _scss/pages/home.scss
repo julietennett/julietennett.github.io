@@ -5,6 +5,11 @@ body {
 .page--home {
   position: relative;
 
+  .footer {
+    position: relative;
+    z-index: -1000;
+  }
+
   //////////////////NAV STYLES
     .nav {
       .nav__hamburger--icon {
@@ -32,12 +37,16 @@ body {
       }
     }
 
-/////////////////PREV-NEXT STYLES
+/////////////////FOOTER STYLES
   .link__item {
     background-image: linear-gradient(to top, $c-me--purple, $c-me--purple 50%, transparent 50%, transparent);
   }
 
   .footer__link {
     color: $c-me--purple;
+  }
+
+  .footer__container {
+    background-color: $c-me--light;
   }
 }
