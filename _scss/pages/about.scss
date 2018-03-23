@@ -1,0 +1,95 @@
+body {
+  background-color: $c-me--light;
+}
+
+.js-slider-open {
+  .about__container {
+    z-index: -1;
+  }
+}
+
+.page--about {
+  position: relative;
+
+  .about__container {
+    padding: 0 4em;
+    width: 100%;
+    position: relative;
+  }
+
+  .about__text--container {
+    position: relative;
+    transition: all .5s ease;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+  .before-load {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  .about__text {
+    width: 100%;
+    margin: 0;
+    color: $c-transparent;
+    -webkit-text-stroke-width: .1px;
+    -webkit-text-stroke-color: $c-me--purple;
+    @include fluid-font-size(40px, 50px, $bp-mobile, $bp-tablet-vert);
+    line-height: 50px;
+    @media (min-width: $bp-tablet-vert) {
+      @include fluid-font-size(50px, 65px, $bp-tablet-vert, $bp-tablet-horiz);
+      line-height: 75px;
+    }
+    @media (min-width: $bp-tablet-horiz) {
+      @include fluid-font-size(65px, 95px, $bp-tablet-horiz, $bp-desktop);
+      line-height: 95px;
+    }
+    @media (min-width: $bp-desktop) {
+      line-height: 105px;
+    }
+    cursor: url("/img/icons/finger.png"), pointer;
+
+  }
+
+  //////////////////NAV STYLES
+    .nav {
+      .nav__hamburger--icon {
+        stroke: $c-me--purple;
+      }
+      .icon-white {
+        stroke: $c-me--purple !important; //why are u trying to hurt me icon-white??
+      }
+      .nav__slider {
+        box-shadow: 0 0 19px $c-me--purple;
+      }
+      .nav__slider--icon {
+        stroke: $c-me--purple;
+      }
+      .slider--item {
+        background-image: linear-gradient(to right, $c-me--purple, $c-me--purple 50%, transparent 50%, transparent);
+        &:hover {
+          .slider--link {
+            color: $c-me--purple;
+          }
+        }
+      }
+      .slider--link {
+        color: $c-me--purple;
+      }
+    }
+
+////////////////FOOTER STYLES
+  .link__item {
+    background-image: linear-gradient(to top, $c-me--purple, $c-me--purple 50%, transparent 50%, transparent);
+  }
+
+  .footer__link {
+    color: $c-me--purple;
+  }
+
+  .typed-cursor {
+    display: none;
+  }
+}
