@@ -1,0 +1,42 @@
+---
+layout: base
+title: Illustrations
+permalink: /illustrations/
+---
+
+<div class="page--illustrations">
+  {% include layout/header.html %}
+
+  <div class="content">
+
+    <!--hero-->
+    {% include components/hero.html
+    color='light'
+    question='illustrations' %}
+
+    <!--the project-->
+    <div class="project-section illustrating white">
+      <div class="img--container">
+        <img class="illustration--img img-3" src="/img/illustrations/illustration--01.png" alt="">
+        <img class="illustration--img img-3" src="/img/illustrations/illustration--02.png" alt="">
+        <img class="illustration--img img-3" src="/img/illustrations/illustration--03.png" alt="">
+        <img class="illustration--img img-1" src="/img/illustrations/illustration--04.png" alt="">
+        <img class="illustration--img img-3" src="/img/illustrations/illustration--05.png" alt="">
+        <img class="illustration--img img-3" src="/img/illustrations/illustration--06.png" alt="">
+        <img class="illustration--img img-3" src="/img/illustrations/illustration--07.png" alt="">
+        <img class="illustration--img img-2" src="/img/illustrations/illustration--08.png" alt="">
+        <img class="illustration--img img-2" src="/img/illustrations/illustration--09.png" alt="">
+      </div>
+    </div>
+
+    <!-- prev-next -->
+    {% include components/prev-next.html
+      color = 'light'
+      prev = 'lacentrale'
+      next = 'zealery'
+    %}
+
+  </div>
+
+  {% include layout/footer.html %}
+</div>

@@ -1,10 +1,7 @@
 import Nav from './modules/nav';
 import Homepage from './modules/homepage';
-import About from './modules/about';
 
 $(document).ready(function() {
   new Nav();
   new Homepage();
-  new About();
-  $('.before-load').removeClass('before-load');
-});
+}); //this creates a jquery object on document then calling .ready() on that jquery object, which takes in a function tnats called afer the jquery obkect is loaded

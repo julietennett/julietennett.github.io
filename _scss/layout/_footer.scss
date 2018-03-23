@@ -25,6 +25,10 @@
     }
   }
 
+  .js-hide {
+    display: none;
+  }
+
   .link__container {
     width: 100%;
     @media (min-width: $bp-laptop) {
