@@ -31,37 +31,6 @@ body {
       }
     }
 
-    .link--trailtag:hover + .hover__img {
-      opacity: 1;
-      background: url(/img/trailtag/hero-background.png);
-      background-size: cover;
-    }
-    .link--zealery:hover + .hover__img {
-      opacity: 1;
-      background: url(/img/home/work__link--zealery.png);
-      background-size: cover;
-    }
-    .link--videogame:hover + .hover__img {
-      opacity: 1;
-      background: url(/img/videogame/hero-background.png);
-      background-size: cover;
-    }
-    .link--illustrations:hover + .hover__img {
-      opacity: 1;
-      background: url(/img/illustrations/hero-background.png);
-      background-size: cover;
-    }
-    .link--lacentrale:hover + .hover__img {
-      opacity: 1;
-      background: url(/img/lacentrale/hero-background.png);
-      background-size: cover;
-    }
-    .link--holiday:hover + .hover__img {
-      opacity: 1;
-      background: url(/img/holiday/hero-background.png);
-      background-size: cover;
-    }
-
     .link--container {
       margin-top: 50px;
       width: fit-content;

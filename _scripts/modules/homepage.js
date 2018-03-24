@@ -59,21 +59,26 @@ class Homepage {
     var $hamburger = $(".nav__hamburger--icon");
     var $hoverDesc = $(".hover__description");
     var $footer__container = $(".footer__container");
+    let $heroIntro = $(".hero__intro")
 
-    $linkContainer.on("mouseenter", function() {
-      $workLink.addClass('js-text-white');
-      $(this).children($workLink).addClass('js-text-outline');
-      $(this).children($hoverDesc).addClass('js-show');
-      $hamburger.addClass('js-icon-white');
-      $footer__container.addClass('js-hide');
-    })
-    $linkContainer.on("mouseleave", function() {
-      $workLink.removeClass('js-text-white');
-      $(this).children($workLink).removeClass('js-text-outline');
-      $hoverDesc.removeClass('js-show');
-      $hamburger.removeClass('js-icon-white');
-      $footer__container.removeClass('js-hide');
-    })
+    $linkContainer.hover(
+      function () {
+        $workLink.addClass('js-text-white');
+        $(this).children($workLink).addClass('js-text-outline');
+        $(this).children($hoverDesc).addClass('js-show');
+        $hamburger.addClass('js-icon-white');
+        $footer__container.addClass('js-hide');
+        $heroIntro.css('opacity', '0');
+      },
+      function () {
+        $workLink.removeClass('js-text-white');
+        $(this).children($workLink).removeClass('js-text-outline');
+        $hoverDesc.removeClass('js-show');
+        $hamburger.removeClass('js-icon-white');
+        $footer__container.removeClass('js-hide');
+        $heroIntro.css('opacity', '1');
+      }
+    )
   }
 }
 
