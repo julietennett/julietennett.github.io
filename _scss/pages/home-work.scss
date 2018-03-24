@@ -4,17 +4,15 @@ body {
 
 .page--home {
     //////////////////WORK STYLES
-    .project-section {
+
+    .work__links--container{
+      width: 100%;
+      padding-bottom: 75px;
       @media (min-width: $bp-tablet-vert) {
         padding-top: 40px;
         height: 100vh;
         overflow: scroll;
       }
-    }
-
-    .work__links--container{
-      width: 100%;
-      margin: 0 0 75px 0;
     }
 
     .work__link {
