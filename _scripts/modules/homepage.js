@@ -1,7 +1,10 @@
 class Homepage {
   constructor() {
-    this.workLinksColor();
-  }
+    this.$body = $('body');
+    if (this.$body.hasClass('home')) {
+      this.workLinksColor();
+    }
+   }
 
   workLinksColor() {
     var $linkContainer = $(".link--container");
