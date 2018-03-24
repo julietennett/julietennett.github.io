@@ -92,6 +92,7 @@
   }
 
   .slider--item {
+    font-size: 50px;
     display: flex;
     position: relative;
     justify-content: center;
@@ -100,6 +101,9 @@
     background-position: 100% 0;
     background-size: 200% 100%;
     transition: all $hover-time ease-in;
+    @media (min-width: $bp-laptop) {
+      @include fluid-font-size(30px, 50px, $bp-laptop, $bp-desktop);
+    }
     &:hover {
       background-position: 0 0;
       .slider--hover-mask {
