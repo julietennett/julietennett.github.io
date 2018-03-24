@@ -5,6 +5,10 @@ body {
 .page--home {
   position: relative;
 
+  .project-section {
+    padding-left: 7em;
+  }
+
   //////////////////NAV STYLES
     .nav {
       .nav__hamburger--icon {
