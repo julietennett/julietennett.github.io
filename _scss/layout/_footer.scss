@@ -5,7 +5,7 @@
    ========================================================================== */
 
 .footer {
-  position: absolute;
+  // position: absolute;
   bottom: 0;
 
   .footer__container {
@@ -26,7 +26,7 @@
   }
 
   .js-hide {
-    display: none;
+    opacity: 0;
   }
 
   .link__container {
