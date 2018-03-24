@@ -11,7 +11,13 @@ class ScrollAnimation {
   }
 
   homeScroll() {
-    new ScrollMagic.Scene()
+    let $workContainer = $('.work__links--container');
+    new ScrollMagic.Scene({
+      triggerElement: $workContainer,
+      duration: $workContainer.height()
+    })
+    .setPin(".hover__img") // pins the element for the the scene's duration
+	  .addTo(controller); // assign the scene to the controller
   }
 
 

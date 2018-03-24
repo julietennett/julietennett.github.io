@@ -3,8 +3,55 @@ class Homepage {
     this.$body = $('body');
     if (this.$body.hasClass('home')) {
       this.workLinksColor();
+      this.backgroundImg();
     }
    }
+
+  backgroundImg() {
+    let $linkContainer = $('.link--container');
+    let $trailTag = $('.link--trailtag');
+    let $videogame = $('.link--videogame');
+    let $zealery = $('.link--zealery');
+    let $illustrations = $('.link--illustrations');
+    let $lacentrale = $('.link--lacentrale');
+    let $hoverImg = $('.hover__img');
+
+    $linkContainer.hover(
+      function () {
+        $hoverImg.css("opacity", "1");
+      },
+      function () {
+        $hoverImg.css("background-image", "none");
+        $hoverImg.css("opacity", "0");
+      }
+    )
+
+    $zealery.hover(function () {
+      $hoverImg.css("background-image", "url(/img/home/work__link--zealery.png)");
+      $hoverImg.css("background-size", "cover");
+    });
+
+    $videogame.hover(function () {
+      $hoverImg.css("background-image", "url(/img/videogame/hero-background.png)");
+      $hoverImg.css("background-size", "cover");
+    });
+
+    $trailTag.hover(function () {
+      $hoverImg.css("background-image", "url(/img/trailtag/hero-background.png)");
+      $hoverImg.css("background-size", "cover");
+    });
+
+    $illustrations.hover(function () {
+      $hoverImg.css("background-image", "url(/img/illustrations/hero-background.png)");
+      $hoverImg.css("background-size", "cover");
+    });
+
+    $lacentrale.hover(function () {
+      $hoverImg.css("background-image", "url(/img/lacentrale/hero-background.png)");
+      $hoverImg.css("background-size", "cover");
+    });
+
+  }
 
   workLinksColor() {
     var $linkContainer = $(".link--container");

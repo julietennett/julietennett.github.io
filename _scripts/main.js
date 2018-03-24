@@ -7,6 +7,6 @@ $(document).ready(function() {
   new Nav();
   new Homepage();
   new About();
-  new ScrollAnimation();
+  // new ScrollAnimation();
   $('.before-load').removeClass('before-load');
 });
