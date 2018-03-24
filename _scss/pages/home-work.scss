@@ -6,9 +6,11 @@ body {
     //////////////////WORK STYLES
 
     .work__links--container{
-      width: 100%;
+      width: 85%;
+      margin: 0 auto;
       padding-bottom: 75px;
       @media (min-width: $bp-tablet-vert) {
+        width: 100%;
         padding-top: 40px;
       }
     }

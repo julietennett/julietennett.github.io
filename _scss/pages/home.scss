@@ -6,7 +6,9 @@ body {
   position: relative;
 
   .project-section {
-    padding-left: 7em;
+    @media (min-width: $bp-tablet-vert) {
+        padding-left: 7em;
+    }
   }
 
   //////////////////NAV STYLES
