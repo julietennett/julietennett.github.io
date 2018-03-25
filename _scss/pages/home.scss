@@ -5,9 +5,10 @@ body {
 .page--home {
   position: relative;
 
-  .footer {
-    position: relative;
-    z-index: -1000;
+  .page-section {
+    @media (min-width: $bp-tablet-vert) {
+        padding-left: 7em;
+    }
   }
 
   //////////////////NAV STYLES
@@ -15,7 +16,7 @@ body {
       .nav__hamburger--icon {
         stroke: $c-me--purple;
       }
-      .icon-white {
+      .js-icon-white {
         stroke: $c-me--purple !important; //why are u trying to hurt me icon-white??
       }
       .nav__slider {
@@ -23,6 +24,9 @@ body {
       }
       .nav__slider--icon {
         stroke: $c-me--purple;
+      }
+      .divider {
+        background-color: $c-me--purple;
       }
       .slider--item {
         background-image: linear-gradient(to right, $c-me--purple, $c-me--purple 50%, transparent 50%, transparent);
@@ -44,9 +48,5 @@ body {
 
   .footer__link {
     color: $c-me--purple;
-  }
-
-  .footer__container {
-    background-color: $c-me--light;
   }
 }

@@ -4,17 +4,16 @@ body {
 
 .page--home {
     //////////////////WORK STYLES
-    .project-section {
-      @media (min-width: $bp-tablet-vert) {
-        padding-top: 40px;
-        height: 100vh;
-        overflow: scroll;
-      }
-    }
 
-    .work__links--container{
-      width: 100%;
-      margin: 0 0 75px 0;
+    .work__links--container {
+      display: block;
+      width: 85%;
+      margin: 0 auto;
+      padding-bottom: 75px;
+      @media (min-width: $bp-tablet-vert) {
+        width: 100%;
+        padding-top: 40px;
+      }
     }
 
     .work__link {
@@ -33,49 +32,18 @@ body {
       }
     }
 
-    .link--trailtag:hover + .hover__img {
-      opacity: 1;
-      background: url(/img/trailtag/hero-background.png);
-      background-size: cover;
-    }
-    .link--zealery:hover + .hover__img {
-      opacity: 1;
-      background: url(/img/home/work__link--zealery.png);
-      background-size: cover;
-    }
-    .link--videogame:hover + .hover__img {
-      opacity: 1;
-      background: url(/img/videogame/hero-background.png);
-      background-size: cover;
-    }
-    .link--illustrations:hover + .hover__img {
-      opacity: 1;
-      background: url(/img/illustrations/hero-background.png);
-      background-size: cover;
-    }
-    .link--lacentrale:hover + .hover__img {
-      opacity: 1;
-      background: url(/img/lacentrale/hero-background.png);
-      background-size: cover;
-    }
-    .link--holiday:hover + .hover__img {
-      opacity: 1;
-      background: url(/img/holiday/hero-background.png);
-      background-size: cover;
-    }
-
     .link--container {
       margin-top: 50px;
       width: fit-content;
     }
 
     .hover__img {
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       width: 100vw;
       height: 100vh;
-      transform: translateY(100%);
+      // transform: translateY(100%);
       z-index: -1;
       opacity: 0;
       transition: opacity .3s ease;

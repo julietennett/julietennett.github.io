@@ -65,6 +65,18 @@
     align-items: center;
   }
 
+  .wireframes {
+    .image-full-width {
+      background-image: url("/img/zealery/section--wireframes.png");
+    }
+  }
+
+  .hifi {
+    .image-full-width {
+      background-image: url("/img/zealery/section--hifi.png");
+    }
+  }
+
   .guidelines {
     .img--block {
       width: 100%;
@@ -87,6 +99,9 @@
     }
     .nav__slider--icon {
       stroke: $c-zealery--pink;
+    }
+    .divider {
+      background-color: $c-zealery--pink;
     }
     .slider--item {
       background-image: linear-gradient(to right, $c-zealery--pink, $c-zealery--pink 50%, transparent 50%, transparent);

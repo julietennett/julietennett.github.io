@@ -3,7 +3,10 @@ import Typed from 'typed.js';
 class About {
 
   constructor() {
-    this.changeFact();
+    this.$body = $('body');
+    if (this.$body.hasClass('about')) {
+      this.changeFact();
+    }
   }
 
   changeFact() {

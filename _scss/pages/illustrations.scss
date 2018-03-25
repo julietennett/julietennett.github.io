@@ -113,6 +113,9 @@
     .nav__slider {
       box-shadow: 0 0 25px $c-illustrations--purple;
     }
+    .divider {
+      background-color: $c-illustrations--purple;
+    }
     .slider--item {
       background-image: linear-gradient(to right, $c-illustrations--purple, $c-illustrations--purple 50%, transparent 50%, transparent);
       &:hover {
