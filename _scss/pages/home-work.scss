@@ -5,7 +5,8 @@ body {
 .page--home {
     //////////////////WORK STYLES
 
-    .work__links--container{
+    .work__links--container {
+      display: block;
       width: 85%;
       margin: 0 auto;
       padding-bottom: 75px;
