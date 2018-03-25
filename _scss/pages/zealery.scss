@@ -88,6 +88,9 @@
     .nav__slider--icon {
       stroke: $c-zealery--pink;
     }
+    .divider {
+      background-color: $c-zealery--pink;
+    }
     .slider--item {
       background-image: linear-gradient(to right, $c-zealery--pink, $c-zealery--pink 50%, transparent 50%, transparent);
       &:hover {

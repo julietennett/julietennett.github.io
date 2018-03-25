@@ -19,21 +19,25 @@ class Nav {
   }
 
   hamburgerColor() {
-    var $hamburgerIcon = $('.nav__hamburger--icon');
-    var heroHeight = $('.hero').innerHeight();
-    var projectSection = $('.project-section').innerHeight();
+    let $hamburgerIcon = $('.nav__hamburger--icon');
+    let $hero = $('.hero');
+    let heroHeight = $('.hero').innerHeight();
+    let projectSection = $('.project-section').innerHeight();
+    let scrollPos = window.scrollY;
 
     const $projectSectionArr = $('.project-section');
 
-    $hamburgerIcon.addClass('js-icon-white');
+    if ($hero.hasClass('dark')) {
+      $hamburgerIcon.addClass('js-icon-white');
+    }
 
     $(document).scroll(function() {
       var scrollPos = window.scrollY;
 
-      for (var i = 0; i < $projectSectionArr.length; i++) {
-        var $projectSection = $projectSectionArr.eq(i);
-        var offset = $projectSection.offset().top;
-        var sectionHeight = $projectSection.innerHeight();
+      for (let i = 0; i < $projectSectionArr.length; i++) {
+        let $projectSection = $projectSectionArr.eq(i);
+        let offset = $projectSection.offset().top;
+        let sectionHeight = $projectSection.innerHeight();
         if (scrollPos > (offset - 37) && scrollPos < offset + sectionHeight) {
           if ($projectSection.hasClass('dark')) {
             $hamburgerIcon.addClass('js-icon-white');

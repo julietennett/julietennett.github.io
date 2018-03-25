@@ -100,6 +100,9 @@
     .nav__slider {
       box-shadow: 0 0 25px $c-trailtag--shadow;
     }
+    .divider {
+      background-color: $c-trailtag--teal;
+    }
     .slider--item {
       background-image: linear-gradient(to right, $c-trailtag--teal, $c-trailtag--teal 50%, transparent 50%, transparent);
       &:hover {

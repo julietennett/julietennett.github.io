@@ -98,6 +98,9 @@
     .nav__slider {
       box-shadow: 0 0 25px $c-videogame--blue;
     }
+    .divider {
+      background-color: $c-videogame--blue;
+    }
     .slider--item {
       background-image: linear-gradient(to right, $c-videogame--blue, $c-videogame--blue 50%, transparent 50%, transparent);
       &:hover {
