@@ -1,8 +1,8 @@
 .image-block {
   .grid--col2 {
     padding-left: 3.5%;
+    margin-bottom: 50px;
     @media (min-width: $bp-laptop) {
-      padding-top: 20px;
       padding-left: $m-grid-col2;
       width: $w-grid-col2;
     }
