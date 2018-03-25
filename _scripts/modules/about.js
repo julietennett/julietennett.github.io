@@ -1,16 +1,15 @@
 import Typed from 'typed.js';
 
 class About {
-
   constructor() {
     this.changeFact();
   }
 
   changeFact() {
-    let $aboutText = $(".about__text");
-    let $aboutFact = $(".about__text--fact");
-
-    var aboutFacts = [
+    let _this = this;
+    let $aboutText = $('.about__text');
+    let $aboutFact = $('.about__text--fact');
+    let aboutFacts = [
       'an interaction designer who loves the problem solving that goes on behind screens',
       'a lover of all things related to design process',
       'a designer who solves problems with, like, a lot of sticky notes',
@@ -22,22 +21,23 @@ class About {
       'a designer who loves to illustrate with Sketch’s pen tool',
       'a designer who recently learned that code is not, indeed, magic because she knows how to do it now',
     ];
-    let randomFact = aboutFacts[Math.floor(Math.random()*aboutFacts.length)];
-    var typed = new Typed('.about__text--fact', {
-      strings: [aboutFacts[0]],
-      typeSpeed: 20
+
+    let typed = new Typed('.about__text--fact', {
+      strings: [aboutFacts[_this.getRandomInt(aboutFacts.length)]],
+      typeSpeed: 20,
     });
 
-    $aboutText.on("click", function () {
-      $aboutFact.text(randomFact);
-      randomFact = aboutFacts[Math.floor(Math.random()*aboutFacts.length)];
-      $(".about__text--fact").text(''); //ugh remove the current text :\
-
+    $aboutText.on('click', function() {
+      typed.destroy();
       typed = new Typed('.about__text--fact', {
-        strings: [randomFact],
-        typeSpeed: 20
+        strings: [aboutFacts[_this.getRandomInt(aboutFacts.length)]],
+        typeSpeed: 20,
       });
     });
+  }
+
+  getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
   }
 
 }
