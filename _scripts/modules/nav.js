@@ -22,10 +22,10 @@ class Nav {
     let $hamburgerIcon = $('.nav__hamburger--icon');
     let $hero = $('.hero');
     let heroHeight = $('.hero').innerHeight();
-    let projectSection = $('.project-section').innerHeight();
+    let projectSection = $('.page-section').innerHeight();
     let scrollPos = window.scrollY;
 
-    const $projectSectionArr = $('.project-section');
+    const $projectSectionArr = $('.page-section');
 
     if ($hero.hasClass('dark')) {
       $hamburgerIcon.addClass('js-icon-white');
