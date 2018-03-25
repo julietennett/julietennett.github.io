@@ -81,14 +81,22 @@
   }
 
   .nav__slider--list {
+    height: 100%;
     list-style: none;
     padding: 45px 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     @media (min-width: $bp-tablet-vert) {
       padding: 0;
     }
+  }
+
+  .divider {
+    margin: 25px auto;
+    width: 75%;
+    height: 2px;
+    background-color: $c-zealery--pink;
+    border-radius: 10px;
   }
 
   .slider--item {
@@ -96,6 +104,7 @@
     display: flex;
     position: relative;
     justify-content: center;
+    align-items: center;
     background-image: linear-gradient(to right, #ff685a, #ff685a 50%, transparent 50%, transparent);
     width: 100%;
     background-position: 100% 0;
