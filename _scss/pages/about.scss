@@ -22,6 +22,7 @@ body {
     transition: all .5s ease;
     opacity: 1;
     transform: translateY(0);
+    cursor: url('/img/icons/finger.png'), pointer;
   }
 
 
@@ -49,8 +50,6 @@ body {
     @media (min-width: $bp-desktop) {
       line-height: 105px;
     }
-    cursor: url("/img/icons/finger.png"), pointer;
-
   }
 
   //////////////////NAV STYLES
