@@ -83,6 +83,9 @@
     .image-full-width {
       background-image: url("/img/videogame/section--characters.png");
       height: 400px;
+      @media (min-width: $bp-laptop) {
+        background-image: none;
+      }
     }
   }
 
