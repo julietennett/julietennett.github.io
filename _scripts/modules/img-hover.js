@@ -9,13 +9,12 @@ class ImageHover {
 
     $image.mousemove( function(evt) {
       let xPos = evt.pageX;//works thank god
-      // console.log(evt.pageX);
-      // console.log(xPos);
-      let imageLength = '4372';
-      // let xTest = 3;
+      let pageW = $(document.body).width();
+      let xPerc = xPos / pageW;
+
 
       $(this).children($pageSection).css('background-position-x',  function() {
-        return - (xPos * imageLength) + '%';
+        return - (xPerc * 100) + '%';
       });
     });
   }
