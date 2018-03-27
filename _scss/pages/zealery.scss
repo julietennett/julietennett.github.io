@@ -90,18 +90,6 @@
     }
   }
 
-  .guidelines {
-    .img--block {
-      width: 100%;
-      padding-top: 50px;
-      @media (min-width: $bp-laptop) {
-        padding-top: 75px;
-        height: 450px;
-        width: auto;
-      }
-    }
-  }
-
 //////////////////NAV STYLES
   .nav {
     .nav__hamburger--icon {

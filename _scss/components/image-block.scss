@@ -4,7 +4,7 @@
     margin-bottom: 50px;
     @media (min-width: $bp-laptop) {
       padding-left: $m-grid-col2;
-      width: $w-grid-col2;
+      max-width: $w-grid-col2;
     }
   }
 }
@@ -33,10 +33,6 @@
         }
       }
 
-      .img--block {
-        width: 100%;
-      }
-
       .caption {
         @media (min-width: $bp-tablet-vert) {
           width: 50%;
@@ -49,4 +45,8 @@
     }
   }
 
+}
+
+.img-block__image {
+  width: 100%;
 }

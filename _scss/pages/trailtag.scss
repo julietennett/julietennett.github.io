@@ -100,16 +100,6 @@
     }
   }
 
-  .visual {
-    .img--block {
-      width: 100%;
-      @media (min-width: $bp-laptop) {
-        height: 450px;
-        width: auto;
-      }
-    }
-  }
-
   .navigation {
     .image-full-width {
       background-image: url("/img/trailtag/section--navigation.png");
