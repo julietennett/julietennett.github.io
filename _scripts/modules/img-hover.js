@@ -1,7 +1,6 @@
 class ImageHover {
   constructor() {
     this.scrollImageX();
-    this.scrollImageXY();
   }
 
   scrollImageX() {
