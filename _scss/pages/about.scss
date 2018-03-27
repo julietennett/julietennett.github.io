@@ -48,8 +48,8 @@ body {
       line-height: 75px;
     }
     @media (min-width: $bp-tablet-horiz) {
-      @include fluid-font-size(65px, 90px, $bp-tablet-horiz, $bp-desktop);
-      line-height: 95px;
+      @include fluid-font-size(65px, 85px, $bp-tablet-horiz, $bp-desktop);
+      line-height: 90px;
     }
     @media (min-width: $bp-desktop) {
       line-height: 105px;
