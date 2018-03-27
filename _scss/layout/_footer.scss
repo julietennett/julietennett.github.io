@@ -13,15 +13,22 @@
     display: none;
     @media (min-width: $bp-tablet-vert) {
       display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 4.5em 10px 4.5em;
+    }
+  }
+
+  .footer__links--container {
+    @media (min-width: $bp-tablet-vert) {
+      display: flex;
       flex-direction: row;
       justify-content: center;
-      padding: 20px 4.5em 20px 4.5em;
       flex-wrap: wrap;
     }
     @media (min-width: $bp-tablet-horiz) {
       flex-direction: row;
       justify-content: space-around;
-      padding: 20px 4.5em 20px 4.5em;
     }
   }
 
@@ -74,6 +81,12 @@
 
   .footer__link {
     @include fluid-font-size(16px, 24px, $bp-mobile, $bp-tablet-vert);
+  }
+
+  .site-credit__text {
+    @include fluid-font-size(10px, 12px, $bp-mobile, $bp-tablet-vert);
+    color: gray;
+    align-self: baseline;
   }
 
 }
