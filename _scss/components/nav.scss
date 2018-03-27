@@ -22,7 +22,7 @@
   }
 
   .nav__hamburger--icon {
-    transition: all .4s $transition-type;
+    transition: transform .4s $transition-type;
     transition-delay: .3s;
     transform: translateX(0);
     width: auto;
