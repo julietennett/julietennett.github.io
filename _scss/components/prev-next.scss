@@ -69,7 +69,7 @@
   .prev-next__link {
     @include fluid-font-size(60px, 75px, $bp-mobile, $bp-tablet-vert);
     @media (min-width: $bp-tablet-vert) {
-      @include fluid-font-size(55px, 95px, $bp-tablet-vert, $bp-desktop);
+      @include fluid-font-size(55px, 85px, $bp-tablet-vert, $bp-desktop);
     }
   }
 
