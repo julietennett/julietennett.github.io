@@ -26,6 +26,10 @@
     }
   }
 
+  .label {
+    border: none;
+  }
+
   ////////////////SECTION STYLES
 
   .light {
@@ -68,6 +72,7 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 0 2em;
   }
 
   .img-3 {
@@ -111,7 +116,9 @@
       stroke: $c-illustrations--purple;
     }
     .nav__slider {
-      box-shadow: 0 0 25px $c-illustrations--purple;
+      @media (min-width: $bp-tablet-vert) {
+        box-shadow: 0 0 25px $c-illustrations--purple;
+      }
     }
     .divider {
       background-color: $c-illustrations--purple;
@@ -143,6 +150,10 @@
 
   .footer__link {
     color: $c-illustrations--purple;
+  }
+
+  .site-credit__text {
+    color: $c-illustrations--footer;
   }
 
 }

@@ -24,16 +24,22 @@ class About {
       'and i use a lot of  exclamation points and custom slack emojis',
       'and i prefer illustrating in sketch over ai #unpopularopinion'
     ];
+    let factNum = 0;
 
     let typed = new Typed('.about__text--fact', {
-      strings: [aboutFacts[_this.getRandomInt(aboutFacts.length)]],
+      strings: [aboutFacts[0]],
       typeSpeed: 20,
     });
 
     $aboutText.on('click', function() {
       typed.destroy();
+      if (factNum < aboutFacts.length - 1) {
+        factNum += 1;
+      } else {
+        factNum = 0;
+      }
       typed = new Typed('.about__text--fact', {
-        strings: [aboutFacts[_this.getRandomInt(aboutFacts.length)]],
+        strings: [aboutFacts[factNum]],
         typeSpeed: 20,
       });
     });

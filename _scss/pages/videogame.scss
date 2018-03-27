@@ -1,10 +1,7 @@
-.page--videogame{ //this is to make sure it only shows up on trailtag page
+.page--videogame{
   position: relative;
   //////////////////HERO STYLES
 
-  // .hero {
-  //   align-items: flex-start;
-  // }
 
   h1 {
     -webkit-text-fill-color: rgba(0, 0, 0, 0); //overrides color (regardless of order)
@@ -89,25 +86,15 @@
     }
   }
 
-  .visual {
-    .img--block {
-      width: 100%;
-      padding-top: 50px;
-      @media (min-width: $bp-laptop) {
-        padding-top: 75px;
-        height: 450px;
-        width: auto;
-      }
-    }
-  }
-
 //////////////////NAV STYLES
   .nav {
     .nav__hamburger--icon {
       stroke: $c-videogame--blue;
     }
     .nav__slider {
-      box-shadow: 0 0 25px $c-videogame--blue;
+      @media (min-width: $bp-tablet-vert) {
+        box-shadow: 0 0 25px $c-videogame--blue;
+      }
     }
     .divider {
       background-color: $c-videogame--blue;
@@ -139,6 +126,10 @@
 
   .footer__link {
     color: $c-videogame--blue;
+  }
+
+  .site-credit__text {
+    color: $c-videogame--footer;
   }
 
 }

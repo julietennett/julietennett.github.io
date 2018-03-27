@@ -45,6 +45,9 @@ body {
   }
 
   .intro__img {
+    transition: transform .5s $ease-in-out-quint;
+    opacity: 1;
+    transform: translateY(0);
     width: 85%;
     height: 85%;
     z-index: -5;
@@ -64,6 +67,9 @@ body {
   }
 
   .intro__text--container {
+    transition: all .5s $ease-in-out-quint;
+    opacity: 1;
+    transform: translateY(0);
     width: 85%;
     @media (min-width: $bp-tablet-vert) {
       width: 50%;
@@ -95,6 +101,10 @@ body {
 
   //intro links
   .intro__links--container {
+    transition: all .4s $ease-in-out-quint;
+    transition-delay: .3s;
+    opacity: 1;
+    transform: translateY(0);
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -113,9 +123,8 @@ body {
     width: fit-content;
     background-position: 0 0;
     background-size: 100% 200%;
-    transition: all $hover-time ease-in;
+    transition: all $hover-time $ease-in-out-quint;
     margin-top: 20px;
-    padding: 0 10px;
     @media(min-width: $bp-mobile-horiz) {
       margin-left: 10%;
       margin-top: 0;
@@ -140,20 +149,29 @@ body {
     position: absolute;
     overflow: hidden;
     transform: translateY(100%);
-    transition: transform $hover-time ease-in;
+    transition: transform $hover-time $ease-in-out-quint;
     pointer-events: none;
   }
 
   .intro__link--hover {
     transform: translateY(-100%);
-    transition: transform $hover-time ease-in;
+    transition: transform $hover-time $ease-in-out-quint;
     -webkit-text-stroke-width: .85px;
     -webkit-text-stroke-color: $c-white;
   }
 
   .intro__link {
-    height: 100%;
     display: inline-block;
+    height: 100%;
+    padding: 5px 10px 8px 10px;
     text-decoration: none;
+    font-family: $f-bitter;
+    font-size: 1.75em;
+    color: $c-me--purple;
+  }
+
+  .before-load {
+    opacity: 0;
+    transform: translateY(10px);
   }
 }

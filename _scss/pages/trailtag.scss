@@ -100,16 +100,6 @@
     }
   }
 
-  .visual {
-    .img--block {
-      width: 100%;
-      @media (min-width: $bp-laptop) {
-        height: 450px;
-        width: auto;
-      }
-    }
-  }
-
   .navigation {
     .image-full-width {
       background-image: url("/img/trailtag/section--navigation.png");
@@ -122,7 +112,9 @@
       stroke: $c-trailtag--teal;
     }
     .nav__slider {
-      box-shadow: 0 0 25px $c-trailtag--shadow;
+      @media (min-width: $bp-tablet-vert) {
+        box-shadow: 0 0 25px $c-trailtag--shadow;
+      }
     }
     .divider {
       background-color: $c-trailtag--teal;
@@ -154,6 +146,10 @@
 
   .footer__link {
     color: $c-trailtag--teal;
+  }
+
+  .site-credit__text {
+    color: $c-trailtag--footer;
   }
 
 }

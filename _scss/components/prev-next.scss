@@ -36,10 +36,9 @@
   }
 
   .link__item {
-    padding: 5px 10px 10px 10px;
     background-position: 0 0;
     background-size: 100% 200%;
-    transition: all $hover-time ease-in;
+    transition: all $hover-time-prevnext $ease-in-out-quad;
     &:hover {
       background-position: 0 100%;
       .link__mask {
@@ -55,21 +54,25 @@
     position: absolute;
     overflow: hidden;
     transform: translateY(106%);
-    transition: transform $hover-time ease-in;
+    transition: transform $hover-time-prevnext $ease-in-out-quad;
     pointer-events: none;
   }
 
   .link__hover {
     transform: translateY(-106%);
-    transition: transform $hover-time ease-in;
+    transition: transform $hover-time-prevnext $ease-in-out-quad;
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: $c-white;
   }
 
   .prev-next__link {
+    display: inline-block;
+    padding: 5px 10px 10px 10px;
     @include fluid-font-size(60px, 75px, $bp-mobile, $bp-tablet-vert);
+    line-height: 84px;
     @media (min-width: $bp-tablet-vert) {
-      @include fluid-font-size(55px, 95px, $bp-tablet-vert, $bp-desktop);
+      @include fluid-font-size(55px, 85px, $bp-tablet-vert, $bp-desktop);
+      line-height: 120px;
     }
   }
 

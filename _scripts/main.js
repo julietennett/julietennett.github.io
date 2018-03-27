@@ -9,6 +9,7 @@ $(document).ready(function() {
   new Homepage();
   new About();
   new ImageHover();
-  // new ScrollAnimation();
   $('.before-load').removeClass('before-load');
+  $('.before-load-left').removeClass('before-load-left');
+  $('.before-load-right').removeClass('before-load-right');
 });

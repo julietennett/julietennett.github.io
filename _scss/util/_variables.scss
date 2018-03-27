@@ -8,6 +8,9 @@
    ========================================================================== */
 $c-black: #4A4A4A;
 $c-white: #fff;
+$c-transparent: rgba(0, 0, 0, 0);
+$c-me--purple: #745E84;
+$c-me--light: #FBF6FF;
 $c-zealery--pink: #FF685A;
 $c-zealery--pinkshadow: rgba(172, 45, 45, 50);
 $c-zealery--light: #FCF3F2;
@@ -15,18 +18,18 @@ $c-zealery--lightshadow: rgba(106, 17, 17, 50);
 $c-trailtag--teal: #106469;
 $c-trailtag--shadow: rgba(5, 68, 72, 50);
 $c-trailtag--light: #E1E8E8;
-$c-nifty--purple: #5A1537;
-$c-nifty--light: #F9F2F5;
-$c-me--purple: #745E84;
-$c-me--light: #FBF6FF;
 $c-videogame--blue: #5B59A3;
 $c-videogame--light: #F5F9FF;
 $c-illustrations--purple: #784B5D;
 $c-illustrations--light: #FCEFF4;
-$c-holiday--red: #CC4F55;
-$c-holiday--light: #F8F0F0;
 $c-lacentrale--blue: #69C4EC;
-$c-transparent: rgba(0, 0, 0, 0);
+/*footer colors*/
+$c-me--footer: #B2A3BD;
+$c-zealery--footer: #DABAB6;
+$c-videogame--footer: #B7C8E2;
+$c-trailtag--footer: #99B8B8;
+$c-illustrations--footer: #D2AFBC;
+$c-lacentrale--footer: #ADDBEF;
 
 /* Variables -> Gradients
    ========================================================================== */
@@ -69,4 +72,31 @@ $w-grid-col2: 85%; //width
 /* Variables -> Easings
    ========================================================================== */
 
-$hover-time: .25s;
+$hover-time: .3s;
+$hover-time-prevnext: .3s;
+$hover-time-footer: .4s;
+$transition-type: ease-in-out;
+$ease-in-quad:      cubic-bezier(0.550,  0.085, 0.680, 0.530);
+$ease-in-cubic:     cubic-bezier(0.550,  0.055, 0.675, 0.190);
+$ease-in-quart:     cubic-bezier(0.895,  0.030, 0.685, 0.220);
+$ease-in-quint:     cubic-bezier(0.755,  0.050, 0.855, 0.060);
+$ease-in-sine:      cubic-bezier(0.470,  0.000, 0.745, 0.715);
+$ease-in-expo:      cubic-bezier(0.950,  0.050, 0.795, 0.035);
+$ease-in-circ:      cubic-bezier(0.600,  0.040, 0.980, 0.335);
+$ease-in-back:      cubic-bezier(0.600, -0.280, 0.735, 0.045);
+$ease-out-quad:     cubic-bezier(0.250,  0.460, 0.450, 0.940);
+$ease-out-cubic:    cubic-bezier(0.215,  0.610, 0.355, 1.000);
+$ease-out-quart:    cubic-bezier(0.165,  0.840, 0.440, 1.000);
+$ease-out-quint:    cubic-bezier(0.230,  1.000, 0.320, 1.000);
+$ease-out-sine:     cubic-bezier(0.390,  0.575, 0.565, 1.000);
+$ease-out-expo:     cubic-bezier(0.190,  1.000, 0.220, 1.000);
+$ease-out-circ:     cubic-bezier(0.075,  0.820, 0.165, 1.000);
+$ease-out-back:     cubic-bezier(0.175,  0.885, 0.320, 1.275);
+$ease-in-out-quad:  cubic-bezier(0.455,  0.030, 0.515, 0.955);
+$ease-in-out-cubic: cubic-bezier(0.645,  0.045, 0.355, 1.000);
+$ease-in-out-quart: cubic-bezier(0.770,  0.000, 0.175, 1.000);
+$ease-in-out-quint: cubic-bezier(0.860,  0.000, 0.070, 1.000);
+$ease-in-out-sine:  cubic-bezier(0.445,  0.050, 0.550, 0.950);
+$ease-in-out-expo:  cubic-bezier(1.000,  0.000, 0.000, 1.000);
+$ease-in-out-circ:  cubic-bezier(0.785,  0.135, 0.150, 0.860);
+$ease-in-out-back:  cubic-bezier(0.680, -0.550, 0.265, 1.550);

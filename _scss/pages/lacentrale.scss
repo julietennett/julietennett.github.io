@@ -9,8 +9,11 @@
 
   .hero {
     background-color: $c-illustrations--purple;
-    background: url(/img/lacentrale/hero-background.png);
-    background-size: cover;
+    background: none;
+    @media (min-width: $bp-tablet-vert) {
+      background: url(/img/lacentrale/hero-background.png);
+      background-size: cover;
+    }
   }
 
   ////////////////SECTION STYLES
@@ -88,7 +91,9 @@
       stroke: $c-lacentrale--blue;
     }
     .nav__slider {
-      box-shadow: 0 0 25px $c-lacentrale--blue;
+      @media (min-width: $bp-tablet-vert) {
+        box-shadow: 0 0 25px $c-lacentrale--blue;
+      }
     }
     .divider {
       background-color: $c-lacentrale--blue;
@@ -131,6 +136,10 @@
   .link__hover {
     -webkit-text-stroke-color: $c-lacentrale--blue;
     -webkit-text-stroke-width: 1px;
+  }
+
+  .site-credit__text {
+    color: $c-lacentrale--footer;
   }
 
 }

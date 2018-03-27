@@ -14,7 +14,7 @@
   .nav__hamburger--button {
     width: 25px;
     padding: 0;
-    transition: all .15s ease-in-out;
+    transition: all .15s $transition-type;
     cursor: pointer;
     &:hover {
       transform: scale(1.1);
@@ -22,6 +22,9 @@
   }
 
   .nav__hamburger--icon {
+    transition: transform .4s $transition-type;
+    transition-delay: .3s;
+    transform: translateX(0);
     width: auto;
     stroke: #000;
 
@@ -29,6 +32,10 @@
       stroke: #fff !important;
     }
 
+  }
+
+  .before-load {
+    transform: translateX(-100px);
   }
 
 
@@ -65,13 +72,13 @@
   .nav__slider--button {
     margin: 16px 16px 0 0;
     padding: 0;
-    transition: all .15s ease-in-out;
+    transition: all .15s $transition-type;
     cursor: pointer;
     &:hover {
       transform: scale(1.1);
     }
     @media (min-width: $bp-tablet-vert) {
-      margin: 36px 26px 0 36px;
+      margin: 26px;
     }
   }
 
@@ -81,7 +88,6 @@
   }
 
   .nav__slider--list {
-    height: 100%;
     list-style: none;
     padding: 45px 0;
     display: flex;
@@ -99,7 +105,7 @@
   }
 
   .slider--item {
-    font-size: 50px;
+    font-size: 40px;
     display: flex;
     position: relative;
     justify-content: center;
@@ -108,9 +114,9 @@
     width: 100%;
     background-position: 100% 0;
     background-size: 200% 100%;
-    transition: all $hover-time ease-in;
+    transition: all $hover-time $transition-type;
     @media (min-width: $bp-laptop) {
-      @include fluid-font-size(30px, 50px, $bp-laptop, $bp-desktop);
+      @include fluid-font-size(30px, 40px, $bp-laptop, $bp-desktop);
     }
     &:hover {
       background-position: 0 0;
@@ -127,7 +133,7 @@
     position: absolute;
     overflow: hidden;
     transform: translateX(-100%);
-    transition: transform $hover-time ease-in;
+    transition: transform $hover-time $transition-type;
     pointer-events: none;
   }
 
@@ -135,7 +141,7 @@
     -webkit-text-stroke-width: 1.2px;
     -webkit-text-stroke-color: white;
     transform: translateX(100%);
-    transition: transform $hover-time ease-in;
+    transition: transform $hover-time $transition-type;
   }
 
   .slider--link {

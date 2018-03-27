@@ -47,7 +47,7 @@ class Homepage {
     });
 
     $lacentrale.hover(function () {
-      $hoverImg.css("background-image", "url(/img/lacentrale/hero-background.png)");
+      $hoverImg.css("background-image", "url(/img/home/work__link--lacentrale.png)");
       $hoverImg.css("background-size", "cover");
     });
 

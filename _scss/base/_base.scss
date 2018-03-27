@@ -99,6 +99,10 @@ button {
   border: none;
 }
 
+ul {
+  margin: 0;
+}
+
 
 /* Base -> Typography
    ========================================================================== */
@@ -124,17 +128,6 @@ a {
  font-family: $f-bitter;
  color: $c-me--purple;
  text-decoration: none;
-}
-
-.secondary-link {
-  font-family: $f-bitter;
-  font-size: 1.75em;
-  color: $c-me--purple;
-  border-bottom: solid 4px $c-me--purple;
-}
-
-.link__underline {
-  border-bottom: solid 6px $c-me--purple;
 }
 
 h2 {

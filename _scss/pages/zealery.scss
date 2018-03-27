@@ -27,11 +27,24 @@
         width: 30vw;
         top: 400px;
         right: 25%;
+        transform: translateY(0);
+        transition: all .5s $transition-type;
+        transition-delay: .5s;
       }
       &--right {
         width: 40vw;
+        transform: translateX(0);
+        transition: all .5s $transition-type;
+        transition-delay: .5s;
       }
     }
+  }
+
+  .before-load-left {
+    transform: translateY(600px);
+  }
+  .before-load-right {
+    transform: translateX(600px);
   }
 
   ////////////////////COLOR STYLES
@@ -90,25 +103,15 @@
     }
   }
 
-  .guidelines {
-    .img--block {
-      width: 100%;
-      padding-top: 50px;
-      @media (min-width: $bp-laptop) {
-        padding-top: 75px;
-        height: 450px;
-        width: auto;
-      }
-    }
-  }
-
 //////////////////NAV STYLES
   .nav {
     .nav__hamburger--icon {
       stroke: $c-zealery--pink;
     }
     .nav__slider {
-      box-shadow: 0 0 19px $c-zealery--pinkshadow;
+      @media (min-width: $bp-tablet-vert) {
+        box-shadow: 0 0 19px $c-zealery--pinkshadow;
+      }
     }
     .nav__slider--icon {
       stroke: $c-zealery--pink;
@@ -140,6 +143,10 @@
 
   .footer__link {
     color: $c-zealery--pink;
+  }
+
+  .site-credit__text {
+    color: $c-zealery--footer;
   }
 
 

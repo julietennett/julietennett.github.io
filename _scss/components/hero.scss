@@ -10,9 +10,24 @@
     overflow: hidden;
     padding: 100px 4.5em;
   }
+
+  .before-load {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+.question {
+  transition: all .5s $transition-type;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .label {
+  transition: all .5s $transition-type;
+  transition-delay: .2s;
+  opacity: 1;
+  transform: translateY(0);
   display: flex; //sets width to the size of its contents
   flex-flow: wrap;
   justify-content: space-between;

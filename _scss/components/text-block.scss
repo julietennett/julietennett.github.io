@@ -19,7 +19,7 @@
       padding-left: 3.5%;
       @media (min-width: $bp-tablet-vert) {
         flex-flow: row-reverse;
-        padding-left: 0;
+        padding-left: $m-grid-col1;
         width: 85%;
       }
 
