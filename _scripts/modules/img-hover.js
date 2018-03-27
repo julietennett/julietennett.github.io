@@ -4,7 +4,7 @@ class ImageHover {
   }
 
   scrollImage() {
-    let $image = $('.scroll-image');
+    let $image = $('.hover-image-x');
     let $pageSection = $('.page-section');
 
     $image.mousemove( function(evt) {
