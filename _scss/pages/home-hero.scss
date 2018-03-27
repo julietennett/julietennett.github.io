@@ -45,6 +45,9 @@ body {
   }
 
   .intro__img {
+    transition: all .5s $transition-type;
+    opacity: 1;
+    transform: translateY(0);
     width: 85%;
     height: 85%;
     z-index: -5;
