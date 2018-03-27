@@ -109,7 +109,9 @@
       stroke: $c-zealery--pink;
     }
     .nav__slider {
-      box-shadow: 0 0 19px $c-zealery--pinkshadow;
+      @media (min-width: $bp-tablet-vert) {
+        box-shadow: 0 0 19px $c-zealery--pinkshadow;
+      }
     }
     .nav__slider--icon {
       stroke: $c-zealery--pink;

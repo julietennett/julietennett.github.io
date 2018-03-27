@@ -88,7 +88,9 @@
       stroke: $c-lacentrale--blue;
     }
     .nav__slider {
-      box-shadow: 0 0 25px $c-lacentrale--blue;
+      @media (min-width: $bp-tablet-vert) {
+        box-shadow: 0 0 25px $c-lacentrale--blue;
+      }
     }
     .divider {
       background-color: $c-lacentrale--blue;

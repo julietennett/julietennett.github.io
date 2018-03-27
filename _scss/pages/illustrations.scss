@@ -115,7 +115,9 @@
       stroke: $c-illustrations--purple;
     }
     .nav__slider {
-      box-shadow: 0 0 25px $c-illustrations--purple;
+      @media (min-width: $bp-tablet-vert) {
+        box-shadow: 0 0 25px $c-illustrations--purple;
+      }
     }
     .divider {
       background-color: $c-illustrations--purple;

@@ -92,7 +92,9 @@
       stroke: $c-videogame--blue;
     }
     .nav__slider {
-      box-shadow: 0 0 25px $c-videogame--blue;
+      @media (min-width: $bp-tablet-vert) {
+        box-shadow: 0 0 25px $c-videogame--blue;
+      }
     }
     .divider {
       background-color: $c-videogame--blue;

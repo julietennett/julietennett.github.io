@@ -20,7 +20,9 @@ body {
         stroke: $c-me--purple !important; //why are u trying to hurt me icon-white??
       }
       .nav__slider {
-        box-shadow: 0 0 19px $c-me--purple;
+        @media (min-width: $bp-tablet-vert) {
+          box-shadow: 0 0 19px $c-me--purple;
+        }
       }
       .nav__slider--icon {
         stroke: $c-me--purple;
