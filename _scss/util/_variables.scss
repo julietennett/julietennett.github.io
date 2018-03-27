@@ -8,6 +8,9 @@
    ========================================================================== */
 $c-black: #4A4A4A;
 $c-white: #fff;
+$c-transparent: rgba(0, 0, 0, 0);
+$c-me--purple: #745E84;
+$c-me--light: #FBF6FF;
 $c-zealery--pink: #FF685A;
 $c-zealery--pinkshadow: rgba(172, 45, 45, 50);
 $c-zealery--light: #FCF3F2;
@@ -15,18 +18,18 @@ $c-zealery--lightshadow: rgba(106, 17, 17, 50);
 $c-trailtag--teal: #106469;
 $c-trailtag--shadow: rgba(5, 68, 72, 50);
 $c-trailtag--light: #E1E8E8;
-$c-nifty--purple: #5A1537;
-$c-nifty--light: #F9F2F5;
-$c-me--purple: #745E84;
-$c-me--light: #FBF6FF;
 $c-videogame--blue: #5B59A3;
 $c-videogame--light: #F5F9FF;
 $c-illustrations--purple: #784B5D;
 $c-illustrations--light: #FCEFF4;
-$c-holiday--red: #CC4F55;
-$c-holiday--light: #F8F0F0;
 $c-lacentrale--blue: #69C4EC;
-$c-transparent: rgba(0, 0, 0, 0);
+/*footer colors*/
+$c-me--footer: #B2A3BD;
+$c-zealery--footer: #DABAB6;
+$c-videogame--footer: #B7C8E2;
+$c-trailtag--footer: #99B8B8;
+$c-illustrations--footer: #D2AFBC;
+$c-lacentrale--footer: #ADDBEF;
 
 /* Variables -> Gradients
    ========================================================================== */

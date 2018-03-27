@@ -84,7 +84,7 @@
 
   .site-credit__text {
     @include fluid-font-size(10px, 12px, $bp-mobile, $bp-tablet-vert);
-    color: gray;
+    color: $c-me--footer;
     align-self: baseline;
   }
 
