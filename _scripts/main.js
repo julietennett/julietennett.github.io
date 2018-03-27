@@ -10,4 +10,6 @@ $(document).ready(function() {
   new About();
   new ImageHover();
   $('.before-load').removeClass('before-load');
+  $('.before-load-left').removeClass('before-load-left');
+  $('.before-load-right').removeClass('before-load-right');
 });

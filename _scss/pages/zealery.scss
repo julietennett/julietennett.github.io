@@ -27,11 +27,24 @@
         width: 30vw;
         top: 400px;
         right: 25%;
+        transform: translateY(0);
+        transition: all .5s $transition-type;
+        transition-delay: .5s;
       }
       &--right {
         width: 40vw;
+        transform: translateX(0);
+        transition: all .5s $transition-type;
+        transition-delay: .5s;
       }
     }
+  }
+
+  .before-load-left {
+    transform: translateY(600px);
+  }
+  .before-load-right {
+    transform: translateX(600px);
   }
 
   ////////////////////COLOR STYLES
