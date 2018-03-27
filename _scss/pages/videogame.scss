@@ -70,11 +70,12 @@
     align-items: center;
   }
 
-  .scroll {
+  .hover-image-x {
     .page-section {
       height: 400px;
       background: url(/img/videogame/section--scroll.png);
       background-size: cover;
+      cursor: ew-resize;
     }
   }
 
@@ -82,6 +83,9 @@
     .image-full-width {
       background-image: url("/img/videogame/section--characters.png");
       height: 400px;
+      @media (min-width: $bp-laptop) {
+        background-image: none;
+      }
     }
   }
 

@@ -15,7 +15,7 @@ class About {
     let aboutFacts = [
       'an interaction designer who loves the problem solving that goes on behind screens',
       'a lover of all things related to design process',
-      'a designer with some development chops'
+      'a designer with some development chops',
       'and i love to iterate, retrospect, and improve every step of the way',
       'a senior design student @ northeastern university',
       'someone who tags ppl in a lot of memes',
