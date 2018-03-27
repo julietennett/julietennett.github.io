@@ -6,7 +6,7 @@ const uglify     = require('gulp-uglify');
 const util       = require('gulp-util');
 
 const jsEntry   = '_scripts/main.js';
-const destPath = '_site/js';
+const destPath = 'js';
 
 module.exports = gulp => {
 
