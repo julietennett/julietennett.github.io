@@ -80,6 +80,7 @@
 
   .footer__link {
     @include fluid-font-size(16px, 24px, $bp-mobile, $bp-tablet-vert);
+    line-height: 34px;
   }
 
   .site-credit__text {
