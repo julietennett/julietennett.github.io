@@ -125,7 +125,6 @@ body {
     background-size: 100% 200%;
     transition: all $hover-time $ease-in-out-quint;
     margin-top: 20px;
-    padding: 0 10px;
     @media(min-width: $bp-mobile-horiz) {
       margin-left: 10%;
       margin-top: 0;
@@ -162,9 +161,13 @@ body {
   }
 
   .intro__link {
-    height: 100%;
     display: inline-block;
+    height: 100%;
+    padding: 5px 10px 8px 10px;
     text-decoration: none;
+    font-family: $f-bitter;
+    font-size: 1.75em;
+    color: $c-me--purple;
   }
 
   .before-load {
