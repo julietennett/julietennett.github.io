@@ -14,7 +14,7 @@
   .nav__hamburger--button {
     width: 25px;
     padding: 0;
-    transition: all .15s $hover-animation;
+    transition: all .15s $transition-type;
     cursor: pointer;
     &:hover {
       transform: scale(1.1);
@@ -65,7 +65,7 @@
   .nav__slider--button {
     margin: 16px 16px 0 0;
     padding: 0;
-    transition: all .15s $hover-animation;
+    transition: all .15s $transition-type;
     cursor: pointer;
     &:hover {
       transform: scale(1.1);
@@ -107,7 +107,7 @@
     width: 100%;
     background-position: 100% 0;
     background-size: 200% 100%;
-    transition: all $hover-time $hover-animation;
+    transition: all $hover-time $transition-type;
     @media (min-width: $bp-laptop) {
       @include fluid-font-size(30px, 40px, $bp-laptop, $bp-desktop);
     }
@@ -126,7 +126,7 @@
     position: absolute;
     overflow: hidden;
     transform: translateX(-100%);
-    transition: transform $hover-time $hover-animation;
+    transition: transform $hover-time $transition-type;
     pointer-events: none;
   }
 
@@ -134,7 +134,7 @@
     -webkit-text-stroke-width: 1.2px;
     -webkit-text-stroke-color: white;
     transform: translateX(100%);
-    transition: transform $hover-time $hover-animation;
+    transition: transform $hover-time $transition-type;
   }
 
   .slider--link {

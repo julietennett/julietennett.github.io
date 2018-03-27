@@ -9,6 +9,5 @@ $(document).ready(function() {
   new Homepage();
   new About();
   new ImageHover();
-  // new ScrollAnimation();
   $('.before-load').removeClass('before-load');
 });

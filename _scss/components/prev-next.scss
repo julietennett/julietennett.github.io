@@ -39,7 +39,7 @@
     padding: 5px 10px 10px 10px;
     background-position: 0 0;
     background-size: 100% 200%;
-    transition: all $hover-time $hover-animation;
+    transition: all $hover-time $transition-type;
     &:hover {
       background-position: 0 100%;
       .link__mask {
@@ -55,13 +55,13 @@
     position: absolute;
     overflow: hidden;
     transform: translateY(106%);
-    transition: transform $hover-time $hover-animation;
+    transition: transform $hover-time $transition-type;
     pointer-events: none;
   }
 
   .link__hover {
     transform: translateY(-106%);
-    transition: transform $hover-time $hover-animation;
+    transition: transform $hover-time $transition-type;
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: $c-white;
   }

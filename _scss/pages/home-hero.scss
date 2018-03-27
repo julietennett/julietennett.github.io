@@ -113,7 +113,7 @@ body {
     width: fit-content;
     background-position: 0 0;
     background-size: 100% 200%;
-    transition: all $hover-time $hover-animation;
+    transition: all $hover-time $transition-type;
     margin-top: 20px;
     padding: 0 10px;
     @media(min-width: $bp-mobile-horiz) {
@@ -140,13 +140,13 @@ body {
     position: absolute;
     overflow: hidden;
     transform: translateY(100%);
-    transition: transform $hover-time $hover-animation;
+    transition: transform $hover-time $transition-type;
     pointer-events: none;
   }
 
   .intro__link--hover {
     transform: translateY(-100%);
-    transition: transform $hover-time $hover-animation;
+    transition: transform $hover-time $transition-type;
     -webkit-text-stroke-width: .85px;
     -webkit-text-stroke-color: $c-white;
   }
