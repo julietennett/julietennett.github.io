@@ -24,6 +24,10 @@
         color: $c-lacentrale--blue;
         border-color: $c-lacentrale--blue;
       }
+      .text-block__link {
+        color: $c-lacentrale--blue;
+        border-bottom: 1px solid $c-lacentrale--blue;
+      }
   }
 
   .dark {

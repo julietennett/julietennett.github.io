@@ -15,14 +15,14 @@ class About {
     let aboutFacts = [
       'an interaction designer who loves the problem solving that goes on behind screens',
       'a lover of all things related to design process',
-      'a designer who solves problems with, like, a lot of sticky notes',
-      'someone who tags ppl in a lot of memes',
-      'a lover of micro-interactions, animations, and hover effects',
+      'a designer with some development chops',
+      'and i love to iterate, retrospect, and improve every step of the way',
       'a senior design student @ northeastern university',
-      'a person who uses a lot of  exclamation points and custom slack emojis',
-      'an iterater, retrospect-er, and improver',
-      'a designer who loves to illustrate with Sketch’s pen tool',
-      'a designer who recently learned that code is not, indeed, magic because she knows how to do it now',
+      'someone who tags ppl in a lot of memes',
+      'and i&apos;ve recently been obsessed with micro-interactions, animations, and hover effects',
+      'a designer who solves problems with, like, a lot of sticky notes',
+      'and i use a lot of  exclamation points and custom slack emojis',
+      'and i prefer illustrating in sketch over ai #unpopularopinion'
     ];
 
     let typed = new Typed('.about__text--fact', {

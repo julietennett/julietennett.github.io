@@ -33,38 +33,50 @@
   ////////////////SECTION STYLES
 
   .light {
-      background-color: $c-trailtag--light;
-      h2 {
-        color: $c-trailtag--teal;
-      }
-      .caption {
-        color: $c-trailtag--teal;
-        border-color: $c-trailtag--teal;
-      }
+    background-color: $c-trailtag--light;
+    h2 {
+      color: $c-trailtag--teal;
+    }
+    .caption {
+      color: $c-trailtag--teal;
+      border-color: $c-trailtag--teal;
+    }
+    .text-block__link {
+      color: $c-trailtag--teal;
+      border-bottom: 1px solid $c-trailtag--teal;
+    }
   }
 
   .white {
-      background-color: $c-white;
-      h2 {
-        color: $c-trailtag--teal;
-      }
-      .caption {
-        color: $c-trailtag--teal;
-        border-color: $c-trailtag--teal;
-      }
+    background-color: $c-white;
+    h2 {
+      color: $c-trailtag--teal;
+    }
+    .caption {
+      color: $c-trailtag--teal;
+      border-color: $c-trailtag--teal;
+    }
+    .text-block__link {
+      color: $c-trailtag--teal;
+      border-bottom: 1px solid $c-trailtag--teal;
+    }
   }
 
   .dark {
-      background-color: $c-trailtag--teal;
-      h2 {
-        color: $c-white;
-      }
-      p {
-        color: $c-white;
-      }
-      .caption {
-        color: $c-white;
-      }
+    background-color: $c-trailtag--teal;
+    h2 {
+      color: $c-white;
+    }
+    p {
+      color: $c-white;
+    }
+    .caption {
+      color: $c-white;
+    }
+    .text-block__link {
+      color: $c-white;
+      border-bottom: 1px solid $c-white;
+    }
   }
 
   .project {
