@@ -64,6 +64,9 @@ body {
   }
 
   .intro__text--container {
+    transition: all .5s $transition-type;
+    opacity: 1;
+    transform: translateY(0);
     width: 85%;
     @media (min-width: $bp-tablet-vert) {
       width: 50%;
@@ -95,6 +98,10 @@ body {
 
   //intro links
   .intro__links--container {
+    transition: all .4s $transition-type;
+    transition-delay: .3s;
+    opacity: 1;
+    transform: translateY(0);
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -155,5 +162,10 @@ body {
     height: 100%;
     display: inline-block;
     text-decoration: none;
+  }
+
+  .before-load {
+    opacity: 0;
+    transform: translateY(10px);
   }
 }
