@@ -11,6 +11,10 @@ body {
 .page--about {
   position: relative;
 
+  .page-section {
+    align-items: flex-start;
+  }
+
   .about__container {
     padding: 0 4em;
     width: 100%;
@@ -44,7 +48,7 @@ body {
       line-height: 75px;
     }
     @media (min-width: $bp-tablet-horiz) {
-      @include fluid-font-size(65px, 95px, $bp-tablet-horiz, $bp-desktop);
+      @include fluid-font-size(65px, 90px, $bp-tablet-horiz, $bp-desktop);
       line-height: 95px;
     }
     @media (min-width: $bp-desktop) {
