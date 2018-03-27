@@ -71,7 +71,7 @@
       transform: scale(1.1);
     }
     @media (min-width: $bp-tablet-vert) {
-      margin: 36px 26px 0 36px;
+      margin: 26px;
     }
   }
 
@@ -81,7 +81,6 @@
   }
 
   .nav__slider--list {
-    height: 100%;
     list-style: none;
     padding: 45px 0;
     display: flex;
