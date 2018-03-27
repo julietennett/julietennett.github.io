@@ -31,8 +31,6 @@ class About {
       typeSpeed: 20,
     });
 
-    console.log(aboutFacts.length);
-
     $aboutText.on('click', function() {
       typed.destroy();
       if (factNum < aboutFacts.length - 1) {
@@ -40,7 +38,6 @@ class About {
       } else {
         factNum = 0;
       }
-      console.log(factNum);
       typed = new Typed('.about__text--fact', {
         strings: [aboutFacts[factNum]],
         typeSpeed: 20,
