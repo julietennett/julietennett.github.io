@@ -75,7 +75,7 @@ $w-grid-col2: 85%; //width
 $hover-time: .3s;
 $hover-time-prevnext: .3s;
 $hover-time-footer: .4s;
-$transition-type: ease-in-out;
+$$ease-in-out-quad: cubic-bezier(0.455,  0.030, 0.515, 0.955);
 $ease-in-quad:      cubic-bezier(0.550,  0.085, 0.680, 0.530);
 $ease-in-cubic:     cubic-bezier(0.550,  0.055, 0.675, 0.190);
 $ease-in-quart:     cubic-bezier(0.895,  0.030, 0.685, 0.220);

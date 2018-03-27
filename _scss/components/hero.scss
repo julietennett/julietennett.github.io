@@ -18,13 +18,13 @@
 }
 
 .question {
-  transition: all .5s $transition-type;
+  transition: all .5s $$ease-in-out-quad;
   opacity: 1;
   transform: translateY(0);
 }
 
 .label {
-  transition: all .5s $transition-type;
+  transition: all .5s $$ease-in-out-quad;
   transition-delay: .2s;
   opacity: 1;
   transform: translateY(0);
