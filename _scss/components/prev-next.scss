@@ -38,7 +38,7 @@
   .link__item {
     background-position: 0 0;
     background-size: 100% 200%;
-    transition: all $hover-time $transition-type;
+    transition: all $hover-time-prevnext $ease-in-out-quad;
     &:hover {
       background-position: 0 100%;
       .link__mask {
@@ -54,13 +54,13 @@
     position: absolute;
     overflow: hidden;
     transform: translateY(106%);
-    transition: transform $hover-time $transition-type;
+    transition: transform $hover-time-prevnext $ease-in-out-quad;
     pointer-events: none;
   }
 
   .link__hover {
     transform: translateY(-106%);
-    transition: transform $hover-time $transition-type;
+    transition: transform $hover-time-prevnext $ease-in-out-quad;
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: $c-white;
   }

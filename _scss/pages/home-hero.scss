@@ -45,7 +45,7 @@ body {
   }
 
   .intro__img {
-    transition: transform .5s $transition-type;
+    transition: transform .5s $ease-in-out-quint;
     opacity: 1;
     transform: translateY(0);
     width: 85%;
@@ -67,7 +67,7 @@ body {
   }
 
   .intro__text--container {
-    transition: all .5s $transition-type;
+    transition: all .5s $ease-in-out-quint;
     opacity: 1;
     transform: translateY(0);
     width: 85%;
@@ -101,7 +101,7 @@ body {
 
   //intro links
   .intro__links--container {
-    transition: all .4s $transition-type;
+    transition: all .4s $ease-in-out-quint;
     transition-delay: .3s;
     opacity: 1;
     transform: translateY(0);
@@ -123,7 +123,7 @@ body {
     width: fit-content;
     background-position: 0 0;
     background-size: 100% 200%;
-    transition: all $hover-time $transition-type;
+    transition: all $hover-time $ease-in-out-quint;
     margin-top: 20px;
     padding: 0 10px;
     @media(min-width: $bp-mobile-horiz) {
@@ -150,13 +150,13 @@ body {
     position: absolute;
     overflow: hidden;
     transform: translateY(100%);
-    transition: transform $hover-time $transition-type;
+    transition: transform $hover-time $ease-in-out-quint;
     pointer-events: none;
   }
 
   .intro__link--hover {
     transform: translateY(-100%);
-    transition: transform $hover-time $transition-type;
+    transition: transform $hover-time $ease-in-out-quint;
     -webkit-text-stroke-width: .85px;
     -webkit-text-stroke-color: $c-white;
   }

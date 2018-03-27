@@ -48,7 +48,7 @@
     padding: 5px 10px 10px 10px;
     background-position: 0 0;
     background-size: 100% 200%;
-    transition: all $hover-time $transition-type;
+    transition: all $hover-time-footer $ease-in-out-quint;
     &:first-child {
       margin-left: 0;
     }
@@ -67,13 +67,13 @@
     position: absolute;
     overflow: hidden;
     transform: translateY(106%);
-    transition: transform $hover-time $transition-type;
+    transition: transform $hover-time-footer $ease-in-out-quint;
     pointer-events: none;
   }
 
   .link__hover {
     transform: translateY(-106%);
-    transition: transform $hover-time $transition-type;
+    transition: transform $hover-time-footer $ease-in-out-quint;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: $c-white;
   }
