@@ -86,8 +86,9 @@ body {
     @include fluid-font-size(65px, 80px, $bp-mobile, $bp-tablet-vert);
     @include fluid-font-size(75px, 100px, $bp-laptop, $bp-desktop);
     line-height: 75px;
-    color: $c-transparent;
     -webkit-text-stroke-color: $c-me--purple;
+    -webkit-text-fill-color: $c-transparent;
+    color: $c-me--purple;
     @media (min-width: $bp-laptop) {
       margin: 40px 0;
     }
