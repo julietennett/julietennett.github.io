@@ -227,3 +227,8 @@ p {
     display: block;
   }
 }
+
+.before-load {
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
