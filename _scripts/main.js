@@ -9,11 +9,11 @@ $(document).ready(function() {
   new Homepage();
   new About();
   new ImageHover();
-  setTimeout(function(){
-    $('.before-load').removeClass('before-load');
-    $('.before-load-left').removeClass('before-load-left');
-    $('.before-load-right').removeClass('before-load-right');
-  }, 200);
+  // setTimeout(function(){
+  //   $('.before-load').removeClass('before-load');
+  //   $('.before-load-left').removeClass('before-load-left');
+  //   $('.before-load-right').removeClass('before-load-right');
+  // }, 200);
   // $('.before-load').removeClass('before-load');
   // $('.before-load-left').removeClass('before-load-left');
   // $('.before-load-right').removeClass('before-load-right');
