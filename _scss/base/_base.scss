@@ -127,6 +127,12 @@ h1 {
   }
 }
 
+.safari {
+  h1 {
+    -webkit-text-stroke-width: 1px;
+  }
+}
+
 a {
  font-family: $f-bitter;
  color: $c-me--purple;
