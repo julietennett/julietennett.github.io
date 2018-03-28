@@ -54,6 +54,10 @@ body {
     @media (min-width: $bp-desktop) {
       line-height: 105px;
     }
+    @media (min-width: $bp-desktop-xxl) {
+      font-size: 105px;
+      line-height: 115px;
+    }
   }
 
   //////////////////NAV STYLES
