@@ -118,6 +118,9 @@
     @media (min-width: $bp-laptop) {
       @include fluid-font-size(30px, 40px, $bp-laptop, $bp-desktop);
     }
+    @media (min-width: $bp-desktop-xxl) {
+      font-size: 60px;
+    }
     &:hover {
       background-position: 0 0;
       .slider--hover-mask {

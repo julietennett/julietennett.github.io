@@ -74,6 +74,9 @@
       @include fluid-font-size(55px, 85px, $bp-tablet-vert, $bp-desktop);
       line-height: 120px;
     }
+    @media (min-width: $bp-desktop-xxl) {
+      font-size: 100px;
+    }
   }
 
 }
