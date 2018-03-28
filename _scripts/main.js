@@ -13,7 +13,7 @@ $(document).ready(function() {
     $('.before-load').removeClass('before-load');
     $('.before-load-left').removeClass('before-load-left');
     $('.before-load-right').removeClass('before-load-right');
-  }, 2000);
+  }, 200);
   // $('.before-load').removeClass('before-load');
   // $('.before-load-left').removeClass('before-load-left');
   // $('.before-load-right').removeClass('before-load-right');
