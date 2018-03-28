@@ -104,6 +104,16 @@
     }
   }
 
+  .guidelines {
+    .image-full-width {
+      display: none;
+      @media (min-width: $bp-laptop) {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+
 //////////////////NAV STYLES
   .nav {
     .nav__hamburger--icon {

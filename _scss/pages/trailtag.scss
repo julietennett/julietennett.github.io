@@ -92,17 +92,19 @@
     }
   }
 
-  .hover-image-xy {
-    .page-section {
-      height: 400px;
-      background: url(/img/trailtag/section--ux.png);
-      background-size: 300%;
-    }
-  }
-
   .navigation {
     .image-full-width {
       background-image: url("/img/trailtag/section--navigation.png");
+    }
+  }
+
+  .ux {
+    .image-full-width {
+      display: none;
+      @media (min-width: $bp-laptop) {
+        display: block;
+        width: 100%;
+      }
     }
   }
 

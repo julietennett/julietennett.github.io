@@ -10,7 +10,6 @@
 
   .footer__container {
     width: 100vw;
-    display: none;
     @media (min-width: $bp-tablet-vert) {
       display: flex;
       flex-direction: column;
@@ -19,6 +18,7 @@
   }
 
   .footer__links--container {
+    display: none;
     @media (min-width: $bp-tablet-vert) {
       display: flex;
       flex-direction: row;
@@ -84,6 +84,11 @@
     @media (min-width: $bp-desktop-xxl) {
       font-size: 34px;
     }
+  }
+
+  .site-credit {
+    text-align: center;
+    width: 100%;
   }
 
   .site-credit__text {

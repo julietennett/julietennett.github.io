@@ -1,5 +1,11 @@
 body {
   background-color: $c-me--light;
+
+  .safari {
+    .about__text {
+      -webkit-text-stroke-width: 3.5px;
+    }
+  }
 }
 
 .js-slider-open {
