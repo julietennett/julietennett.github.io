@@ -111,10 +111,9 @@ h1 {
   font-family: $f-bitter;
   line-height: 1.4em;
   width: 90%;
-  color: $c-white; //fallback color for browsers that don't support outline
   -webkit-text-stroke-width: .01px;
   -webkit-text-stroke-color: $c-white;
-  -webkit-text-color: $c-white;
+  color: $c-white; //fallback color for browsers that don't support outline
   @media (min-width: $bp-tablet-vert) {
     @include fluid-font-size(40px, 50px, $bp-tablet-vert, $bp-laptop);
     width: 85%;
