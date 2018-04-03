@@ -46,7 +46,9 @@ body {
 
   .intro__img {
     position: relative;
-    transition: all .5s $ease-in-out-quint;
+    transition: top .5s $ease-in-out-quint;
+    transition: opacity .5s $ease-in-out-quint;
+
     opacity: 1;
     top: 0;
     width: 85%;
