@@ -46,11 +46,9 @@ body {
 
   .intro__img {
     position: relative;
-    transition: top .5s $ease-in-out-quint;
-    transition: opacity .5s $ease-in-out-quint;
-
+    transition: all .5s $ease-in-out-quint;
     opacity: 1;
-    top: 0;
+    transform: translateY(0);
     width: 85%;
     height: 85%;
     z-index: -5;
@@ -72,7 +70,7 @@ body {
     position: relative;
     transition: all .5s $ease-in-out-quint;
     opacity: 1;
-    top: 0;
+    transform: translateY(0);
     width: 85%;
     @media (min-width: $bp-tablet-vert) {
       width: 50%;
@@ -109,7 +107,7 @@ body {
     transition: all .4s $ease-in-out-quint;
     transition-delay: .3s;
     opacity: 1;
-    top: 0;
+    transform: translateY(0);
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -178,6 +176,6 @@ body {
   .before-load {
     transition: none !important;
     opacity: 0;
-    top: 10px;
+    transform: translateY(10px);
   }
 }

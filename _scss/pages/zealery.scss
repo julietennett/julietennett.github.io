@@ -42,9 +42,11 @@
   }
 
   .before-load-left {
+    transition: none !important;
     transform: translateY(600px);
   }
   .before-load-right {
+    transition: none !important;
     transform: translateX(600px);
   }
 
