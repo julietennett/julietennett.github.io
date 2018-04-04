@@ -5,6 +5,9 @@
   .nav__hamburger--button-container {
     top: 0;
     position: fixed;
+    transition: left .7s $transition-type;
+    transition-delay: .3s;
+    left: 0;
     margin: 16px;
     @media (min-width: $bp-tablet-vert) {
       margin: 36px 72px;
