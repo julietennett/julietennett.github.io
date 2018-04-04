@@ -140,6 +140,10 @@
 
   .site-credit__text {
     color: $c-lacentrale--footer;
+    a {
+      color: $c-lacentrale--footer;
+      border-bottom: solid 1px $c-lacentrale--footer;
+    }
   }
 
 }

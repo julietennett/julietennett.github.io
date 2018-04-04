@@ -160,6 +160,10 @@
 
   .site-credit__text {
     color: $c-zealery--footer;
+    a {
+      color: $c-zealery--footer;
+      border-bottom: solid 1px $c-zealery--footer;
+    }
   }
 
 

@@ -154,6 +154,10 @@
 
   .site-credit__text {
     color: $c-illustrations--footer;
+    a {
+      color: $c-illustrations--footer;
+      border-bottom: solid 1px $c-illustrations--footer;
+    }
   }
 
 }

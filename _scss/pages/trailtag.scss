@@ -152,6 +152,10 @@
 
   .site-credit__text {
     color: $c-trailtag--footer;
+    a {
+      color: $c-trailtag--footer;
+      border-bottom: solid 1px $c-trailtag--footer;
+    }
   }
 
 }

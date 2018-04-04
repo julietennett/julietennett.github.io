@@ -129,6 +129,10 @@
 
   .site-credit__text {
     color: $c-videogame--footer;
+    a {
+      color: $c-videogame--footer;
+      border-bottom: solid 1px $c-videogame--footer;
+    }
   }
 
 }
