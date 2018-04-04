@@ -188,6 +188,21 @@ p {
   }
 }
 
+// .before-load {
+//   // transition: none;
+//   opacity: 0;
+//
+//   .intro__img {
+//     transform: translateY(10px);
+//   }
+//   .intro__text--container {
+//     transform: translateY(10px);
+//   }
+//   .intro__links--container {
+//     transform: translateY(10px);
+//   }
+// }
+
 
 
 /* Base -> Components
@@ -226,9 +241,4 @@ p {
   @include mq($bp-mobile) {
     display: block;
   }
-}
-
-.before-load {
-  visibility: hidden !important;
-  opacity: 0 !important;
 }

@@ -176,8 +176,8 @@ body {
   }
 
   .before-load {
+    transition: none !important;
     opacity: 0;
     top: 10px;
-    position: fixed;
   }
 }
