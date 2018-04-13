@@ -13,6 +13,7 @@ body {
 
   //////////////////NAV STYLES
     .nav {
+      display: none;
       .nav__hamburger--icon {
         stroke: $c-me--purple;
       }
