@@ -1,0 +1,58 @@
+---
+layout: base
+title: unsent | Julie Tennett
+permalink: /unsent/
+---
+
+<div class="page--unsent">
+  {% include layout/header.html %}
+
+  <div class="content">
+
+    <!--hero-->
+    {% include components/hero.html
+    color='dark'
+    question='how can i design a impactful, non-traditional reading experiece?'
+    class='independent study' kind='ui & ux, illustration, front-end' date='spring 2018' %}
+
+    <!--the project-->
+    <div class="page-section background white">
+      <div class="center-container">
+        {% include components/subhead.html
+        subhead='project background' %}
+
+        {% include components/text-block.html
+        class='text-block'
+        par='During my co-op at LevelUp, I was treated as a full-fledged member on their agency team. Our team&apos;s job was to work with restaurant client&apos;s to design custom branded mobile apps used by their customers to collect rewards, view menus and locations, and order ahead. La Centrale was one of my favorite clients to work with during my 6 months at LevelUp, and one of the apps that I got to own from start to finish! <br>
+        <br>La Centrale&apos;s branding inspired me from the get-go, and as a brand new, Eately-style dining experience in need of an app for their grand opening, there was a lot of space to interpret and push their branding within their app. The colors, font, and type treatments were all fun to work on, in addition to the lemon-y icon illustrations I got to make!
+        <br>
+        <br>Download the La Centrale app <a class="text-block__link" href="https://itunes.apple.com/us/app/la-centrale/id1328551205?mt=8" target="_blank">here!</a>' %}
+
+      </div>
+    </div>
+
+    <!--the project-->
+    <div class="page-section mockups white">
+      <div class="img--container">
+        <img class="mockup--img" src="/img/lacentrale/mockup--01.png" alt="">
+        <img class="mockup--img" src="/img/lacentrale/mockup--02.png" alt="">
+        <img class="mockup--img" src="/img/lacentrale/mockup--03.png" alt="">
+        <img class="mockup--img" src="/img/lacentrale/mockup--04.png" alt="">
+        <img class="mockup--img" src="/img/lacentrale/mockup--05.png" alt="">
+        <img class="mockup--img" src="/img/lacentrale/mockup--06.png" alt="">
+        <img class="mockup--img" src="/img/lacentrale/mockup--07.png" alt="">
+        <img class="mockup--img" src="/img/lacentrale/mockup--08.png" alt="">
+      </div>
+    </div>
+
+    <!-- prev-next -->
+    {% include components/prev-next.html
+      color = 'dark'
+      prev = 'trailtag'
+      next = 'illustrations'
+    %}
+
+  </div>
+
+  {% include layout/footer.html %}
+</div>
