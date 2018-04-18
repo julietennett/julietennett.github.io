@@ -10,6 +10,7 @@ class Homepage {
   backgroundImg() {
     let $linkContainer = $('.link--container');
     let $trailTag = $('.link--trailtag');
+    let $unsent = $('.link--unsent');
     let $videogame = $('.link--videogame');
     let $zealery = $('.link--zealery');
     let $illustrations = $('.link--illustrations');
@@ -28,6 +29,11 @@ class Homepage {
 
     $zealery.hover(function () {
       $hoverImg.css("background-image", "url(/img/home/work__link--zealery.png)");
+      $hoverImg.css("background-size", "cover");
+    });
+
+    $unsent.hover(function () {
+      $hoverImg.css("background-image", "url(/img/unsent/hero-background.png)");
       $hoverImg.css("background-size", "cover");
     });
 
