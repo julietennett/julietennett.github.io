@@ -1,0 +1,34 @@
+---
+layout: base
+title: drift | Julie Tennett
+permalink: /ab-testing/
+---
+<!--these are jekyll things that things know how to read. dont put anything above them >:( -->
+
+<div class="page--abtesting">
+  {% include layout/header.html %}
+
+  <div class="content">
+
+    <!--hero-->
+    {% include components/hero.html
+    color='dark'
+    img2='ab-testing/hero-img.png'
+    question='Helping our customers feel confident testing higher converting changes'
+    role='product designer <br>@ <a class="label__link" href="drift.com" target="_blank">drift</a>' date='Fall 2020' %}
+
+
+    <!-- prev-next -->
+    {% include components/prev-next.html
+      color = 'light'
+      prev = 'sidewalker'
+      next = 'unsent'
+    %}
+
+    {% include layout/footer.html %}
+
+    </div>
+
+  </div>
+
+</div>
