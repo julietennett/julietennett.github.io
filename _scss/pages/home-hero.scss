@@ -72,6 +72,9 @@ body {
     opacity: 1;
     transform: translateY(0);
     width: 85%;
+    .intro__text--link {
+      border-bottom: 1px solid $c-me--purple;
+    }
     @media (min-width: $bp-tablet-vert) {
       width: 50%;
     }

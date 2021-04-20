@@ -13,16 +13,13 @@ class About {
     let $aboutText = $('.about__text');
     let $aboutFact = $('.about__text--fact');
     let aboutFacts = [
-      'an interaction designer who loves the problem solving that goes on behind screens',
-      'a lover of all things related to design process',
-      'a designer with some development chops',
+      'a product designer who loves the problem solving that goes on behind screens',
+      'a lover of all things process',
       'and i love to iterate, retrospect, and improve every step of the way',
-      'a senior design student @ northeastern university',
-      'someone who tags ppl in a lot of memes',
-      'and i&apos;ve recently been obsessed with micro-interactions, animations, and hover effects',
-      'a designer who solves problems with, like, a lot of sticky notes',
-      'and i use a lot of  exclamation points and custom slack emojis',
-      'and i prefer illustrating in sketch over ai #unpopularopinion'
+      'a product designer at drift',
+      // 'a product designer at <a href="https://www.drift.com/" target="_blank" rel=noopener noreferer">drift</a>',
+      'and i use a lot of exclamation points and custom slack emojis',
+      'and making complex components in Figma is my jam'
     ];
     let factNum = 0;
 
