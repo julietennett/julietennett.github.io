@@ -68,7 +68,7 @@
   }
 
   .dark {
-    background-color: $c-zealery--pink;
+    background-color: $c-drift--dark;
     h2 {
       color: $c-white;
     }
@@ -82,30 +82,31 @@
   }
 
   ////////////////////SECTION STYLES
-  .research {
+  .page-section {
+    padding-left: 25vh;
+  }
+
+  .figma {
     display: flex;
-    align-items: center;
-  }
-
-  .wireframes {
-    .image-full-width {
-      background-image: url("/img/zealery/section--wireframes.png");
+    justify-content: center;
+    // .image-block {
+    //   width: 30vw;
+    // }
+    .subhead--indented {
+      padding-left: 0;
     }
-  }
-
-  .hifi {
-    .image-full-width {
-      background-image: url("/img/zealery/section--hifi.png");
+    .grid--col2 {
+      padding-left: 0;
+      display: flex;
+      justify-content: center;
     }
-  }
-
-  .guidelines {
-    .image-full-width {
-      display: none;
-      @media (min-width: $bp-laptop) {
-        display: block;
-        width: 100%;
-      }
+    h2 {
+      font-size: 36px;
+      font-weight: normal;
+    }
+    .img-block__image {
+      width: 30vh;
+      margin-top: 16px;
     }
   }
 
