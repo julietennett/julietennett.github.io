@@ -3,12 +3,12 @@
   //////////////////HERO STYLES
 
   h1 {
-    -webkit-text-fill-color: $c-zealery--pink; //overrides color (regardless of order)
-    color: $c-zealery--pink;
+    -webkit-text-stroke-color: $c-drift--dark; //overrides color (regardless of order)
+    -webkit-text-fill-color:$c-drift--light;
   }
 
   .hero {
-    background-color: $c-zealery--pink;
+    background-color: $c-drift--light;
   }
 
   .hero__img--container {
@@ -53,13 +53,26 @@
   ////////////////////COLOR STYLES
 
   .light {
-    background-color: $c-zealery--light;
+    background-color: $c-drift--light;
     h2 {
-      color: $c-zealery--pink;
+      color: $c-drift--dark;
     }
     .text-block__link {
-      color: $c-zealery--pink;
-      border-bottom: 1px solid $c-zealery--pink;
+      color: $c-drift--dark;
+      border-bottom: 1px solid $c-drift--dark;
+    }
+    .label {
+      border-top: 1px solid $c-drift--dark;
+      .label__section--title {
+        color: $c-drift--dark;
+      }
+      .label__section--answer {
+        color: $c-drift--dark;
+      }
+      .label__link {
+        color: $c-drift--dark;
+        border-bottom: 1px solid $c-drift--dark;
+      }
     }
   }
 

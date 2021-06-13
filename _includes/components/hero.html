@@ -16,6 +16,12 @@
     </div>
 
     <div class="label before-load">
+      {% if include.company %}
+      <div class="label__section">
+        <div class="label__section--title">company</div>
+        <div class="label__section--answer">{{ include.company }}</div>
+      </div>
+      {% endif %}
       {% if include.role %}
       <div class="label__section">
         <div class="label__section--title">role</div>
