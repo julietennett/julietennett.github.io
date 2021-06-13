@@ -112,50 +112,50 @@
 //////////////////NAV STYLES
   .nav {
     .nav__hamburger--icon {
-      stroke: $c-zealery--pink;
+      stroke: $c-drift--dark;
     }
     .nav__slider {
       @media (min-width: $bp-tablet-vert) {
-        box-shadow: 0 0 19px $c-zealery--pinkshadow;
+        // box-shadow: 0 0 19px $c-zealery--pinkshadow;
       }
     }
     .nav__slider--icon {
-      stroke: $c-zealery--pink;
+      stroke: $c-drift--dark;
     }
     .divider {
-      background-color: $c-zealery--pink;
+      background-color: $c-drift--dark;
     }
     .slider--item {
-      background-image: linear-gradient(to right, $c-zealery--pink, $c-zealery--pink 50%, transparent 50%, transparent);
+      background-image: linear-gradient(to right, $c-drift--dark, $c-drift--dark 50%, transparent 50%, transparent);
       &:hover {
         .slider--link {
-          color: $c-zealery--pink;
+          color: $c-drift--dark;
         }
       }
     }
     .slider--link {
-      color: $c-zealery--pink;
+      color: $c-drift--dark;
     }
   }
 
   /////////////////BOTTOM LINK STYLES
   .link__item {
-    background-image: linear-gradient(to top, $c-zealery--pink, $c-zealery--pink 50%, transparent 50%, transparent);
+    background-image: linear-gradient(to top, $c-drift--dark, $c-drift--dark 50%, transparent 50%, transparent);
   }
 
   .prev-next__link {
-    color: $c-zealery--pink;
+    color: $c-drift--dark;
   }
 
   .footer__link {
-    color: $c-zealery--pink;
+    color: $c-drift--dark;
   }
 
   .site-credit__text {
-    color: $c-zealery--footer;
+    color: $c-drift--dark;
     a {
-      color: $c-zealery--footer;
-      border-bottom: solid 1px $c-zealery--footer;
+      color: $c-drift--dark;
+      border-bottom: solid 1px $c-drift--dark;
     }
   }
 
