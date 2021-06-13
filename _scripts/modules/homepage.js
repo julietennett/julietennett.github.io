@@ -16,6 +16,7 @@ class Homepage {
     let $illustrations = $('.link--illustrations');
     let $lacentrale = $('.link--lacentrale');
     let $hoverImg = $('.hover__img');
+    let $abtesting = $('.link--abtesting');
 
     $linkContainer.hover(
       function () {
@@ -26,6 +27,12 @@ class Homepage {
         $hoverImg.css("opacity", "0");
       }
     )
+
+    $abtesting.hover(function () {
+      $hoverImg.css("background-image", "url(/img/home/work__link--abtesting.png)");
+      $hoverImg.css("background-size", "cover");
+    });
+
 
     $zealery.hover(function () {
       $hoverImg.css("background-image", "url(/img/home/work__link--zealery.png)");
