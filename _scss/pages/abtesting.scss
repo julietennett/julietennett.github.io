@@ -17,23 +17,14 @@
       position: relative;
       display: flex;
       justify-content: flex-end;
-      width: 105vw;
+      width: 95vw;
     }
   }
 
   .hero__img {
     @media (min-width: $bp-tablet-vert) {
       position: absolute;
-      &--left {
-        width: 30vw;
-        top: 400px;
-        right: 25%;
-        transform: translateY(0);
-        transition: all .5s $transition-type;
-        transition-delay: .5s;
-      }
       &--right {
-        width: 40vw;
         transform: translateX(0);
         transition: all .5s $transition-type;
         transition-delay: .5s;
@@ -87,17 +78,6 @@
     .text-block__link {
       color: $c-white;
       border-bottom: 1px solid $c-white;
-    }
-  }
-
-  .white {
-    background-color: $c-white;
-    h2 {
-      color: $c-zealery--pink;
-    }
-    .text-block__link {
-      color: $c-zealery--pink;
-      border-bottom: 1px solid $c-zealery--pink;
     }
   }
 
