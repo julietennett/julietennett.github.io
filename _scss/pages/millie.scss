@@ -1,10 +1,10 @@
-.page--millie{
+.page--millie {
   position: relative;
 
   ////////////////SECTION STYLES
 
   .light {
-      background-color: $c-illustrations--light;
+      background-color: $c-me--light;
       h2 {
         color: $c-illustrations--purple;
       }
@@ -14,43 +14,17 @@
       }
   }
 
-  .white {
-      background-color: $c-white;
-      h2 {
-        color: $c-illustrations--purple;
-      }
-      .caption {
-        color: $c-illustrations--purple;
-        border-color: $c-illustrations--purple;
-      }
+  .page-section {
+    justify-content: center;
   }
-
-  .dark {
-      background-color: $c-illustrations--purple;
-      h2 {
-        color: $c-white;
-      }
-      p {
-        color: $c-white;
-      }
-      .caption {
-        color: $c-white;
-      }
-  }
-
+  
   .img--container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 0 2em;
   }
 
-  .img-3 {
-    width: 30%;
-    height: 30%;
-    transition: all .3s ease;
-  }
 
   @keyframes wiggle {
     0% { transform: rotate(0deg); }
@@ -61,24 +35,8 @@
     100% { transform: rotate(0deg); }
   }
 
-  .img-1 {
-    width: 100%;
+  .img {
     height: 100%;
-  }
-
-  .img-2 {
-    width: 50%;
-    height: 50%;
-  }
-
-  .illustration--img {
-    margin: 3em 0;
-    &:hover {
-      animation-duration: .6s;
-      animation-timing-function: linear;
-      animation-iteration-count: 1;
-      animation-name: wiggle;
-    }
   }
 
 }
