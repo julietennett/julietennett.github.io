@@ -1,0 +1,45 @@
+---
+layout: base
+title: drift | Julie Tennett
+permalink: /ab-testing/
+---
+<!--these are jekyll things that things know how to read. dont put anything above them >:( -->
+
+<div class="page--abtesting">
+  {% include layout/header.html %}
+
+  <div class="content">
+
+    <!--hero-->
+    {% include components/hero.html
+    color='light'
+    img2='ab-testing/hero-img.png'
+    question='Helping our customers feel confident testing higher converting changes'
+    role='product designer' company='<a class="label__link" href="drift.com" target="_blank">drift</a>' date='Fall 2020' %}
+
+    <!--figma section-->
+    <div class="page-section figma dark">
+      <div class="center-container">
+        {% include components/subhead.html
+        subhead='check out this case study in figma!' %}
+
+        {% include components/image-block.html
+        class='image-block'
+        img='ab-testing/figma.png' alt = 'figma logo' %}
+      </div>
+    </div>
+
+    <!-- prev-next -->
+    {% include components/prev-next.html
+      color = 'light'
+      prev = 'routing'
+      next = 'zealery'
+    %}
+
+    {% include layout/footer.html %}
+
+    </div>
+
+  </div>
+
+</div>
